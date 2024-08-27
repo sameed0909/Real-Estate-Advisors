@@ -2,10 +2,10 @@ import React from "react";
 
 const FeatureSection = () => {
   return (
-    <div className="max-w-5xl mx-auto p-4 sm:p-6 mt-20">
+    <div className="max-w-5xl mx-auto p-4 sm:p-6 mt-20 text-center">
       <div className="mb-2">
         <span
-          className="px-6 py-2 text-sm font-semibold rounded-full"
+          className="px-6 py-2 text-sm font-semibold squared"
           style={{
             background:
               "linear-gradient(90.46deg, #325098 -24.51%, #FBD0E1 104.69%)",
@@ -15,7 +15,7 @@ const FeatureSection = () => {
         </span>
       </div>
       <h1
-        className="text-2xl font-semibold mb-8 p-2 text-transparent bg-clip-text text-center"
+        className="text-2xl font-semibold mb-8 p-2 text-transparent bg-clip-text"
         style={{
           background:
             "linear-gradient(90.46deg, #325098 -24.51%, #FBD0E1 104.69%)",
@@ -30,7 +30,7 @@ const FeatureSection = () => {
         <img
           src="/image1.png"
           alt="AI Integration"
-          className="w-full md:w-1/2 h-64 md:h-auto object-cover rounded-lg"
+          className="w-full md:w-1/2 h-64 md:h-auto object-cover rounded-none"
         />
 
         <div className="w-full md:w-1/2 p-6 flex flex-col justify-center md:pl-8 text-left">
@@ -90,7 +90,7 @@ const FeatureSection = () => {
         <img
           src="/image2.png"
           alt="Analytics Tools"
-          className="w-full md:w-1/2 h-64 md:h-auto object-cover rounded-lg"
+          className="w-full md:w-1/2 h-64 md:h-auto object-cover rounded-none"
         />
       </div>
 
@@ -99,7 +99,7 @@ const FeatureSection = () => {
         <img
           src="/image3.png"
           alt="Real Estate Insights"
-          className="w-full md:w-1/2 h-64 md:h-auto object-cover rounded-lg"
+          className="w-full md:w-1/2 h-64 md:h-auto object-cover rounded-none"
         />
         <div className="w-full md:w-1/2 p-6 flex flex-col justify-center md:pl-8 text-left">
           <h1
