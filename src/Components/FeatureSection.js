@@ -2,21 +2,22 @@ import React from "react";
 
 const FeatureSection = () => {
   return (
-    <div className="max-w-5xl mx-auto p-4 sm:p-6 mt-20 text-center">
+    <div className="max-w-5xl mx-auto p-4 sm:p-6 mt-20">
       <div className="mb-2">
       <span
-  className="px-6 py-2 text-sm font-semibold squared"
+  className="px-6 py-2 text-sm font-semibold squared-full justify-center"
   style={{
     background:
       "linear-gradient(90.46deg, #325098 -24.51%, #FBD0E1 104.69%)",
-    color: "white"
+    alignItems: "center",
+    color: "#FFFFFF"
   }}
 >
-          CORE FEATURES
-        </span>
+  Core Features
+</span>
       </div>
       <h1
-        className="text-2xl font-semibold mb-8 p-2 text-transparent bg-clip-text"
+        className="text-2xl font-semibold mb-8 p-2 text-transparent bg-clip-text text-center"
         style={{
           background:
             "linear-gradient(90.46deg, #325098 -24.51%, #FBD0E1 104.69%)",
@@ -27,11 +28,11 @@ const FeatureSection = () => {
       </h1>
 
       {/* AI Integration Section */}
-      <div className="flex flex-col md:flex-row bg-white overflow-hidden mb-8 rounded-lg shadow-lg h-78">
+      <div className="flex flex-col md:flex-row bg-white overflow-hidden mb-8 rounded-lg shadow-lg">
         <img
           src="/image1.png"
           alt="AI Integration"
-          className="w-full md:w-1/2 h-full object-cover rounded-none"
+          className="w-full md:w-1/2 h-64 md:h-auto object-cover rounded-lg"
         />
 
         <div className="w-full md:w-1/2 p-6 flex flex-col justify-center md:pl-8 text-left">
@@ -62,7 +63,7 @@ const FeatureSection = () => {
       </div>
 
       {/* Analytics Tools Section */}
-      <div className="flex flex-col md:flex-row bg-white overflow-hidden mb-8 rounded-lg shadow-lg h-78">
+      <div className="flex flex-col md:flex-row bg-white overflow-hidden mb-8 rounded-lg shadow-lg">
         <div className="w-full md:w-1/2 p-6 flex flex-col justify-center md:pr-8 text-left">
           <h1
             className="text-xl font-semibold mb-2 p-2 text-transparent bg-clip-text"
@@ -91,16 +92,16 @@ const FeatureSection = () => {
         <img
           src="/image2.png"
           alt="Analytics Tools"
-          className="w-full md:w-1/2 h-full object-cover rounded-none"
+          className="w-full md:w-1/2 h-64 md:h-auto object-cover rounded-lg"
         />
       </div>
 
       {/* Real Estate Insights Section */}
-      <div className="flex flex-col md:flex-row bg-white overflow-hidden rounded-lg shadow-lg h-78">
+      <div className="flex flex-col md:flex-row bg-white overflow-hidden rounded-lg shadow-lg">
         <img
           src="/image3.png"
           alt="Real Estate Insights"
-          className="w-full md:w-1/2 h-full object-cover rounded-none"
+          className="w-full md:w-1/2 h-64 md:h-auto object-cover rounded-lg"
         />
         <div className="w-full md:w-1/2 p-6 flex flex-col justify-center md:pl-8 text-left">
           <h1
