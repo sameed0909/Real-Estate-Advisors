@@ -1,19 +1,20 @@
-import React from 'react';
-import Service from './Components/Service.js'
-import TestimonialsSection from './Components/TestimonialsSection.js';
-import AdisorsSection from './Components/AdvisorsSection.js'
-import HeroSection from './Components/HeroSection.js';
-import Footer from './Components/Footer.js';
-
+import React from "react";
+import Service from "./Components/Service.js";
+import TestimonialsSection from "./Components/TestimonialsSection.js";
+import AdisorsSection from "./Components/AdvisorsSection.js";
+import HeroSection from "./Components/HeroSection.js";
+import Footer from "./Components/Footer.js";
+import FeatureSection from "./Components/FeatureSection.js";
 
 function App() {
   return (
     <div className="App">
-      <HeroSection/>
-      <Service/>
-      <TestimonialsSection/>
-      <AdisorsSection/>
-      <Footer/>
+      <HeroSection />
+      <FeatureSection />
+      <Service />
+      <TestimonialsSection />
+      <AdisorsSection />
+      <Footer />
     </div>
   );
 }
