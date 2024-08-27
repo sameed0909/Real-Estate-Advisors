@@ -20,6 +20,7 @@ const AdvisorsSection = () => {
   ];
 
   return (
+    
     <section className="py-10">
       <div className="container mx-auto">
         {/* Section Title */}
