@@ -55,13 +55,12 @@ const HeroSection = () => {
                   "linear-gradient(89.67deg, #325098 0.1%, #FFFFFF 89.29%)",
                 WebkitBackgroundClip: "text",
                 WebkitTextFillColor: "transparent",
-              fontWeight: 600,
+                fontWeight: 600,
               }}
             >
               AI-Driven
             </span>{" "}
-            <span style={{ color: "#325098" ,              fontWeight: 600,
-}}>Insights.</span>
+            <span style={{ color: "#325098", fontWeight: 600 }}>Insights.</span>
           </h1>
           <p className="text-gray-600 mb-6">
             Office spaces that meet the market, Winning keywords, website
@@ -96,7 +95,7 @@ const HeroSection = () => {
         </div>
 
         {/* Right Section */}
-        <div className="md:w-2/4 h-full relative md:absolute top-0 right-0 w-full md:w-3/5 md:h-full z-0">
+        <div className="md:w-1/2 h-full relative md:absolute top-0 right-0 w-full md:w-3/5 md:h-full z-0">
           <img
             src={`${process.env.PUBLIC_URL}/hero.png`}
             alt="Modern House"
