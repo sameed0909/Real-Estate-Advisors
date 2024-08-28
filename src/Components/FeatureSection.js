@@ -26,7 +26,7 @@ const FeatureSection = () => {
       </h1>
 
       {/* AI Integration Section */}
-      <div className="flex flex-col md:flex-row bg-white overflow-hidden mb-8 rounded-lg shadow-lg">
+      <div className="flex flex-col md:flex-row bg-white overflow-hidden mb-8 rounded-lg">
         <div className="w-full md:w-1/2 h-full">
           <img
             src="/image1.png"
@@ -39,8 +39,7 @@ const FeatureSection = () => {
           <h1
             className="text-xl font-semibold mb-2 p-2 text-transparent bg-clip-text"
             style={{
-              background:
-                "linear-gradient(90.46deg, #325098 -24.51%, #FBD0E1 104.69%)",
+              background:"linear-gradient(90.46deg, #325098 -24.51%, #FBD0E1 104.69%)",
               WebkitBackgroundClip: "text",
             }}
           >
@@ -63,13 +62,12 @@ const FeatureSection = () => {
       </div>
 
       {/* Analytics Tools Section */}
-      <div className="flex flex-col md:flex-row bg-white overflow-hidden mb-8 rounded-lg shadow-lg">
+      <div className="flex flex-col md:flex-row bg-white overflow-hidden mb-8 rounded-lg">
         <div className="w-full md:w-1/2 p-6 flex flex-col justify-center md:pr-8 text-left">
           <h1
             className="text-xl font-semibold mb-2 p-2 text-transparent bg-clip-text"
             style={{
-              background:
-                "linear-gradient(90.46deg, #325098 -24.51%, #FBD0E1 104.69%)",
+              background:"linear-gradient(90.46deg, #325098 -24.51%, #FBD0E1 104.69%)",
               WebkitBackgroundClip: "text",
             }}
           >
@@ -97,7 +95,7 @@ const FeatureSection = () => {
       </div>
 
       {/* Real Estate Insights Section */}
-      <div className="flex flex-col md:flex-row bg-white overflow-hidden rounded-lg shadow-lg">
+      <div className="flex flex-col md:flex-row bg-white overflow-hidden rounded-lg">
         <img
           src="/image3.png"
           alt="Real Estate Insights"
