@@ -8,7 +8,7 @@ import Slider from "react-slick";
 // import "slick-carousel/slick/slick-theme.css";
 
 const TestimonialCard = ({ name, role, image, rating, text }) => (
-  <div className="bg-white p-6 rounded-2xl shadow-lg flex flex-col items-start text-left">
+  <div className="bg-white p-6 rounded-2xl shadow-lg flex flex-col items-start text-left mb-10">
     <div className="flex items-center space-x-4 mb-4">
       <img src={image} alt={name} className="w-16 h-16 rounded-full" />
       <div>
@@ -53,6 +53,7 @@ const TestimonialsSection = () => {
     return () => window.removeEventListener("resize", handleResize);
   }, []);
 
+  // Slider settings with 5-second autoplay
   const settings = {
     dots: true,
     infinite: true,
@@ -60,7 +61,7 @@ const TestimonialsSection = () => {
     slidesToShow: slidesToShow,
     slidesToScroll: 1,
     autoplay: true,
-    autoplaySpeed: 3000, // 5-second timer
+    autoplaySpeed: 5000, // 5 seconds
   };
 
   const testimonials = [
@@ -93,13 +94,12 @@ const TestimonialsSection = () => {
       text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
     },
     {
-      name: "Ali",
+      name: "Sara",
       role: "Web Developer",
       image: "/images/avatar5.png",
       rating: "5.00",
       text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
     },
-    // Add more testimonials as needed
   ];
 
   return (
@@ -109,7 +109,7 @@ const TestimonialsSection = () => {
         <div className="mb-12">
           <div className="mb-2 flex justify-center">
             <span
-              className="px-6 py-2 text-sm font-semibold squared-full border-2 border-[#FBD0E1] rounded"
+              className="px-6 py-2 text-sm font-semibold rounded"
               style={{
                 background:
                   "linear-gradient(90.46deg, #325098 -24.51%, #FBD0E1 104.69%)",
@@ -120,9 +120,9 @@ const TestimonialsSection = () => {
             </span>
           </div>
           <h2
-            className="text-3xl font-bold mt-10"
+            className="text-3xl font-semibold mt-10"
             style={{
-              background:"linear-gradient(90deg, #8CA8BE 0%, #325098 100%)",
+              background: "linear-gradient(90deg, #8CA8BE 15%, #325098 100%)",
               WebkitBackgroundClip: "text",
               WebkitTextFillColor: "transparent",
             }}
