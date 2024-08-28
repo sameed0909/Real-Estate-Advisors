@@ -3,18 +3,17 @@ import React from "react";
 const FeatureSection = () => {
   return (
     <div className="max-w-5xl mx-auto p-4 sm:p-6 mt-20">
-      <div className="mb-2">
-      <span
-  className="px-6 py-2 text-sm font-semibold squared-full justify-center"
-  style={{
-    background:
-      "linear-gradient(90.46deg, #325098 -24.51%, #FBD0E1 104.69%)",
-    alignItems: "center",
-    color: "#FFFFFF"
-  }}
->
-  Core Features
-</span>
+      <div className="mb-2 flex justify-center">
+        <span
+          className="px-6 py-2 text-sm font-semibold squared-full"
+          style={{
+            background:
+              "linear-gradient(90.46deg, #325098 -24.51%, #FBD0E1 104.69%)",
+            color: "#FFFFFF",
+          }}
+        >
+          CORE FEATURES
+        </span>
       </div>
       <h1
         className="text-2xl font-semibold mb-8 p-2 text-transparent bg-clip-text text-center"

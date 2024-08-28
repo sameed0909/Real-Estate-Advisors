@@ -6,18 +6,35 @@ const TestimonialsSection = () => {
       <div className="container mx-auto text-center">
         {/* Header */}
         <div className="mb-12">
-          <div className="inline-block bg-purple-200 text-purple-700 text-xs font-semibold px-3 py-1 rounded-full mb-4">
-            12K+ HAPPY CLIENTS
+          <div className="mb-2 flex justify-center">
+            <span
+              className="px-6 py-2 text-sm font-semibold squared-full"
+              style={{
+                background:
+                  "linear-gradient(90.46deg, #325098 -24.51%, #FBD0E1 104.69%)",
+                color: "#FFFFFF",
+              }}
+            >
+              12K+ HAPPY CLIENTS
+            </span>
           </div>
-          <h2 className="text-gray-800 text-3xl font-semibold">
-            Testimonials <span className="text-blue-600">And Success Stories</span>
+          <h2
+            className="text-3xl font-semibold mt-10"
+            style={{
+              background: "linear-gradient(90deg, #8CA8BE 15%, #325098 100%)",
+              WebkitBackgroundClip: "text",
+              WebkitTextFillColor: "transparent",
+            }}
+          >
+            Testimonials{" "}
+            <span className="text-blue-600">And Success Stories</span>
           </h2>
         </div>
 
         {/* Testimonials */}
         <div className="flex flex-col md:flex-row justify-center space-y-8 md:space-y-0 md:space-x-8">
           {/* Testimonial Card 1 */}
-          <div className="bg-white p-6 rounded-lg shadow-lg flex flex-col items-center text-center">
+          <div className="bg-white p-6 rounded-2xl shadow-lg flex flex-col items-center text-center">
             <img
               src="/images/avatar1.png"
               alt="Ahmed"
@@ -45,7 +62,7 @@ const TestimonialsSection = () => {
           </div>
 
           {/* Testimonial Card 2 */}
-          <div className="bg-white p-6 rounded-lg shadow-lg flex flex-col items-center text-center">
+          <div className="bg-white p-6 rounded-2xl  shadow-lg flex flex-col items-center text-center">
             <img
               src="/images/avatar2.png"
               alt="Alizey"
@@ -73,7 +90,7 @@ const TestimonialsSection = () => {
           </div>
 
           {/* Testimonial Card 3 */}
-          <div className="bg-white p-6 rounded-lg shadow-lg flex flex-col items-center text-center">
+          <div className="bg-white p-6 rounded-2xl  shadow-lg flex flex-col items-center text-center">
             <img
               src="/images/avatar3.png"
               alt="Fatima"
