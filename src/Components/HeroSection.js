@@ -1,4 +1,5 @@
 import React from "react";
+import "../style.css"
 
 const HeroSection = () => {
   return (
@@ -13,9 +14,12 @@ const HeroSection = () => {
             className="h-full"
           />
         </div>
-        <button className="border border-white text-white px-4 py-2 squared-full shadow hover:bg-white hover:text-indigo-600 transition duration-300">
-          Schedule a Call
-        </button>
+        <button className="border border-white text-white px-4 py-2 squared-full shadow hover:bg-white hover:text-indigo-600 transition duration-300 btn-custom">
+  Schedule a Call
+</button>
+
+
+
       </div>
 
       {/* Hero Section */}
