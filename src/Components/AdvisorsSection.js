@@ -31,7 +31,7 @@ const AdvisorsSection = () => {
     <section className="py-10">
       <div className="mb-2 flex justify-center">
         <span
-          className="px-6 py-2 text-sm font-semibold squared-full justify-center"
+          className="px-6 py-2 text-sm font-semibold squared-full justify-center border-2 border-[#FBD0E1] rounded"
           style={{
             background:
               "linear-gradient(90.46deg, #325098 -24.51%, #FBD0E1 104.69%)",
@@ -46,7 +46,7 @@ const AdvisorsSection = () => {
         className="text-2xl font-bold mb-8 p-2 text-transparent bg-clip-text text-center"
         style={{
           background:
-            "linear-gradient(90.46deg, #8CA8BE -24.51%, #325098 104.69%)",
+                  "linear-gradient(90deg, #8CA8BE 0%, #325098 100%)",
           WebkitBackgroundClip: "text",
         }}
       >

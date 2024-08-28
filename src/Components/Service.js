@@ -5,7 +5,7 @@ const ServicesSection = () => {
     <section className="py-16">
       <div className="mb-2 flex justify-center">
         <span
-          className="px-6 py-2 text-sm font-semibold squared-full"
+          className="px-6 py-2 text-sm font-semibold squared-full border-2 border-[#FBD0E1] rounded"
           style={{
             background:
               "linear-gradient(90.46deg, #325098 -24.51%, #FBD0E1 104.69%)",
@@ -17,10 +17,9 @@ const ServicesSection = () => {
       </div>
 
       <h1
-        className="text-2xl font-semibold mt-4 mb-4 p-2 text-transparent bg-clip-text text-center mt-10"
+        className="text-2xl font-bold mt-4 mb-4 p-2 text-transparent bg-clip-text text-center"
         style={{
-          background:
-            "linear-gradient(91.21deg, #8CA8BE 15.19%, #325098 99.73%)",
+          background: "linear-gradient(90deg, #8CA8BE 0%, #325098 100%)",
           WebkitBackgroundClip: "text",
         }}
       >
@@ -33,22 +32,22 @@ const ServicesSection = () => {
           fontWeight: 400,
         }}
       >
-        Lorem ipsum dolor sit amet,libero consectetur elit. <br lang="en"></br>
+        Lorem ipsum dolor sit amet, libero consectetur elit. <br />
         Integer nec odio. Praesent libero. Sed cursus dapibus diam
       </p>
 
-      <div className="container mx-auto flex flex-col md:flex-row items-center">
+      <div className="flex flex-col md:flex-row items-start">
         {/* Image Section */}
-        <div className="md:w-1/2">
+        <div className="w-full md:w-1/2 p-0 m-0">
           <img
             src="/images/feature4.png"
             alt="An illustration of a city in hand, representing our platform's capabilities"
-            className="rounded-lg shadow-lg"
-            style={{ height: "500px" }} // Add this line to increase the height of the image
+            className="w-full h-auto rounded-lg shadow-lg"
+            style={{ height: "500px" }} // Adjust height as needed
           />
         </div>
         {/* Text Section */}
-        <div className="md:w-1/2 mt-8 md:mt-0 md:pl-12">
+        <div className="w-full md:w-1/2 mt-8 md:mt-0 md:pl-12">
           <h3
             className="text-2xl font-semibold mb-4"
             style={{
