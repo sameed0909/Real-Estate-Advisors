@@ -1,9 +1,9 @@
 import React from "react";
-import "../style.css"
+import "../style.css";
 
 const HeroSection = () => {
   return (
-    <div className="relative bg-gray-50 min-h-screen">
+    <div className="relative  min-h-screen">
       {/* Navbar */}
       <div className="absolute top-0 left-0 w-full flex items-center justify-between p-6 z-10">
         <div className="h-10">
@@ -15,11 +15,8 @@ const HeroSection = () => {
           />
         </div>
         <button className="border border-white text-white px-4 py-2 squared-full shadow hover:bg-white hover:text-indigo-600 transition duration-300 btn-custom">
-  Schedule a Call
-</button>
-
-
-
+          Schedule a Call
+        </button>
       </div>
 
       {/* Hero Section */}
