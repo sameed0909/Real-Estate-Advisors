@@ -65,7 +65,7 @@ const AdvisorsSection = () => {
                 key={index}
                 className={`relative group ${
                   index === 0 ? "w-64 h-[360px]" : "w-72 h-[450px]"
-                } rounded-xl overflow-hidden shadow-lg bg-white`} // Conditional sizing for the first image
+                } rounded-xl overflow-hidden shadow-lg bg-white`}
                 style={{
                   transform: `translateY(${-index * 60}px)`,
                   marginRight: "1rem",
@@ -76,13 +76,16 @@ const AdvisorsSection = () => {
                   src={advisor.image}
                   alt={advisor.name}
                 />
-                {/* Hover Overlay with Detailed Text */}
-                <div className="absolute inset-0 bg-black bg-opacity-60 flex flex-col items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-300 p-4">
-                  <div className="text-white text-lg font-bold">
-                    {advisor.name}
-                  </div>
-                  <p className="text-white text-sm mb-2">{advisor.title}</p>
-                  <p className="text-white text-xs leading-relaxed">
+                {/* Hover Gradient Overlay */}
+                <div className="absolute inset-0 bg-gradient-to-b from-[#325098] to-[#444853] opacity-0 group-hover:opacity-70 transition-opacity duration-300" />
+                {/* Fixed Name and Title at Bottom */}
+                <div className="absolute bottom-0 left-0 w-full bg-opacity-60 text-white p-4">
+                  <div className="font-bold text-lg">{advisor.name}</div>
+                  <p className="text-sm">{advisor.title}</p>
+                </div>
+                {/* Hover Overlay with Detailed Description */}
+                <div className="absolute inset-0 bg-black bg-opacity-75 flex items-center justify-center opacity-0 group-hover:opacity-70 transition-opacity duration-300 p-4">
+                  <p className="text-white text-large leading-relaxed text-center">
                     {advisor.description}
                   </p>
                 </div>
@@ -114,7 +117,9 @@ const AdvisorsSection = () => {
             <button
               className="mt-4 text-white font-bold py-2 px-6 rounded"
               style={{
-                backgroundColor: buttonHover ? "#2A2542" : "#332D4F",
+                background: buttonHover
+                  ? "linear-gradient(90deg, #325098 0%, #444853 100%)"
+                  : "#332D4F",
               }}
               onMouseOver={() => setButtonHover(true)}
               onMouseOut={() => setButtonHover(false)}
