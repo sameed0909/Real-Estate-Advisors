@@ -28,13 +28,15 @@ const FeatureSection = () => {
 
       {/* AI Integration Section */}
       <div className="flex flex-col md:flex-row bg-white overflow-hidden mb-8 rounded-lg shadow-lg">
-        <img
-          src="/image1.png"
-          alt="AI Integration"
-          className="w-full md:w-1/2 h-64 md:h-auto object-cover rounded-lg"
-        />
+        <div className="w-full md:w-1/2 h-full">
+          <img
+            src="/image1.png"
+            alt="AI Integration"
+            className="w-full h-full object-cover rounded-lg"
+          />
+        </div>
 
-        <div className="w-full md:w-1/2 p-6 flex flex-col justify-center md:pl-8 text-left">
+        <div className="w-full md:w-1/2 p-6 flex flex-col justify-center text-left">
           <h1
             className="text-xl font-semibold mb-2 p-2 text-transparent bg-clip-text"
             style={{
@@ -91,7 +93,7 @@ const FeatureSection = () => {
         <img
           src="/image2.png"
           alt="Analytics Tools"
-          className="w-full md:w-1/2 h-64 md:h-auto object-cover rounded-lg"
+          className="w-full md:w-1/2 h-auto md:h-auto object-cover rounded-lg"
         />
       </div>
 
@@ -100,7 +102,7 @@ const FeatureSection = () => {
         <img
           src="/image3.png"
           alt="Real Estate Insights"
-          className="w-full md:w-1/2 h-64 md:h-auto object-cover rounded-lg"
+          className="w-full md:w-1/2 h-auto md:h-auto object-cover rounded-lg"
         />
         <div className="w-full md:w-1/2 p-6 flex flex-col justify-center md:pl-8 text-left">
           <h1
