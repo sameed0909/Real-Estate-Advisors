@@ -2,7 +2,7 @@ import React from "react";
 
 const TestimonialsSection = () => {
   return (
-    <section className="bg-gray-50 py-16">
+    <section className="py-16">
       <div className="container mx-auto text-center">
         {/* Header */}
         <div className="mb-12">
