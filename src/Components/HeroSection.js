@@ -96,7 +96,7 @@ const HeroSection = () => {
         </div>
 
         {/* Right Section */}
-        <div className="md:w-2/5 h-full relative md:absolute top-0 right-0 w-full z-0">
+        <div className="md:w-3/6 h-full relative md:absolute top-0 right-0 w-full z-0">
           <img
             src={`${process.env.PUBLIC_URL}/hero.png`}
             alt="Modern House"

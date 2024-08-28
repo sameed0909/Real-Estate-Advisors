@@ -5,6 +5,8 @@ import AdisorsSection from "./Components/AdvisorsSection.js";
 import HeroSection from "./Components/HeroSection.js";
 import Footer from "./Components/Footer.js";
 import FeatureSection from "./Components/FeatureSection.js";
+import "slick-carousel/slick/slick.css";
+import "slick-carousel/slick/slick-theme.css";
 
 function App() {
   return (
