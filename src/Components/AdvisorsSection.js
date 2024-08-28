@@ -20,16 +20,34 @@ const AdvisorsSection = () => {
   ];
 
   return (
-    
     <section className="py-10">
+      <div className="mb-2 flex justify-center">
+      <span
+  className="px-6 py-2 text-sm font-semibold squared-full justify-center"
+  style={{
+    background:"linear-gradient(90.46deg, #325098 -24.51%, #FBD0E1 104.69%)",
+    alignItems: "center",
+    color: "#FFFFFF"
+  }}
+  >
+    OUR ADVISOR
+    </span>
+    </div>
+    <h1
+        className="text-2xl font-bold mb-8 p-2 text-transparent bg-clip-text text-center"
+        style={{
+          background:"linear-gradient(90.46deg, #325098 -24.51%, #FBD0E1 104.69%)",
+          WebkitBackgroundClip: "text",
+        }}
+      >
+        Meet Our Advisor
+      </h1>
+      <p className="text-gray-500 mb-6 text-center -mt-6">
+            Lorem ipsum dolor sit amet, libero consectetur elit. <br></br>Integer nec
+            odio. Praesent libero. Sed cursus dapibus diam.
+      </p>
       <div className="container mx-auto">
         {/* Section Title */}
-        <div className="text-center mb-8">
-          <h2 className="text-3xl font-bold text-blue-600">Meet Our Advisors</h2>
-          <p className="mt-4 text-gray-600">
-            Lorem ipsum dolor sit amet, libero consectetur elit. Integer nec odio.
-          </p>
-        </div>
 
         {/* Main Flex Container for Images and Text */}
         <div className="flex flex-wrap lg:flex-nowrap justify-between">
@@ -49,17 +67,29 @@ const AdvisorsSection = () => {
           </div>
 
           {/* Why Our Advisors Stand Out Section */}
-          <div className="mt-6 lg:mt-0 lg:w-1/3 lg:ml-8 p-6 bg-gray-50 rounded-lg shadow-md">
-            <h3 className="text-2xl font-bold text-blue-600">Why Our Advisors Stand Out</h3>
-            <p className="mt-4 text-gray-600">
+          <div className="mt-6 lg:mt-0 lg:w-1/3 lg:ml-8 p-6">
+          <h1 className="text-2xl font-bold mb-8 p-2 text-transparent bg-clip-text text-left"
+          style={{background: "linear-gradient(90.46deg, #325098 -24.51%, #FBD0E1 104.69%)",
+            WebkitBackgroundClip: "text",
+            }}>
+              Why Our Advisor Stand Out
+              </h1>
+            <p className="mt-4 text-gray-600 -mt-4">
               Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus at lacus ut lacus varius dapibus vel eget odio. Cras ut lorem vitae ligula commodo efficitur.
             </p>
             <p className="mt-4 text-gray-600">
               Curabitur ac tortor at ipsum facilisis aliquam. Donec vel felis a eros feugiat consequat in at libero.
             </p>
-            <button className="mt-6 bg-blue-600 text-white font-bold py-2 px-6 rounded-full hover:bg-blue-700">
-              Read More
-            </button>
+            <button className="mt-6 text-white font-bold py-2 px-6 squared"
+  style={{
+    backgroundColor: "#332D4F",
+  }}
+  onMouseOver={(e) => e.target.style.backgroundColor = "#2A2542"}
+  onMouseOut={(e) => e.target.style.backgroundColor = "#332D4F"}
+>
+  Read More
+</button>
+
           </div>
         </div>
       </div>
