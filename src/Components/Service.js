@@ -5,7 +5,7 @@ const ServicesSection = () => {
     <section className="py-16">
       <div className="mb-2 flex justify-center">
         <span
-          className="px-6 py-2 text-sm font-semibold squared-full"
+          className="px-6 py-2 text-sm font-semibold squared-full border-2 border-[#FBD0E1] rounded"
           style={{
             background:
               "linear-gradient(90.46deg, #325098 -24.51%, #FBD0E1 104.69%)",
@@ -17,10 +17,9 @@ const ServicesSection = () => {
       </div>
 
       <h1
-        className="text-2xl font-semibold mt-4 mb-4 p-2 text-transparent bg-clip-text text-center mt-10"
+        className="text-2xl font-bold mt-4 mb-4 p-2 text-transparent bg-clip-text text-center mt-10"
         style={{
-          background:
-            "linear-gradient(91.21deg, #8CA8BE 15.19%, #325098 99.73%)",
+          background:"linear-gradient(90deg, #8CA8BE 0%, #325098 100%)",
           WebkitBackgroundClip: "text",
         }}
       >

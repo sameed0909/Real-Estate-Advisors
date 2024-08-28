@@ -8,7 +8,7 @@ const TestimonialsSection = () => {
         <div className="mb-12">
           <div className="mb-2 flex justify-center">
             <span
-              className="px-6 py-2 text-sm font-semibold squared-full"
+              className="px-6 py-2 text-sm font-semibold squared-full border-2 border-[#FBD0E1] rounded"
               style={{
                 background:
                   "linear-gradient(90.46deg, #325098 -24.51%, #FBD0E1 104.69%)",
@@ -19,9 +19,9 @@ const TestimonialsSection = () => {
             </span>
           </div>
           <h2
-            className="text-3xl font-semibold mt-10"
+            className="text-3xl font-bold mt-10"
             style={{
-              background: "linear-gradient(90deg, #8CA8BE 15%, #325098 100%)",
+              background:"linear-gradient(90deg, #8CA8BE 0%, #325098 100%)",
               WebkitBackgroundClip: "text",
               WebkitTextFillColor: "transparent",
             }}
