@@ -55,7 +55,7 @@ const HeroSection = () => {
                 fontWeight: 600,
               }}
             >
-              AI-Driven
+              <br></br>AI-Driven
             </span>{" "}
             <span style={{ color: "#325098", fontWeight: 600 }}>Insights.</span>
           </h1>
