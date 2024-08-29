@@ -22,7 +22,7 @@ const HeroSection = () => {
       {/* Hero Section */}
       <div
         className="flex flex-col md:flex-row p-8 mt-0 relative z-0"
-        style={{ minHeight: "calc(100vh)" }}
+        style={{}}
       >
         {/* Left Section */}
         <div className="md:w-1/2 text-center md:text-left relative z-20 mt-16 md:mt-20">
