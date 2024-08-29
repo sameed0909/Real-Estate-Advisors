@@ -60,7 +60,7 @@ const HeroSection = () => {
             </span>{" "}
             <span style={{ color: "#325098", fontWeight: 600 }}>Insights.</span>
           </h1>
-          <p className="text-gray-600 mb-6 text-sm md:text-base md:mt-5 lg:text-lg">
+          <p className="text-gray-600 mb-6 text-sm md:text-base mt-5 lg:text-lg">
             Office spaces that meet the market, Winning keywords, website
             behavioral move data instantly, real estate automation and marketing
             emails other than Interminie no ac adator board or heads-up.
