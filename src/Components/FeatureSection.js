@@ -5,7 +5,7 @@ const FeatureSection = () => {
     <div className="max-w-5xl mx-auto p-4 sm:p-6 mt-10">
       <div className="mb-2 flex justify-center">
         <span
-          className="px-6 py-2 text-sm font-semibold squared-full border-2 rounded"
+          className="px-6 py-2 text-sm font-semibold squared-full rounded"
           style={{
             background:
               "linear-gradient(90.46deg, #325098 -24.51%, #FBD0E1 104.69%)",
