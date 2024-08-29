@@ -4,7 +4,7 @@
     border: solid black 1px;
   }
   .btn-custom:hover {
-    background-color: #325098;
+    background-color: none;
     color: white;
   }
 }

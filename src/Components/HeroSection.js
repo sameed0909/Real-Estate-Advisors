@@ -14,7 +14,7 @@ const HeroSection = () => {
             className="h-full"
           />
         </div>
-        <button className="border border-white text-white px-4 py-2 squared-full hover:bg-white hover:text-indigo-600 transition duration-300 btn-custom">
+        <button className="border border-white text-white px-4 py-2 shadow hover:bg-white hover:text-indigo-600 transition duration-300 btn-custom md:border-white md:text-white md:hover:bg-white md:hover:text-indigo-600 md:transition md:duration-300">
           Schedule a Call
         </button>
       </div>
@@ -36,7 +36,7 @@ const HeroSection = () => {
             Find the best property advisor
           </div>
           <h1
-            className="hero-heading"
+            className="text-3xl md:text-4xl lg:text-5xl hero-heading"
             style={{
               color: "#8CA8BE",
               fontFamily: "Urbanist, sans-serif",
@@ -60,7 +60,7 @@ const HeroSection = () => {
             </span>{" "}
             <span style={{ color: "#325098", fontWeight: 600 }}>Insights.</span>
           </h1>
-          <p className="text-gray-600 mb-6">
+          <p className="text-gray-600 mb-6 text-sm md:text-base md:mt-5 lg:text-lg">
             Office spaces that meet the market, Winning keywords, website
             behavioral move data instantly, real estate automation and marketing
             emails other than Interminie no ac adator board or heads-up.
@@ -99,7 +99,7 @@ const HeroSection = () => {
                 50k+
               </div>
               <div
-                className="text-gray-600"
+                className="text-gray-600 text-sm md:text-base lg:text-lg"
                 style={{
                   color: "#332D4F",
                   fontFamily: "Urbanist, sans-serif",
@@ -120,7 +120,7 @@ const HeroSection = () => {
                 10+
               </div>
               <div
-                className="text-gray-600"
+                className="text-gray-600 text-sm md:text-base lg:text-lg"
                 style={{
                   color: "#332D4F",
                   fontFamily: "Urbanist, sans-serif",
@@ -141,7 +141,7 @@ const HeroSection = () => {
                 98%
               </div>
               <div
-                className="text-gray-600"
+                className="text-gray-600 text-sm md:text-base lg:text-lg"
                 style={{
                   color: "#332D4F",
                   fontFamily: "Urbanist, sans-serif",
