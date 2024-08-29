@@ -1,42 +1,47 @@
-@media (max-width: 760px) {
-    .btn-custom {
-      border-color: black;
-      color: black;
-    }
-  }
-  /* HeroSection.css */
+/* HeroSection.css */
+.hero-section {
+  margin-bottom: 8vh; /* Dynamic margin for better spacing */
+}
+
 @media (max-width: 1024px) {
   .container {
     flex-direction: column;
   }
 }
-@media (min-width: 1092px) {
+
+@media (min-width: 1500px) {
   .hero-heading {
-    font-size: 40px;
-    line-height: 60px;
-  } 
-  @media (min-width: 1200px){
-    .hero-heading{
-      font-size: 50px;
-      line-height: 70px;
-    }
+    font-size: 3vw;
+    line-height: 4.5vw;
   }
-  @media (min-width: 1300px){
-    .hero-heading{
-      font-size: 50px;
-      line-height: 70px;
-    }
+  .hero-section {
+    margin-bottom: 5vh; /* Reduce gap as screen size increases */
   }
-  @media (min-width: 1400px){
-    .hero-heading{
-      font-size: 50px;
-      line-height: 70px;
-    }
+}
+
+@media (min-width: 1800px) {
+  .hero-heading {
+    font-size: 3.5vw;
+    line-height: 5vw;
   }
-  @media (min-width: 1500px){
-    .hero-heading{
-      font-size: 50px;
-      line-height: 70px;
-    }
+  .hero-section {
+    margin-bottom: 4vh; /* Further reduce gap */
   }
- }
+}
+
+@media (min-width: 2000px) {
+  .hero-heading {
+    font-size: 4vw;
+    line-height: 5.5vw;
+  }
+  .hero-section {
+    margin-bottom: 3vh; /* Maintain balanced spacing */
+  }
+}
+
+@media (max-width: 760px) {
+  .btn-custom {
+    border-color: black;
+    color: black;
+  }
+}
