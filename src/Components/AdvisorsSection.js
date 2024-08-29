@@ -31,7 +31,7 @@ const AdvisorsSection = () => {
     <section className="py-10">
       <div className="mb-2 flex justify-center">
         <span
-          className="px-6 py-2 text-sm font-semibold squared-full justify-center border-2 border-[#FBD0E1] rounded"
+          className="px-6 py-2 text-sm font-semibold squared-full justify-center rounded"
           style={{
             background:
               "linear-gradient(90.46deg, #325098 -24.51%, #FBD0E1 104.69%)",
@@ -45,7 +45,7 @@ const AdvisorsSection = () => {
       <h1
         className="text-2xl font-bold mb-8 p-2 text-transparent bg-clip-text text-center"
         style={{
-          background:"linear-gradient(90deg, #8CA8BE 0%, #325098 100%)",
+          background: "linear-gradient(90deg, #8CA8BE 0%, #325098 100%)",
           WebkitBackgroundClip: "text",
         }}
       >
@@ -62,8 +62,8 @@ const AdvisorsSection = () => {
             {advisors.map((advisor, index) => (
               <div
                 key={index}
-                className={`relative group ${
-                  index === 0 ? "w-64 h-[360px]" : "w-72 h-[450px]"
+                className={`relative group w-[300px] ${
+                  index === 0 ? "h-[439.13px]" : "h-[544.02px]"
                 } rounded-xl overflow-hidden shadow-lg bg-white`}
                 style={{
                   transform: `translateY(${-index * 60}px)`,
@@ -75,23 +75,31 @@ const AdvisorsSection = () => {
                   src={advisor.image}
                   alt={advisor.name}
                 />
-                {/* Hover Gradient Overlay */}
-                <div className="absolute inset-0 bg-gradient-to-b from-[#325098] to-[#444853] opacity-0 group-hover:opacity-70 transition-opacity duration-300" />
-                {/* Fixed Name and Title at Bottom */}
-                <div className="absolute bottom-0 left-0 w-full bg-opacity-60 text-white p-4">
+                {/* Name and Title are fixed at bottom */}
+                <div className="absolute bottom-0 left-0 w-full opacity-90 text-white p-4 z-10">
                   <div className="font-bold text-lg">{advisor.name}</div>
                   <p className="text-sm">{advisor.title}</p>
                 </div>
-                {/* Hover Overlay with Detailed Description */}
-                <div className="absolute inset-0 bg-black bg-opacity-75 flex items-center justify-center opacity-0 group-hover:opacity-70 transition-opacity duration-300 p-4">
-                  <p className="text-white text-large leading-relaxed text-center">
-                    {advisor.description}
-                  </p>
+                {/* Shutter Effect for Description */}
+                <div className="absolute inset-0 flex flex-col justify-start">
+                  {/* Gradient Overlay */}
+                  <div className="w-full h-full flex flex-col justify-center transition-transform duration-500 ease-in-out transform group-hover:translate-y-0 -translate-y-full">
+                    <div
+                      className="w-full h-full flex flex-col justify-center p-4"
+                      style={{
+                        background: "linear-gradient(180deg, rgba(50, 80, 152, 1) 0%, rgba(68, 72, 83, 0.5) 100%)",
+                      }}
+                    >
+                      <h2 className="text-xl font-bold text-white mb-2">Investment Advisor</h2>
+                      <p className="text-white text-large leading-relaxed text-left">
+                        {advisor.description}
+                      </p>
+                    </div>
+                  </div>
                 </div>
               </div>
             ))}
           </div>
-
           {/* Why Our Advisors Stand Out Section */}
           <div className="lg:w-1/3 p-6">
             <h1
@@ -117,7 +125,7 @@ const AdvisorsSection = () => {
               className="mt-4 text-white font-bold py-2 px-6 rounded"
               style={{
                 background: buttonHover
-                  ? "linear-gradient(90deg, #325098 0%, #444853 100%)"
+                  ? "linear-gradient(90deg, rgba(50, 80, 152, 0.7) 0%, rgba(68, 72, 83, 0.7) 100%)"
                   : "#332D4F",
               }}
               onMouseOver={() => setButtonHover(true)}
