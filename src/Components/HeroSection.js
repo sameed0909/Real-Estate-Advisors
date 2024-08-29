@@ -3,7 +3,7 @@ import "../style.css";
 
 const HeroSection = () => {
   return (
-    <div className="relative min-h-screen">
+    <div className="relative min-h-screen md:m-5">
       {/* Navbar */}
       <div className="absolute top-0 left-0 w-full flex items-center justify-between p-6 z-10">
         <div className="h-10">
@@ -60,7 +60,7 @@ const HeroSection = () => {
             </span>{" "}
             <span style={{ color: "#325098", fontWeight: 600 }}>Insights.</span>
           </h1>
-          <p className="text-gray-600 mb-6 text-sm md:text-base md:mt-5 lg:text-lg">
+          <p className="text-gray-600 mb-6 text-sm md:text-base mt-5 lg:text-lg">
             Office spaces that meet the market, Winning keywords, website
             behavioral move data instantly, real estate automation and marketing
             emails other than Interminie no ac adator board or heads-up.
