@@ -21,4 +21,22 @@
       line-height: 70px;
     }
   }
+  @media (min-width: 1300px){
+    .hero-heading{
+      font-size: 50px;
+      line-height: 70px;
+    }
+  }
+  @media (min-width: 1400px){
+    .hero-heading{
+      font-size: 50px;
+      line-height: 70px;
+    }
+  }
+  @media (min-width: 1500px){
+    .hero-heading{
+      font-size: 50px;
+      line-height: 70px;
+    }
+  }
  }
