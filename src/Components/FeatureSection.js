@@ -2,7 +2,7 @@ import React from "react";
 
 const FeatureSection = () => {
   return (
-    <div className="max-w-5xl mx-auto p-4 sm:p-6 mt-20">
+    <div className="max-w-5xl mx-auto p-4 sm:p-6 mt-10">
       <div className="mb-2 flex justify-center">
         <span
           className="px-6 py-2 text-sm font-semibold squared-full border-2 border-[#FBD0E1] rounded"
@@ -18,7 +18,7 @@ const FeatureSection = () => {
       <h1
         className="text-2xl font-bold mb-8 p-2 text-transparent bg-clip-text text-center"
         style={{
-          background:"linear-gradient(90deg, #8CA8BE 0%, #325098 100%)",
+          background: "linear-gradient(90deg, #8CA8BE 0%, #325098 100%)",
           WebkitBackgroundClip: "text",
         }}
       >
@@ -39,7 +39,8 @@ const FeatureSection = () => {
           <h1
             className="text-xl font-semibold mb-2 p-2 text-transparent bg-clip-text"
             style={{
-              background:"linear-gradient(90.46deg, #325098 -24.51%, #FBD0E1 104.69%)",
+              background:
+                "linear-gradient(90.46deg, #325098 -24.51%, #FBD0E1 104.69%)",
               WebkitBackgroundClip: "text",
             }}
           >
@@ -67,7 +68,8 @@ const FeatureSection = () => {
           <h1
             className="text-xl font-semibold mb-2 p-2 text-transparent bg-clip-text"
             style={{
-              background:"linear-gradient(90.46deg, #325098 -24.51%, #FBD0E1 104.69%)",
+              background:
+                "linear-gradient(90.46deg, #325098 -24.51%, #FBD0E1 104.69%)",
               WebkitBackgroundClip: "text",
             }}
           >
