@@ -8,11 +8,12 @@
 @media (max-width: 1024px) {
   .container {
     flex-direction: column;
+    
   }
 }
 @media (min-width: 1092px) {
   .hero-heading {
-    font-size: 40px;
+    font-size: 50px;
     line-height: 60px;
   } 
   @media (min-width: 1200px){

@@ -49,7 +49,7 @@ const HeroSection = () => {
             <span
               style={{
                 background:
-                  "linear-gradient(89.67deg, #325098 0.1%, #FFFFFF 89.29%)",
+                  "linear-gradient(89.67deg, #325098 1%, #FFFFFF 100%)",
                 WebkitBackgroundClip: "text",
                 WebkitTextFillColor: "transparent",
                 fontWeight: 600,
