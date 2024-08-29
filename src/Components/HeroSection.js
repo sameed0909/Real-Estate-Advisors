@@ -3,7 +3,7 @@ import "../style.css";
 
 const HeroSection = () => {
   return (
-    <div className="relative  min-h-screen">
+    <div className="relative min-h-screen">
       {/* Navbar */}
       <div className="absolute top-0 left-0 w-full flex items-center justify-between p-6 z-10">
         <div className="h-10">
@@ -39,12 +39,11 @@ const HeroSection = () => {
             Find the best property advisor
           </div>
           <h1
+            className="hero-heading"
             style={{
               color: "#8CA8BE",
               fontFamily: "Urbanist, sans-serif",
-              fontSize: "40px",
               fontWeight: 400,
-              lineHeight: "60px",
               letterSpacing: "0.02em",
               textAlign: "left",
             }}

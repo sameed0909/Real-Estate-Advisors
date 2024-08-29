@@ -10,3 +10,9 @@
     flex-direction: column;
   }
 }
+@media (min-width: 1092px) {
+  .hero-heading {
+    font-size: 40px;
+    line-height: 60px;
+  }
+}
