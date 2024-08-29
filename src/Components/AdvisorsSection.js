@@ -8,6 +8,7 @@ const AdvisorsSection = () => {
       image: "images/advisor1.png",
       description:
         "Est peritus in investmentibus cum plus 15 annis experientiae in real estate et mercatoriis proprietatibus. James excels in strategica accessus, opportunitates lucrativas agnoscens et portfolios diversis administrans. Cum track record per investmenta praevia ultra $500 million.",
+      link: "#", // Add link here
     },
     {
       name: "Alex Jordan",
@@ -15,6 +16,7 @@ const AdvisorsSection = () => {
       image: "images/advisor2.png",
       description:
         "Est peritus in investmentibus cum plus 15 annis experientiae in real estate et mercatoriis proprietatibus. Alex excels in strategica accessus, opportunitates lucrativas agnoscens et portfolios diversis administrans. Cum track record per investmenta praevia ultra $500 million.",
+      link: "#", // Add link here
     },
     {
       name: "Taylor Morgan",
@@ -22,6 +24,7 @@ const AdvisorsSection = () => {
       image: "images/advisor3.png",
       description:
         "Est peritus in investmentibus cum plus 15 annis experientiae in real estate et mercatoriis proprietatibus. Taylor excels in strategica accessus, opportunitates lucrativas agnoscens et portfolios diversis administrans. Cum track record per investmenta praevia ultra $500 million.",
+      link: "#", // Add link here
     },
   ];
 
@@ -83,17 +86,26 @@ const AdvisorsSection = () => {
                 {/* Shutter Effect for Description */}
                 <div className="absolute inset-0 flex flex-col justify-start">
                   {/* Gradient Overlay */}
-                  <div className="w-full h-full flex flex-col justify-center transition-transform duration-500 ease-in-out transform group-hover:translate-y-0 -translate-y-full">
+                  <div className="w-full h-full flex flex-col transition-transform duration-500 ease-in-out transform group-hover:translate-y-0 -translate-y-full">
                     <div
-                      className="w-full h-full flex flex-col justify-center p-4"
+                      className="w-full h-full flex flex-col p-4"
                       style={{
                         background: "linear-gradient(180deg, rgba(50, 80, 152, 1) 0%, rgba(68, 72, 83, 0.5) 100%)",
                       }}
                     >
-                      <h2 className="text-xl font-bold text-white mb-2">Investment Advisor</h2>
+                      <h2 className="text-xl font-semibold text-white mb-2 mt-4" style={{ fontFamily:"Urbanist, sans-serif" }}>
+                        Investment Advisor
+                      </h2>
                       <p className="text-white text-large leading-relaxed text-left">
                         {advisor.description}
                       </p>
+                      {/* Learn More Link */}
+                      <a
+                        href={advisor.link}
+                        className="text-white font-semibold mt-4 inline-block"
+                      >
+                        Learn More &#x2B9E;
+                      </a>
                     </div>
                   </div>
                 </div>
@@ -103,7 +115,7 @@ const AdvisorsSection = () => {
           {/* Why Our Advisors Stand Out Section */}
           <div className="lg:w-1/3 p-6">
             <h1
-              className="text-2xl font-bold mb-4 p-2 text-transparent bg-clip-text text-left"
+              className="text-2xl font-bold mb-4 text-transparent bg-clip-text text-left"
               style={{
                 background:
                   "linear-gradient(90.46deg, #325098 -24.51%, #FBD0E1 104.69%)",
