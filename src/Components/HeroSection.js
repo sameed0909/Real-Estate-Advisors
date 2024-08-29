@@ -14,7 +14,7 @@ const HeroSection = () => {
             className="h-full"
           />
         </div>
-        <button className="border border-white text-white px-4 py-2 squared-full shadow hover:bg-white hover:text-indigo-600 transition duration-300 btn-custom">
+        <button className="border border-white text-white px-4 py-2 squared-full hover:bg-white hover:text-indigo-600 transition duration-300 btn-custom">
           Schedule a Call
         </button>
       </div>
@@ -22,7 +22,7 @@ const HeroSection = () => {
       {/* Hero Section */}
       <div className="flex flex-col md:flex-row p-8 mt-0 relative z-0">
         {/* Left Section */}
-        <div className="md:w-1/2 text-center md:text-left relative z-20 mt-16 md:mt-20">
+        <div className="md:w-1/2 text-left relative z-20 mt-16 md:mt-20">
           <div
             className="inline-block px-3 py-1 rounded-md mb-2"
             style={{
@@ -55,17 +55,17 @@ const HeroSection = () => {
                 fontWeight: 600,
               }}
             >
-              <br></br>AI-Driven
+              <br />
+              AI-Driven
             </span>{" "}
             <span style={{ color: "#325098", fontWeight: 600 }}>Insights.</span>
           </h1>
           <p className="text-gray-600 mb-6">
             Office spaces that meet the market, Winning keywords, website
-            behavioral move <br></br> data instantly, real estate automation and
-            marketing emails other than <br></br>Interminie no ac adator board
-            or heads-up.
+            behavioral move data instantly, real estate automation and marketing
+            emails other than Interminie no ac adator board or heads-up.
           </p>
-          <div className="flex flex-col sm:flex-row gap-4 justify-center md:justify-start">
+          <div className="flex flex-col sm:flex-row gap-4 justify-start">
             <button
               className="px-4 py-2 rounded shadow"
               style={{
@@ -86,7 +86,7 @@ const HeroSection = () => {
               Get in touch
             </button>
           </div>
-          <div className="flex justify-center md:justify-start gap-8 mt-8">
+          <div className="flex justify-start gap-8 mt-8">
             <div className="text-center">
               <div
                 className="text-2xl font-bold"
@@ -158,7 +158,7 @@ const HeroSection = () => {
           <img
             src={`${process.env.PUBLIC_URL}/hero.png`}
             alt="Modern House"
-            className="w-full h-full object-cover rounded-bl-[15px]"
+            className="w-full h-full object-cover rounded-bl-[50px]"
           />
         </div>
       </div>

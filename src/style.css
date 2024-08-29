@@ -1,9 +1,14 @@
 @media (max-width: 760px) {
-    .btn-custom {
-      border-color: black;
-      color: black;
-    }
+  .btn-custom {
+    color: black;
+    border: solid black 1px;
   }
+  .btn-custom:hover {
+    background-color: #325098;
+    color: white;
+  }
+}
+
   /* HeroSection.css */
 @media (max-width: 1024px) {
   .container {
