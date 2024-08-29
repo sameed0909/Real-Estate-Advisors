@@ -8,14 +8,69 @@
 @media (max-width: 1024px) {
   .container {
     flex-direction: column;
+    
   }
 }
 @media (min-width: 1092px) {
   .hero-heading {
-    font-size: 40px;
+    font-size: 50px;
     line-height: 60px;
   } 
   @media (min-width: 1200px){
+    .hero-heading{
+      font-size: 50px;
+      line-height: 70px;
+    }
+  }
+  @media (min-width: 1300px){
+    .hero-heading{
+      font-size: 50px;
+      line-height: 70px;
+    }
+  }
+  @media (min-width: 1400px){
+    .hero-heading{
+      font-size: 50px;
+      line-height: 70px;
+    }
+  }
+  @media (min-width: 1500px){
+    .hero-heading{
+      font-size: 50px;
+      line-height: 70px;
+    }
+  }
+  @media (min-width: 1600px){
+    .hero-heading{
+      font-size: 50px;
+      line-height: 70px;
+    }
+  }
+  @media (min-width: 1700px){
+    .hero-heading{
+      font-size: 50px;
+      line-height: 70px;
+    }
+  }
+  @media (min-width: 1800px){
+    .hero-heading{
+      font-size: 50px;
+      line-height: 70px;
+    }
+  }
+  @media (min-width: 1900px){
+    .hero-heading{
+      font-size: 50px;
+      line-height: 70px;
+    }
+  }
+  @media (min-width: 2000px){
+    .hero-heading{
+      font-size: 50px;
+      line-height: 70px;
+    }
+  }
+  @media (min-width: 2100px){
     .hero-heading{
       font-size: 50px;
       line-height: 70px;

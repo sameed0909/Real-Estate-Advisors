@@ -49,44 +49,106 @@ const HeroSection = () => {
             <span
               style={{
                 background:
-                  "linear-gradient(89.67deg, #325098 0.1%, #FFFFFF 89.29%)",
+                  "linear-gradient(89.67deg, #325098 1%, #FFFFFF 100%)",
                 WebkitBackgroundClip: "text",
                 WebkitTextFillColor: "transparent",
                 fontWeight: 600,
               }}
             >
-              AI-Driven
+              <br></br>AI-Driven
             </span>{" "}
             <span style={{ color: "#325098", fontWeight: 600 }}>Insights.</span>
           </h1>
           <p className="text-gray-600 mb-6">
             Office spaces that meet the market, Winning keywords, website
-            behavioral move data instantly, real estate automation and marketing
-            emails other than Interminie no ac adator board or heads-up.
+            behavioral move <br></br> data instantly, real estate automation and
+            marketing emails other than <br></br>Interminie no ac adator board
+            or heads-up.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center md:justify-start">
             <button
               className="px-4 py-2 rounded shadow"
-              style={{ backgroundColor: "#332D4F", color: "#FFFFFF" }}
+              style={{
+                backgroundColor: "#332D4F",
+                color: "#FFFFFF",
+                fontFamily: "Urbanist, sans-serif",
+              }}
             >
               Schedule a Call
             </button>
-            <button className="border border-indigo-600 text-indigo-600 px-4 py-2 rounded shadow">
+            <button
+              className="border text-indigo-600 px-4 py-2 rounded shadow"
+              style={{
+                color: "#00000099",
+                fontFamily: "Urbanist, sans-serif",
+              }}
+            >
               Get in touch
             </button>
           </div>
           <div className="flex justify-center md:justify-start gap-8 mt-8">
             <div className="text-center">
-              <div className="text-2xl font-bold text-gray-900">50k+</div>
-              <div className="text-gray-600">Happy Clients</div>
+              <div
+                className="text-2xl font-bold"
+                style={{
+                  color: "#332D4F",
+                  fontFamily: "Urbanist, sans-serif",
+                  fontWeight: 800,
+                }}
+              >
+                50k+
+              </div>
+              <div
+                className="text-gray-600"
+                style={{
+                  color: "#332D4F",
+                  fontFamily: "Urbanist, sans-serif",
+                }}
+              >
+                Happy Clients
+              </div>
             </div>
             <div className="text-center">
-              <div className="text-2xl font-bold text-gray-900">10+</div>
-              <div className="text-gray-600">Years of Experience</div>
+              <div
+                className="text-2xl font-bold"
+                style={{
+                  color: "#332D4F",
+                  fontFamily: "Urbanist, sans-serif",
+                  fontWeight: 800,
+                }}
+              >
+                10+
+              </div>
+              <div
+                className="text-gray-600"
+                style={{
+                  color: "#332D4F",
+                  fontFamily: "Urbanist, sans-serif",
+                }}
+              >
+                Years of Experience
+              </div>
             </div>
             <div className="text-center">
-              <div className="text-2xl font-bold text-gray-900">98%</div>
-              <div className="text-gray-600">Client Satisfaction Rate</div>
+              <div
+                className="text-2xl font-bold"
+                style={{
+                  color: "#332D4F",
+                  fontFamily: "Urbanist, sans-serif",
+                  fontWeight: 800,
+                }}
+              >
+                98%
+              </div>
+              <div
+                className="text-gray-600"
+                style={{
+                  color: "#332D4F",
+                  fontFamily: "Urbanist, sans-serif",
+                }}
+              >
+                Client Satisfaction Rate
+              </div>
             </div>
           </div>
         </div>
