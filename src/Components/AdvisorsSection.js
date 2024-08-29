@@ -113,38 +113,58 @@ const AdvisorsSection = () => {
             ))}
           </div>
           {/* Why Our Advisors Stand Out Section */}
-          <div className="lg:w-1/3 p-6">
-            <h1
-              className="text-2xl font-bold mb-4 text-transparent bg-clip-text text-left"
-              style={{
-                background:
-                  "linear-gradient(90.46deg, #325098 -24.51%, #FBD0E1 104.69%)",
-                WebkitBackgroundClip: "text",
-              }}
-            >
-              Why Our Advisors Stand Out
-            </h1>
-            <p className="mt-2 text-gray-600">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus
-              at lacus ut lacus varius dapibus vel eget odio. Cras ut lorem
-              vitae ligula commodo efficitur.
-            </p>
-            <p className="mt-2 text-gray-600">
-              Curabitur ac tortor at ipsum facilisis aliquam. Donec vel felis a
-              eros feugiat consequat in at libero.
-            </p>
-            <button
-              className="mt-4 text-white font-bold py-2 px-6 rounded"
-              style={{
-                background: buttonHover
-                  ? "linear-gradient(90deg, rgba(50, 80, 152, 0.7) 0%, rgba(68, 72, 83, 0.7) 100%)"
-                  : "#332D4F",
-              }}
-              onMouseOver={() => setButtonHover(true)}
-              onMouseOut={() => setButtonHover(false)}
-            >
-              Read More
-            </button>
+          <div className="lg:w-1/3 p-4">
+          <h1
+    className="text-2xl font-bold mb-4 text-transparent bg-clip-text text-left"
+    style={{
+      background: "linear-gradient(90.46deg, #325098 -24.51%, #FBD0E1 104.69%)",
+      WebkitBackgroundClip: "text",
+      marginTop: "-8rem", // Adjust top margin
+    }}
+  >
+    Why Our Advisors Stand Out
+  </h1>
+  <p
+  style={{
+    marginTop: "2rem", // Adds space above the paragraph
+    fontWeight: 400, // Sets the font weight
+    fontSize: "16px", // Sets the font size
+    lineHeight: "30px", // Sets the line height
+  }}
+  className="text-gray-600"
+>
+  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus
+  at lacus ut lacus varius dapibus vel eget odio. Cras ut lorem
+  vitae ligula commodo efficitur.
+</p>
+
+<p
+  style={{
+    marginTop: "4rem", // Adds space above the paragraph
+    fontWeight: 400, // Sets the font weight
+    fontSize: "16px", // Sets the font size
+    lineHeight: "30px", // Sets the line height
+  }}
+  className="text-gray-600"
+>
+  Curabitur ac tortor at ipsum facilisis aliquam. Donec vel felis a
+  eros feugiat consequat in at libero.
+</p>
+
+  <button
+  className="text-white font-bold py-2 px-6 rounded"
+  style={{
+    background: buttonHover
+      ? "linear-gradient(90deg, rgba(50, 80, 152, 0.7) 0%, rgba(68, 72, 83, 0.7) 100%)"
+      : "#332D4F",
+    marginTop: "4rem", // Adjust this value as needed
+  }}
+  onMouseOver={() => setButtonHover(true)}
+  onMouseOut={() => setButtonHover(false)}
+>
+  Read More
+</button>
+
           </div>
         </div>
       </div>
