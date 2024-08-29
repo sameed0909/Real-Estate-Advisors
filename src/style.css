@@ -1,47 +1,78 @@
-/* HeroSection.css */
-.hero-section {
-  margin-bottom: 8vh; /* Dynamic margin for better spacing */
-}
-
+@media (max-width: 760px) {
+    .btn-custom {
+      border-color: black;
+      color: black;
+    }
+  }
+  /* HeroSection.css */
 @media (max-width: 1024px) {
   .container {
     flex-direction: column;
   }
 }
-
-@media (min-width: 1500px) {
+@media (min-width: 1092px) {
   .hero-heading {
-    font-size: 3vw;
-    line-height: 4.5vw;
+    font-size: 40px;
+    line-height: 60px;
+  } 
+  @media (min-width: 1200px){
+    .hero-heading{
+      font-size: 50px;
+      line-height: 70px;
+    }
   }
-  .hero-section {
-    margin-bottom: 5vh; /* Reduce gap as screen size increases */
+  @media (min-width: 1300px){
+    .hero-heading{
+      font-size: 50px;
+      line-height: 70px;
+    }
   }
-}
-
-@media (min-width: 1800px) {
-  .hero-heading {
-    font-size: 3.5vw;
-    line-height: 5vw;
+  @media (min-width: 1400px){
+    .hero-heading{
+      font-size: 50px;
+      line-height: 70px;
+    }
   }
-  .hero-section {
-    margin-bottom: 4vh; /* Further reduce gap */
+  @media (min-width: 1500px){
+    .hero-heading{
+      font-size: 50px;
+      line-height: 70px;
+    }
   }
-}
-
-@media (min-width: 2000px) {
-  .hero-heading {
-    font-size: 4vw;
-    line-height: 5.5vw;
+  @media (min-width: 1600px){
+    .hero-heading{
+      font-size: 50px;
+      line-height: 70px;
+    }
   }
-  .hero-section {
-    margin-bottom: 3vh; /* Maintain balanced spacing */
+  @media (min-width: 1700px){
+    .hero-heading{
+      font-size: 50px;
+      line-height: 70px;
+    }
   }
-}
-
-@media (max-width: 760px) {
-  .btn-custom {
-    border-color: black;
-    color: black;
+  @media (min-width: 1800px){
+    .hero-heading{
+      font-size: 50px;
+      line-height: 70px;
+    }
   }
-}
+  @media (min-width: 1900px){
+    .hero-heading{
+      font-size: 50px;
+      line-height: 70px;
+    }
+  }
+  @media (min-width: 2000px){
+    .hero-heading{
+      font-size: 50px;
+      line-height: 70px;
+    }
+  }
+  @media (min-width: 2100px){
+    .hero-heading{
+      font-size: 50px;
+      line-height: 70px;
+    }
+  }
+ }
