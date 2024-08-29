@@ -3,7 +3,7 @@ import "../style.css";
 
 const HeroSection = () => {
   return (
-    <div className="relative min-h-screen md:m-5">
+    <div className="relative min-h-screen">
       {/* Navbar */}
       <div className="absolute top-0 left-0 w-full flex items-center justify-between p-6 z-10">
         <div className="h-10">
