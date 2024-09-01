@@ -55,7 +55,8 @@ const AdvisorsSection = () => {
         Meet Our Advisor
       </h1>
       <p className="text-gray-500 mb-6 text-center -mt-6 max-w-2xl mx-auto">
-        Lorem ipsum dolor sit amet, libero consectetur elit. Integer nec odio. Praesent libero. Sed cursus dapibus diam.
+        Lorem ipsum dolor sit amet, libero consectetur elit. Integer nec odio.
+        Praesent libero. Sed cursus dapibus diam.
       </p>
       <div className="container mx-auto pt-8 sm:pt-16 lg:pt-32">
         <div className="flex flex-col lg:flex-row justify-start items-start lg:space-x-4 space-y-6 lg:space-y-0">
@@ -64,7 +65,13 @@ const AdvisorsSection = () => {
             {advisors.map((advisor, index) => (
               <div
                 key={index}
-                className="relative group w-full h-[400px] sm:h-[450px] lg:h-[500px] rounded-xl overflow-hidden shadow-lg bg-white transform transition-all duration-300 hover:-translate-y-2"
+                className={`relative group w-full ${
+                  index === 0
+                    ? "lg:h-[400px] sm:h-[450px] h-[450px] mt-24"
+                    : index === 1
+                    ? "lg:h-[500px] sm:h-[450px] h-[450px] mt-12"
+                    : "lg:h-[500px] sm:h-[450px] h-[450px]"
+                } rounded-xl overflow-hidden shadow-lg bg-white transform transition-all duration-300 hover:-translate-y-2`}
               >
                 <img
                   className="w-full h-full object-cover rounded-xl"
@@ -82,10 +89,11 @@ const AdvisorsSection = () => {
                     <div
                       className="w-full h-full flex flex-col p-4"
                       style={{
-                        background: "linear-gradient(180deg, rgba(50, 80, 152, 1) 0%, rgba(68, 72, 83, 0.5) 100%)",
+                        background:
+                          "linear-gradient(180deg, rgba(50, 80, 152, 1) 0%, rgba(68, 72, 83, 0.5) 100%)",
                       }}
                     >
-                      <h2 className="text-xl font-semibold text-white mb-2 mt-4" style={{ fontFamily:"Urbanist, sans-serif" }}>
+                      <h2 className="text-xl font-semibold text-white mb-2 mt-4">
                         Investment Advisor
                       </h2>
                       <p className="text-white text-base leading-relaxed text-left">
@@ -108,7 +116,8 @@ const AdvisorsSection = () => {
             <h1
               className="text-2xl sm:text-3xl font-bold mb-4 text-transparent bg-clip-text text-left"
               style={{
-                background: "linear-gradient(90.46deg, #325098 -24.51%, #FBD0E1 104.69%)",
+                background:
+                  "linear-gradient(90.46deg, #325098 -24.51%, #FBD0E1 104.69%)",
                 WebkitBackgroundClip: "text",
               }}
             >
