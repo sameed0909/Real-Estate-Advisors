@@ -120,15 +120,18 @@ const TestimonialsSection = () => {
             </span>
           </div>
           <h2
-            className="text-3xl font-semibold mt-10"
+            className="text-3xl font-semibold mt-10 leading-tight px-4 md:px-0"
             style={{
               background: "linear-gradient(90deg, #8CA8BE 15%, #325098 100%)",
               WebkitBackgroundClip: "text",
               WebkitTextFillColor: "transparent",
             }}
           >
-            Testimonials{" "}
-            <span className="text-blue-600">And Success Stories</span>
+            <span className="block md:inline">
+              Testimonials
+              <br className="md:hidden" />
+              <span className="text-blue-600">And Success Stories</span>
+            </span>
           </h2>
         </div>
 
