@@ -150,7 +150,6 @@ const AdvisorsSection = () => {
   Curabitur ac tortor at ipsum facilisis aliquam. Donec vel felis a
   eros feugiat consequat in at libero.
 </p>
-
   <button
   className="text-white font-bold py-2 px-6 rounded"
   style={{
