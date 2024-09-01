@@ -16,10 +16,11 @@ const FeatureSection = () => {
         </span>
       </div>
       <h2
-        className="text-xl sm:text-2xl md:text-3xl lg:text-4xl xl:text-5xl font-bold mb-10 p-2 text-transparent bg-clip-text text-center"
+        className="text-xl sm:text-2xl md:text-3xl lg:text-4xl xl:text-3xl font-bold mb-10 p-2 text-transparent bg-clip-text text-center"
         style={{
           background: "linear-gradient(90deg, #8CA8BE 0%, #325098 100%)",
           WebkitBackgroundClip: "text",
+          fontWeight: 700,
         }}
       >
         Main Features Of Our Platform
