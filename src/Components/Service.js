@@ -18,7 +18,7 @@ const ServicesSection = () => {
         </div>
 
         <h1
-          className="text-lg sm:text-xl md:text-2xl lg:text-3xl xl:text-3 xl font-bold mt-4 mb-4 p-2 text-transparent bg-clip-text text-center lg:ml-8"
+          className="text-lg sm:text-xl md:text-2xl lg:text-3xl xl:text-3xl font-bold mt-4 mb-4 p-2 text-transparent bg-clip-text text-center lg:ml-8"
           style={{
             background:
               "linear-gradient(91.21deg, #8CA8BE 35.19%, #325098 99.73%)",
@@ -33,21 +33,21 @@ const ServicesSection = () => {
           Integer nec odio. Praesent libero. Sed cursus dapibus diam
         </p>
 
-        <div className="flex flex-col lg:flex-row items-center lg:items-start">
+        <div className="flex flex-col lg:flex-row lg:items-center">
           {/* Image Section */}
-          <div className="w-full lg:w-1/2 p-0 m-0 lg:absolute lg:left-0">
+          <div className="w-full lg:w-1/2 lg:relative lg:left-0 lg:m-0 lg:p-0">
             <img
               src="/images/feature4.png"
               alt="An illustration of a city in hand, representing our platform's capabilities"
-              className="w-[90%] max-h-[800px] object-cover shadow-lg"
+              className="w-full h-auto max-h-[800px] object-cover shadow-lg"
               style={{
-                height: "500px", // Desired height
+                height: "auto", // Auto height to maintain aspect ratio
                 borderBottomRightRadius: "50px",
               }}
             />
           </div>
           {/* Text Section */}
-          <div className="w-full lg:w-1/2 mt-8 lg:mt-0 lg:ml-[50%] lg:pl-12 px-4">
+          <div className="w-full lg:w-1/2 mt-8 lg:mt-0 lg:pl-12 px-4">
             <h3
               className="text-xl sm:text-2xl md:text-3xl lg:text-4xl xl:text-3xl font-semibold mb-4"
               style={{
