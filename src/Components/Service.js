@@ -76,9 +76,9 @@ const ServicesSection = () => {
                 Investment Opportunities
               </li>
             </ul>
-            <button className="bg-[#332D4F] text-white py-2 px-4 rounded-lg mt-8 lg:mt-12 hover:bg-opacity-90 transition-colors duration-300 text-sm sm:text-base md:text-lg">
+            <button className="bg-[#332D4F] text-white py-2 px-4 rounded-lg mt-0 lg:mt-0 hover:bg-opacity-90 transition-colors duration-300 text-sm sm:text-base md:text-lg">
               Read More
-            </button>
+              </button>
           </div>
         </div>
       </div>
