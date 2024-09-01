@@ -5,7 +5,7 @@ const FeatureSection = () => {
     <div className="max-w-5xl mx-auto p-6 sm:p-6 mt-10">
       <div className="mb-2 flex justify-center">
         <span
-          className="px-6 py-2 text-sm font-semibold s"
+          className="px-6 py-2 text-sm font-semibold"
           style={{
             background:
               "linear-gradient(90.46deg, #325098 -24.51%, #FBD0E1 104.69%)",
@@ -32,8 +32,8 @@ const FeatureSection = () => {
           <img
             src="/image1.png"
             alt="AI Integration"
-            className="w-full h-[300px] object-cover rounded-lg"
-            style={{ borderRadius: "12px" }}
+            className="w-full h-full object-cover rounded-lg"
+            style={{ aspectRatio: "16/9", borderRadius: "12px" }}
           />
         </div>
 
@@ -101,8 +101,8 @@ const FeatureSection = () => {
           <img
             src="/image2.png"
             alt="Analytics Tools"
-            className="w-full h-[300px] object-cover"
-            style={{ borderRadius: "12px" }}
+            className="w-full h-full object-cover"
+            style={{ aspectRatio: "16/9", borderRadius: "12px" }}
           />
         </div>
       </div>
@@ -113,8 +113,8 @@ const FeatureSection = () => {
           <img
             src="/image3.png"
             alt="Real Estate Insights"
-            className="w-full h-[300px] object-cover"
-            style={{ borderRadius: "12px" }}
+            className="w-full h-full object-cover"
+            style={{ aspectRatio: "16/9", borderRadius: "12px" }}
           />
         </div>
         <div className="w-full md:w-1/2 p-6 flex flex-col justify-center md:pl-8 text-left">
