@@ -57,7 +57,7 @@ const AdvisorsSection = () => {
       >
         Meet Our Advisor
       </h1>
-      <p className="text-gray-500 mb-6 text-center mt-10 max-w-2xl mx-auto">
+      <p className="mb-6 text-center mt-10 max-w-2xl mx-auto" style={{ color: "#332D4F", fontFamily: 'Poppins', fontWeight: 400,   }}>
         Lorem ipsum dolor sit amet, libero consectetur elit. Integer nec odio.
         Praesent libero. Sed cursus dapibus diam.
       </p>

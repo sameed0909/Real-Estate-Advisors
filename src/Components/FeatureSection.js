@@ -41,7 +41,7 @@ const FeatureSection = () => {
 
         <div className="w-full md:w-1/2 p-6 flex flex-col justify-center text-left">
           <h1
-            className="text-xl md:text-2xl lg:text-3xl font-semibold mb-2 p-2 text-transparent bg-clip-text"
+            className="text-xl md:text-2xl lg:text-3xl font-semibold mb-2 p-2 text-transparent bg-clip-text -ml-2"
             style={{
               background:
                 "linear-gradient(90.46deg, #325098 -24.51%, #FBD0E1 104.69%)",
@@ -51,7 +51,7 @@ const FeatureSection = () => {
             AI Integration
           </h1>
           <h4
-            className="mb-3 p-2 text-sm md:text-base lg:text-lg"
+            className="mb-3 p-2 -ml-2 text-sm md:text-base lg:text-lg"
             style={{ color: "#8CA8BE" }}
           >
             Advanced AI for Market Trend Analysis
@@ -73,7 +73,7 @@ const FeatureSection = () => {
       <div className="flex flex-col md:flex-row bg-white overflow-hidden mb-10 rounded-lg">
         <div className="w-full md:w-1/2 p-6 flex flex-col justify-center md:pr-8 text-left">
           <h1
-            className="text-xl md:text-2xl lg:text-3xl font-semibold mb-2 p-2 text-transparent bg-clip-text"
+            className="text-xl md:text-2xl lg:text-3xl font-semibold mb-2 p-2 text-transparent bg-clip-text -ml-2"
             style={{
               background:
                 "linear-gradient(90.46deg, #325098 -24.51%, #FBD0E1 104.69%)",
@@ -83,7 +83,7 @@ const FeatureSection = () => {
             Analytics Tools
           </h1>
           <h4
-            className="mb-3 p-2 text-sm md:text-base lg:text-lg"
+            className="mb-3 p-2 text-sm md:text-base lg:text-lg -ml-2"
             style={{ color: "#8CA8BE" }}
           >
             Comprehensive Analytics Tools
@@ -121,7 +121,7 @@ const FeatureSection = () => {
         </div>
         <div className="w-full md:w-1/2 p-6 flex flex-col justify-center md:pl-8 text-left">
           <h1
-            className="text-xl md:text-2xl lg:text-3xl font-semibold mb-2 p-2 text-transparent bg-clip-text"
+            className="text-xl md:text-2xl lg:text-3xl font-semibold mb-2 p-2 text-transparent bg-clip-text -ml-2"
             style={{
               background:
                 "linear-gradient(90.46deg, #325098 -24.51%, #FBD0E1 104.69%)",
@@ -131,7 +131,7 @@ const FeatureSection = () => {
             Real Estate Insights
           </h1>
           <h4
-            className="mb-3 p-2 text-sm md:text-base lg:text-lg"
+            className="mb-3 p-2 text-sm md:text-base lg:text-lg -ml-2"
             style={{ color: "#8CA8BE" }}
           >
             Actionable Real Estate Insights
