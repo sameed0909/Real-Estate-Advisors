@@ -99,9 +99,9 @@ const AdvisorsSection = () => {
                       <h2 className="text-xl text-white mb-2 mt-4" >
                         Investment Advisor
                       </h2>
-                      <p className="text-white text-xs sm:text-sm md:text-base text-left">
-  {advisor.description}
-</p>
+                      <p className="text-white text-base text-left">
+                        {advisor.description}
+                      </p>
                       <a
                         href={advisor.link}
                         className="text-white font-semibold mt-4 inline-block"
