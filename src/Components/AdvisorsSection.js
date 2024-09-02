@@ -150,7 +150,7 @@ const AdvisorsSection = () => {
               eros feugiat consequat in at libero.
             </p>
             <button
-              className="text-white font-bold py-2 px-6 rounded transition-colors duration-300"
+              className="text-white py-2 px-6 rounded-md transition-colors duration-300"
               style={{
                 background: buttonHover
                   ? "linear-gradient(90deg, rgba(50, 80, 152, 0.7) 0%, rgba(68, 72, 83, 0.7) 100%)"
