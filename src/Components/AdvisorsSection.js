@@ -31,7 +31,7 @@ const AdvisorsSection = () => {
   const [buttonHover, setButtonHover] = useState(false);
 
   return (
-    <section className="py-10 px-4 sm:px-6 lg:px-8">
+    <section className="py-10 px-4 sm:px-6 lg:px-8 font-poppins">
       <div className="mb-2 flex justify-center">
         <span
           className="px-6 py-2 text-sm font-semibold squared-full justify-center rounded"
@@ -46,15 +46,18 @@ const AdvisorsSection = () => {
         </span>
       </div>
       <h1
-        className="text-2xl sm:text-3xl lg:text-4xl font-bold mb-8 p-2 text-transparent bg-clip-text text-center"
+        className="text-2xl sm:text-3xl lg:text-4xl font-semibold mb-10 mt-10 text-transparent bg-clip-text text-center"
         style={{
           background: "linear-gradient(90deg, #8CA8BE 0%, #325098 100%)",
           WebkitBackgroundClip: "text",
+          fontFamily: "Urbanist",
+          fontWeight: 1000,
+          letterSpacing: 1,
         }}
       >
         Meet Our Advisor
       </h1>
-      <p className="text-gray-500 mb-6 text-center -mt-6 max-w-2xl mx-auto">
+      <p className="text-gray-500 mb-6 text-center mt-10 max-w-2xl mx-auto">
         Lorem ipsum dolor sit amet, libero consectetur elit. Integer nec odio.
         Praesent libero. Sed cursus dapibus diam.
       </p>
@@ -80,12 +83,12 @@ const AdvisorsSection = () => {
                 />
                 {/* Name and Title are fixed at bottom */}
                 <div className="absolute bottom-0 left-0 w-full opacity-90 text-white p-4 z-10">
-                  <div className="font-bold text-lg">{advisor.name}</div>
+                  <div className="font-poppins text-lg">{advisor.name}</div>
                   <p className="text-sm">{advisor.title}</p>
                 </div>
                 {/* Shutter Effect for Description */}
                 <div className="absolute inset-0 flex flex-col justify-start">
-                  <div className="w-full h-full flex flex-col transition-transform duration-500 ease-in-out transform group-hover:translate-y-0 -translate-y-full">
+                <div className="absolute inset-0 flex flex-col justify-start transition-transform duration-400 ease-in-out transform translate-y-full group-hover:translate-y-0">
                     <div
                       className="w-full h-full flex flex-col p-4"
                       style={{
@@ -93,10 +96,10 @@ const AdvisorsSection = () => {
                           "linear-gradient(180deg, rgba(50, 80, 152, 1) 0%, rgba(68, 72, 83, 0.5) 100%)",
                       }}
                     >
-                      <h2 className="text-xl font-semibold text-white mb-2 mt-4">
+                      <h2 className="text-xl text-white mb-2 mt-4" >
                         Investment Advisor
                       </h2>
-                      <p className="text-white text-base leading-relaxed text-left">
+                      <p className="text-white text-base text-left">
                         {advisor.description}
                       </p>
                       <a
@@ -114,7 +117,7 @@ const AdvisorsSection = () => {
           {/* Why Our Advisors Stand Out Section */}
           <div className="lg:w-1/3 p-4">
             <h1
-              className="text-2xl sm:text-3xl font-bold mb-4 text-transparent bg-clip-text text-left"
+              className="text-2xl sm:text-3xl font-semibold mb-4 text-transparent bg-clip-text text-left"
               style={{
                 background:
                   "linear-gradient(90.46deg, #325098 -24.51%, #FBD0E1 104.69%)",
