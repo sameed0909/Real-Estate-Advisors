@@ -48,7 +48,7 @@ const AdvisorsSection = () => {
       <h1
         className="text-2xl sm:text-3xl lg:text-4xl font-semibold mb-10 mt-10 text-transparent bg-clip-text text-center"
         style={{
-          background: "linear-gradient(90deg, #8CA8BE 0%, #325098 100%)",
+          background: "linear-gradient(91.21deg, #8CA8BE 35.19%, #325098 99.73%)",
           WebkitBackgroundClip: "text",
           fontFamily: "Urbanist",
           fontWeight: 1000,
@@ -57,7 +57,7 @@ const AdvisorsSection = () => {
       >
         Meet Our Advisor
       </h1>
-      <p className="text-gray-500 mb-6 text-center mt-10 max-w-2xl mx-auto">
+      <p className="mb-6 text-center mt-10 max-w-2xl mx-auto" style={{ color: "#332D4F", fontFamily: 'Poppins', fontWeight: 400,   }}>
         Lorem ipsum dolor sit amet, libero consectetur elit. Integer nec odio.
         Praesent libero. Sed cursus dapibus diam.
       </p>

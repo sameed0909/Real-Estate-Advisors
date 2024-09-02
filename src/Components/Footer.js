@@ -67,7 +67,7 @@ const Footer = () => {
 
         {/* Copyright Section */}
         <div className="text-xs text-gray-400 mt-4">
-          © 2024 Company Name. All Rights Reserved
+          © 2024 Pier. All Rights Reserved
         </div>
       </div>
     </footer>
