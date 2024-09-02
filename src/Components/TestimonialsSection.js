@@ -127,10 +127,17 @@ const TestimonialsSection = () => {
               WebkitTextFillColor: "transparent",
             }}
           >
-            <span className="block md:inline">
-              Testimonials
+            <span
+              className="block md:inline"
+              style={{
+                letterSpacing: 1,
+                fontFamily: "Urbanist",
+                fontWeight: 1000,
+              }}
+            >
+              Testimonials 
               <br className="md:hidden" />
-              <span className="text-blue-600">And Success Stories</span>
+              <span className="text-blue-600"> And Success Stories</span>
             </span>
           </h2>
         </div>

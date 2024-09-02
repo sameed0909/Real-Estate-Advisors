@@ -23,6 +23,9 @@ const ServicesSection = () => {
             background:
               "linear-gradient(91.21deg, #8CA8BE 35.19%, #325098 99.73%)",
             WebkitBackgroundClip: "text",
+            fontWeight: 1000,
+            fontFamily: "Urbanist",
+            letterSpacing: 1,
           }}
         >
           HOW OUR PLATFORM WORKS

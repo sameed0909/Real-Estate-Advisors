@@ -5,7 +5,7 @@ const FeatureSection = () => {
     <div className="max-w-5xl mx-auto p-6 sm:p-6 mt-10">
       <div className="mb-2 flex justify-center">
         <span
-          className="px-6 py-2 text-sm font-semibold"
+          className="px-6 py-2 text-sm font-semibold rounded"
           style={{
             background:
               "linear-gradient(90.46deg, #325098 -24.51%, #FBD0E1 104.69%)",
@@ -16,11 +16,13 @@ const FeatureSection = () => {
         </span>
       </div>
       <h2
-        className="text-xl sm:text-2xl md:text-3xl lg:text-4xl xl:text-3xl font-bold mb-10 p-2 text-transparent bg-clip-text text-center"
+        className="text-xl sm:text-2xl md:text-3xl lg:text-4xl xl:text-3xl font-bold mb-10 p-2 text-transparent bg-clip-text text-center mt-10"
         style={{
           background: "linear-gradient(90deg, #8CA8BE 0%, #325098 100%)",
           WebkitBackgroundClip: "text",
-          fontWeight: 700,
+          fontWeight: 1000,
+          fontFamily: "Urbanist",
+          letterSpacing: 1,
         }}
       >
         Main Features Of Our Platform
