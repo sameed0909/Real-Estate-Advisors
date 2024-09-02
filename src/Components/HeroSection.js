@@ -14,7 +14,7 @@ const HeroSection = () => {
             className="h-full"
           />
         </div>
-        <button className="border border-white text-white px-4 py-2 shadow hover:bg-white hover:text-indigo-600 transition duration-300 btn-custom md:border-white md:text-white md:hover:bg-white md:hover:text-indigo-600 md:transition md:duration-300">
+        <button className="border border-white text-white px-4 py-2 shadow hover:bg-white hover:text-indigo-600 transition duration-300 btn-custom md:border-white md:text-white md:hover:bg-white md:hover:text-indigo-600 md:transition md:duration-300  mr-10 rounded">
           Schedule a Call
         </button>
       </div>
@@ -60,7 +60,13 @@ const HeroSection = () => {
             </span>{" "}
             <span style={{ color: "#325098", fontWeight: 600 }}>Insights.</span>
           </h1>
-          <p className="text-gray-600 mb-6 text-sm md:text-base mt-5 lg:text-lg">
+          <p
+            className="mb-6 text-sm md:text-base mt-5 lg:text-lg"
+            style={{
+              color: "#464646",
+              fontFamily: "Poppins",
+            }}
+          >
             Office spaces that meet the market, Winning keywords, website
             behavioral move data instantly, real estate automation and marketing
             emails other than Interminie no ac adator board or heads-up.
@@ -83,13 +89,13 @@ const HeroSection = () => {
                 fontFamily: "Urbanist, sans-serif",
               }}
             >
-              Get in touch
+              Contact Us
             </button>
           </div>
           <div className="flex justify-start gap-8 mt-8">
             <div className="text-center">
               <div
-                className="text-2xl font-bold"
+                className="text-2xl"
                 style={{
                   color: "#332D4F",
                   fontFamily: "Urbanist, sans-serif",
@@ -99,9 +105,9 @@ const HeroSection = () => {
                 50k+
               </div>
               <div
-                className="text-gray-600 text-sm md:text-base lg:text-lg"
+                className="text-sm md:text-base lg:text-lg"
                 style={{
-                  color: "#332D4F",
+                  color: "#464646",
                   fontFamily: "Urbanist, sans-serif",
                 }}
               >
@@ -110,7 +116,7 @@ const HeroSection = () => {
             </div>
             <div className="text-center">
               <div
-                className="text-2xl font-bold"
+                className="text-2xl"
                 style={{
                   color: "#332D4F",
                   fontFamily: "Urbanist, sans-serif",
@@ -120,9 +126,9 @@ const HeroSection = () => {
                 10+
               </div>
               <div
-                className="text-gray-600 text-sm md:text-base lg:text-lg"
+                className="text-sm md:text-base lg:text-lg"
                 style={{
-                  color: "#332D4F",
+                  color: "#464646",
                   fontFamily: "Urbanist, sans-serif",
                 }}
               >
@@ -131,7 +137,7 @@ const HeroSection = () => {
             </div>
             <div className="text-center">
               <div
-                className="text-2xl font-bold"
+                className="text-2xl font-extrabold"
                 style={{
                   color: "#332D4F",
                   fontFamily: "Urbanist, sans-serif",
@@ -141,9 +147,9 @@ const HeroSection = () => {
                 98%
               </div>
               <div
-                className="text-gray-600 text-sm md:text-base lg:text-lg"
+                className="text-sm md:text-base lg:text-lg"
                 style={{
-                  color: "#332D4F",
+                  color: "#464646",
                   fontFamily: "Urbanist, sans-serif",
                 }}
               >
