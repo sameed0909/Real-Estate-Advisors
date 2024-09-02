@@ -2,41 +2,44 @@ import React from "react";
 
 const ServicesSection = () => {
   return (
-    <section className="py-8 sm:py-12 md:py-16 lg:py-20 xl:py-24 2xl:py-28">
+    <section className="py-8 sm:py-12 md:py-16 lg:py-20 xl:py-24 2xl:py-28 -mt-10">
       <div className="container mx-auto px-4 lg:px-0 lg:max-w-full">
-        <div className="mb-4 flex justify-center lg:ml-8">
-          <span
-            className="px-4 sm:px-6 py-2 text-xs sm:text-sm font-semibold rounded"
+        <div className="flex flex-col justify-center items-center">
+          <div className="mb-4 flex justify-center">
+            <span
+              className="px-4 sm:px-6 py-2 text-xs sm:text-sm font-semibold rounded"
+              style={{
+                background:
+                  "linear-gradient(90.46deg, #325098 -24.51%, #FBD0E1 104.69%)",
+                color: "#FFFFFF",
+              }}
+            >
+              OUR SERVICES
+            </span>
+          </div>
+
+          <h1
+            className="text-lg sm:text-xl md:text-2xl lg:text-3xl xl:text-3xl font-bold mt-10 mb-4 p-2 text-transparent bg-clip-text text-center"
             style={{
               background:
-                "linear-gradient(90.46deg, #325098 -24.51%, #FBD0E1 104.69%)",
-              color: "#FFFFFF",
+                "linear-gradient(91.21deg, #8CA8BE 35.19%, #325098 99.73%)",
+              WebkitBackgroundClip: "text",
+              fontWeight: 1000,
+              fontFamily: "Urbanist",
+              letterSpacing: 1,
             }}
           >
-            OUR SERVICES
-          </span>
+            HOW OUR PLATFORM WORKS
+          </h1>
+
+          <p className="text-sm sm:text-base md:text-lg lg:text-xl font-normal mb-8 p-2 text-[#332D4F] max-w-2xl text-center">
+            Lorem ipsum dolor sit amet, libero consectetur elit. Integer{" "}
+            <br className="hidden sm:inline" />
+            nec odio. Praesent libero. Sed cursus dapibus diam
+          </p>
         </div>
 
-        <h1
-          className="text-lg sm:text-xl md:text-2xl lg:text-3xl xl:text-3xl font-bold mt-4 mb-4 p-2 text-transparent bg-clip-text text-center lg:ml-8"
-          style={{
-            background:
-              "linear-gradient(91.21deg, #8CA8BE 35.19%, #325098 99.73%)",
-            WebkitBackgroundClip: "text",
-            fontWeight: 1000,
-            fontFamily: "Urbanist",
-            letterSpacing: 1,
-          }}
-        >
-          HOW OUR PLATFORM WORKS
-        </h1>
-        <p className="text-sm sm:text-base md:text-lg lg:text-xl font-normal mb-8 p-2 text-[#332D4F] max-w-2xl mx-auto text-center">
-          Lorem ipsum dolor sit amet, libero consectetur elit.{" "}
-          <br className="hidden sm:inline" />
-          Integer nec odio. Praesent libero. Sed cursus dapibus diam
-        </p>
-
-        <div className="flex flex-col lg:flex-row lg:items-center">
+        <div className="flex flex-col mt-10 lg:flex-row lg:items-center">
           {/* Image Section */}
           <div className="w-full lg:w-1/2 lg:relative lg:left-0 lg:m-0 lg:p-0">
             <img

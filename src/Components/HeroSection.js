@@ -6,7 +6,7 @@ const HeroSection = () => {
     <div className="relative min-h-screen">
       {/* Navbar */}
       <div className="absolute top-0 left-0 w-full flex items-center justify-between p-6 z-10">
-        <div className="h-10">
+        <div className="h-10 ml-10">
           {/* Logo */}
           <img
             src={`${process.env.PUBLIC_URL}/logo.png`}
@@ -14,7 +14,7 @@ const HeroSection = () => {
             className="h-full"
           />
         </div>
-        <button className="border border-white text-white px-4 py-2 shadow hover:bg-white hover:text-indigo-600 transition duration-300 btn-custom md:border-white md:text-white md:hover:bg-white md:hover:text-indigo-600 md:transition md:duration-300">
+        <button className="border border-white text-white px-4 py-2 rounded shadow hover:bg-white hover:text-indigo-600 transition duration-300 btn-custom md:border-white md:text-white md:hover:bg-white md:hover:text-indigo-600 md:transition md:duration-300">
           Schedule a Call
         </button>
       </div>
@@ -83,7 +83,7 @@ const HeroSection = () => {
                 fontFamily: "Urbanist, sans-serif",
               }}
             >
-              Get in touch
+              Contact Us
             </button>
           </div>
           <div className="flex justify-start gap-8 mt-8">
