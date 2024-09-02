@@ -6,7 +6,7 @@ const ServicesSection = () => {
       <div className="container mx-auto px-4 lg:px-0 lg:max-w-full">
         <div className="mb-4 flex justify-center lg:ml-8">
           <span
-            className="px-4 sm:px-6 py-2 text-xs sm:text-sm font-semibold"
+            className="px-4 sm:px-6 py-2 text-xs sm:text-sm font-semibold rounded"
             style={{
               background:
                 "linear-gradient(90.46deg, #325098 -24.51%, #FBD0E1 104.69%)",
@@ -78,7 +78,7 @@ const ServicesSection = () => {
             </ul>
             <button className="bg-[#332D4F] text-white py-2 px-4 rounded-lg mt-0 lg:mt-0 hover:bg-opacity-90 transition-colors duration-300 text-sm sm:text-base md:text-lg">
               Read More
-              </button>
+            </button>
           </div>
         </div>
       </div>
