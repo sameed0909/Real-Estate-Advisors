@@ -88,7 +88,7 @@ const AdvisorsSection = () => {
                 </div>
                 {/* Shutter Effect for Description */}
                 <div className="absolute inset-0 flex flex-col justify-start">
-                <div className="absolute inset-0 flex flex-col justify-start transition-transform duration-400 ease-in-out transform translate-y-full group-hover:translate-y-0">
+                <div className="absolute inset-0 flex flex-col justify-start transition-transform duration-500 ease-in-out transform translate-y-full group-hover:translate-y-0">
                     <div
                       className="w-full h-full flex flex-col p-4"
                       style={{
