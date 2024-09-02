@@ -8,7 +8,7 @@ import Slider from "react-slick";
 // import "slick-carousel/slick/slick-theme.css";
 
 const TestimonialCard = ({ name, role, image, rating, text }) => (
-  <div className="bg-white p-6 rounded-2xl shadow-lg flex flex-col items-start text-left mb-10 mt-10">
+  <div className="bg-white p-6 rounded-2xl shadow-lg flex flex-col items-start text-left mb-10 mt-10 border border-inherit">
     <div className="flex items-center space-x-4 mb-4">
       <img src={image} alt={name} className="w-16 h-16 rounded-full" />
       <div>
