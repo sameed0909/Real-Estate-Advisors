@@ -2,7 +2,7 @@ import React from "react";
 
 const FeatureSection = () => {
   return (
-    <div className="max-w-5xl mx-auto p-6 sm:p-6 mt-10">
+    <div className="max-w-5xl mx-auto p-6 sm:p-6 mt-20">
       <div className="mb-2 flex justify-center">
         <span
           className="px-6 py-2 text-sm font-semibold rounded"
