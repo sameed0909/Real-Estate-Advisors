@@ -48,7 +48,7 @@ const AdvisorsSection = () => {
       <h1
         className="text-2xl sm:text-3xl lg:text-4xl font-semibold mb-10 mt-10 text-transparent bg-clip-text text-center"
         style={{
-          background: "linear-gradient(90deg, #8CA8BE 0%, #325098 100%)",
+          background: "linear-gradient(91.21deg, #8CA8BE 35.19%, #325098 99.73%)",
           WebkitBackgroundClip: "text",
           fontFamily: "Urbanist",
           fontWeight: 1000,

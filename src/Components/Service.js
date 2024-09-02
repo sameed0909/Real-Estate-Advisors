@@ -32,7 +32,7 @@ const ServicesSection = () => {
             HOW OUR PLATFORM WORKS
           </h1>
 
-          <p className="text-sm sm:text-base md:text-lg lg:text-xl font-normal mb-8 p-2 text-[#332D4F] max-w-2xl text-center">
+          <p className="text-sm sm:text-base md:text-lg lg:text-xl font-normal mb-8 p-2 text-[#332D4F] max-w-2xl text-center text-gray-500">
             Lorem ipsum dolor sit amet, libero consectetur elit. Integer{" "}
             <br className="hidden sm:inline" />
             nec odio. Praesent libero. Sed cursus dapibus diam

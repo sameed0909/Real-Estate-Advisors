@@ -122,7 +122,7 @@ const TestimonialsSection = () => {
           <h2
             className="text-3xl font-semibold mt-10 leading-tight px-4 md:px-0"
             style={{
-              background: "linear-gradient(90deg, #8CA8BE 15%, #325098 100%)",
+              background: "linear-gradient(91.21deg, #8CA8BE 35.19%, #325098 99.73%)",
               WebkitBackgroundClip: "text",
               WebkitTextFillColor: "transparent",
             }}
