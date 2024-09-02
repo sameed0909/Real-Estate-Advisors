@@ -2,7 +2,7 @@ import React from "react";
 
 const Footer = () => {
   return (
-    <footer className="bg-gray-100 text-gray-700 py-6">
+    <footer className="text-gray-700 py-6" style={{ backgroundColor: "#ECE9F7" }}>
       <div className="container mx-auto px-4 md:px-6 lg:px-8 text-center">
         <img
           src="/logo.png"
