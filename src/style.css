@@ -75,7 +75,43 @@
       line-height: 70px;
     }
   }
+  @media (min-width: 2200px){
+    .hero-heading{
+      font-size: 50px;
+      line-height: 70px;
+    }
+  }
   @media (min-width: 2100px){
+    .hero-heading{
+      font-size: 50px;
+      line-height: 70px;
+    }
+  }
+  @media (min-width: 2300px){
+    .hero-heading{
+      font-size: 50px;
+      line-height: 70px;
+    }
+  }
+  @media (min-width: 2400px){
+    .hero-heading{
+      font-size: 50px;
+      line-height: 70px;
+    }
+  }
+  @media (min-width: 2500px){
+    .hero-heading{
+      font-size: 50px;
+      line-height: 70px;
+    }
+  }
+  @media (min-width: 2600px){
+    .hero-heading{
+      font-size: 50px;
+      line-height: 70px;
+    }
+  }
+  @media (min-width: 2700px){
     .hero-heading{
       font-size: 50px;
       line-height: 70px;
