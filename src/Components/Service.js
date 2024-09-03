@@ -4,7 +4,10 @@ import "aos/dist/aos.css"; // Import AOS styles
 
 const ServicesSection = () => {
   useEffect(() => {
-    AOS.init({ duration: 1000 }); // Initialize AOS with a duration of 1000ms
+    AOS.init({ 
+      duration: 1000, // Duration of the animation
+      once: true,     // Trigger animation only once
+    });
   }, []);
 
   return (

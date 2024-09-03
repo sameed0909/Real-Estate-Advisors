@@ -7,7 +7,8 @@ const FeatureSection = () => {
     AOS.init({
       duration: 1000, // Animation duration
       easing: "ease-in-out", // Easing function
-      once: true, // Whether animation should happen only once
+      once: false, // Allow animation to happen more than once
+      mirror: true, // Enable animation on scroll up
     });
   }, []);
 
