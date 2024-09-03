@@ -1,5 +1,6 @@
 import React from "react";
 import "../style.css";
+import CountUp from 'react-countup';
 
 const HeroSection = () => {
   return (
@@ -14,9 +15,6 @@ const HeroSection = () => {
             className="h-full"
           />
         </div>
-        <button className="border border-white text-white px-4 py-2 shadow hover:bg-white hover:text-indigo-600 transition duration-300 btn-custom md:border-white md:text-white md:hover:bg-white md:hover:text-indigo-600 md:transition md:duration-300  mr-10 rounded">
-          Schedule a Call
-        </button>
       </div>
 
       {/* Hero Section */}
@@ -94,25 +92,27 @@ const HeroSection = () => {
           </div>
           <div className="flex justify-start gap-8 mt-8">
             <div className="text-center">
-              <div
-                className="text-2xl"
-                style={{
-                  color: "#332D4F",
-                  fontFamily: "Urbanist, sans-serif",
-                  fontWeight: 800,
-                }}
-              >
-                50k+
-              </div>
-              <div
-                className="text-sm md:text-base lg:text-lg"
-                style={{
-                  color: "#464646",
-                  fontFamily: "Urbanist, sans-serif",
-                }}
-              >
-                Happy Clients
-              </div>
+            <div
+            className="text-2xl"
+            style={{
+              color: "#332D4F",
+              fontFamily: "Urbanist, sans-serif",
+              fontWeight: 800,
+              fontSize: "28px",
+            }}
+          >
+            <CountUp end={50} duration={4.5} />
+            K+
+          </div>
+          <div
+            className="text-sm md:text-base lg:text-lg"
+            style={{
+              color: "#464646",
+              fontFamily: "Urbanist, sans-serif",
+            }}
+          >
+            Happy Clients
+          </div>
             </div>
             <div className="text-center">
               <div
@@ -121,9 +121,11 @@ const HeroSection = () => {
                   color: "#332D4F",
                   fontFamily: "Urbanist, sans-serif",
                   fontWeight: 800,
+                  fontSize: 28,
                 }}
               >
-                10+
+                <CountUp start={0} end={10} duration={2} />
+                +
               </div>
               <div
                 className="text-sm md:text-base lg:text-lg"
@@ -136,15 +138,16 @@ const HeroSection = () => {
               </div>
             </div>
             <div className="text-center">
-              <div
+            <div
                 className="text-2xl font-extrabold"
                 style={{
                   color: "#332D4F",
                   fontFamily: "Urbanist, sans-serif",
                   fontWeight: 800,
+                  fontSize: 28,
                 }}
               >
-                98%
+                <CountUp start={0} end={98} duration={1.5} suffix="%" />
               </div>
               <div
                 className="text-sm md:text-base lg:text-lg"
