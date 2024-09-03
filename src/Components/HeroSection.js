@@ -78,16 +78,7 @@ const HeroSection = () => {
                 fontFamily: "Urbanist, sans-serif",
               }}
             >
-              Schedule a Call
-            </button>
-            <button
-              className="border text-indigo-600 px-4 py-2 rounded shadow"
-              style={{
-                color: "#00000099",
-                fontFamily: "Urbanist, sans-serif",
-              }}
-            >
-              Contact Us
+              Schedule A Demo
             </button>
           </div>
           <div className="flex justify-start gap-8 mt-8">

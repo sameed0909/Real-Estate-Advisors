@@ -16,9 +16,6 @@ const Footer = () => {
           <a href="#schedule" className="text-sm text-gray" style={{ color: "#444853" }}>
             Schedule a Call
           </a>
-          <a href="#contact" className="text-sm" style={{ color: "#444853" }}>
-            Contact Us
-          </a>
         </div>
 
         {/* Social Media Icons */}
