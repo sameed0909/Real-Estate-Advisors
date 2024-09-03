@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 
 const Footer = () => {
   return (
@@ -57,9 +58,9 @@ const Footer = () => {
           <a href="#terms" className="mr-0 sm:mr-2">
             Terms & Conditions
           </a>
-          <a href="#privacy" className="mr-0 sm:mr-2">
+          <Link to="/privacy-policy" className="mr-0 sm:mr-2">
             Privacy Policy
-          </a>
+          </Link>
         </div>
 
         {/* Copyright Section */}
