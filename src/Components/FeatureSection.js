@@ -1,11 +1,22 @@
-import React from "react";
+import React, { useEffect } from "react";
+import AOS from "aos";
+import "aos/dist/aos.css";
 
 const FeatureSection = () => {
+  useEffect(() => {
+    AOS.init({
+      duration: 1000, // Animation duration
+      easing: "ease-in-out", // Easing function
+      once: true, // Whether animation should happen only once
+    });
+  }, []);
+
   return (
     <div className="max-w-5xl mx-auto p-6 sm:p-6 mt-20">
       <div className="mb-2 flex justify-center">
         <span
           className="px-6 py-2 text-sm font-semibold rounded"
+          data-aos="fade-up" // Adding AOS effect
           style={{
             background:
               "linear-gradient(90.46deg, #325098 -24.51%, #FBD0E1 104.69%)",
@@ -24,12 +35,16 @@ const FeatureSection = () => {
           fontFamily: "Urbanist",
           letterSpacing: 1,
         }}
+        data-aos="fade-up" // Adding AOS effect
       >
         Main Features Of Our Platform
       </h2>
 
       {/* AI Integration Section */}
-      <div className="flex flex-col md:flex-row bg-white overflow-hidden mb-10 rounded-lg">
+      <div
+        className="flex flex-col md:flex-row bg-white overflow-hidden mb-10 rounded-lg"
+        data-aos="fade-right" // Adding AOS effect
+      >
         <div className="w-full md:w-1/2 p-6">
           <img
             src="/image1.png"
@@ -70,7 +85,10 @@ const FeatureSection = () => {
       </div>
 
       {/* Analytics Tools Section */}
-      <div className="flex flex-col md:flex-row bg-white overflow-hidden mb-10 rounded-lg">
+      <div
+        className="flex flex-col md:flex-row bg-white overflow-hidden mb-10 rounded-lg"
+        data-aos="fade-left" // Adding AOS effect
+      >
         <div className="w-full md:w-1/2 p-6 flex flex-col justify-center md:pr-8 text-left">
           <h1
             className="text-xl md:text-2xl lg:text-3xl font-semibold mb-2 p-2 text-transparent bg-clip-text -ml-2"
@@ -110,7 +128,10 @@ const FeatureSection = () => {
       </div>
 
       {/* Real Estate Insights Section */}
-      <div className="flex flex-col md:flex-row bg-white overflow-hidden rounded-lg mb-10">
+      <div
+        className="flex flex-col md:flex-row bg-white overflow-hidden rounded-lg mb-10"
+        data-aos="fade-right" // Adding AOS effect
+      >
         <div className="w-full md:w-1/2 p-6">
           <img
             src="/image3.png"
