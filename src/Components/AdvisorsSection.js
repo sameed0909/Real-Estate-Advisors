@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React from "react";
 
 const AdvisorsSection = () => {
   const advisors = [
@@ -27,8 +27,6 @@ const AdvisorsSection = () => {
       link: "#",
     },
   ];
-
-  const [buttonHover, setButtonHover] = useState(false);
 
   return (
     <section className="py-10 px-4 sm:px-6 lg:px-8 font-poppins">
@@ -149,18 +147,6 @@ const AdvisorsSection = () => {
               Curabitur ac tortor at ipsum facilisis aliquam. Donec vel felis a
               eros feugiat consequat in at libero.
             </p>
-            <button
-              className="text-white py-2 px-6 rounded-md transition-colors duration-300"
-              style={{
-                background: buttonHover
-                  ? "linear-gradient(90deg, rgba(50, 80, 152, 0.7) 0%, rgba(68, 72, 83, 0.7) 100%)"
-                  : "#332D4F",
-              }}
-              onMouseOver={() => setButtonHover(true)}
-              onMouseOut={() => setButtonHover(false)}
-            >
-              Read More
-            </button>
           </div>
         </div>
       </div>
