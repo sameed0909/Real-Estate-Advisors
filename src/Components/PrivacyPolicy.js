@@ -88,7 +88,7 @@ const PrivacyPolicy = () => {
             <p className="text-lg mt-4" style={{ fontFamily: 'Poppins, sans-serif', color: '#325098', fontWeight: 400 }}>
               Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Integer venenatis, nisl sit amet volutpat vehicula, libero sem cursus libero, nec vehicula tortor felis nec nulla. Morbi id nulla nec nunc condimentum viverra. Proin sollicitudin, eros nec rhoncus tristique, est nunc vehicula quam.
             </p>
-            <ul className="list-disc list-inside mt-4 text-gray-800">
+            <ul className="list-disc list-inside mt-4 text-gray-800"  style={{ fontFamily: 'Poppins, sans-serif', color: '#325098', fontWeight: 400 }}>
               <li>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</li>
               <li>Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</li>
               <li>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</li>
