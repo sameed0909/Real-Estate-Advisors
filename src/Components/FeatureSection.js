@@ -39,10 +39,9 @@ const FeatureSection = () => {
         style={{
           background: "linear-gradient(90deg, #8CA8BE 0%, #325098 100%)",
           WebkitBackgroundClip: "text",
-          fontWeight: 700,
+          fontWeight: 1000,
           fontFamily: "Urbanist",
-          fontSize: 40,
-          letterSpacing: 2,
+          letterSpacing: 1,
         }}
         data-aos="fade-up" // Adding AOS effect
       >

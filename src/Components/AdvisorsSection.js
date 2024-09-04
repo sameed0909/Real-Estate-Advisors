@@ -32,7 +32,7 @@ const AdvisorsSection = () => {
     <section className="py-10 px-4 sm:px-6 lg:px-8 font-poppins" data-aos="fade-up">
       <div className="mb-2 flex justify-center">
         <span
-          className="px-6 py-2 text-sm font-semibold rounded-full"
+          className="px-6 py-2 text-[22px] font-semibold font-urbanist rounded-[4px]"
           style={{
             background:
               "linear-gradient(90.46deg, #325098 -24.51%, #FBD0E1 104.69%)",

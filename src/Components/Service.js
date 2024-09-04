@@ -18,16 +18,16 @@ const ServicesSection = () => {
           data-aos="fade-up"
         >
           <div className="mb-4 flex justify-center">
-            <span
-              className="px-4 sm:px-6 py-2 text-xs sm:text-sm font-semibold rounded"
-              style={{
-                background:
-                  "linear-gradient(90.46deg, #325098 -24.51%, #FBD0E1 104.69%)",
-                color: "#FFFFFF",
-              }}
-            >
-              OUR SERVICES
-            </span>
+          <span
+            className="px-4 sm:px-6 py-2 text-[22px] font-semibold rounded"
+            style={{
+              background: "linear-gradient(90.46deg, #325098 -24.51%, #FBD0E1 104.69%)",
+              color: "#FFFFFF",
+            }}
+          >
+            OUR SERVICES
+          </span>
+
           </div>
 
           <h1
@@ -54,9 +54,7 @@ const ServicesSection = () => {
             }}
             data-aos="fade-up"
           >
-            Lorem ipsum dolor sit amet, libero consectetur elit. Integer{" "}
-            <br className="hidden sm:inline" />
-            nec odio. Praesent libero. Sed cursus dapibus diam
+            We offer a range of innovative services designed to streamline your real estate investments and operations.
           </p>
         </div>
 
@@ -94,11 +92,8 @@ const ServicesSection = () => {
               The Best Service <span>For You</span>.
             </h3>
             <p className="text-sm sm:text-base md:text-lg lg:text-xl text-gray-500 mt-6 lg:mt-10 text-[#332D4F]">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-              Quisque vel urna nec nulla volutpat facilisis. Fusce egestas
-              nulla ante in posuere, ac efficitur elit faucibus. Sed et
-              perspiciatis unde omnis iste natus error sit voluptatem
-              accusantium doloremque laud.
+              Leverage state-of-the-art AI technology to gain deep insights into market trends, property values, and emerging opportunities. 
+              Our analytics tools provide actionable data to help you make informed investment decisions.Obtain accurate and reliable property valuations using our advanced algorithms. Whether you’re buying, selling, or managing properties, our appraisals help ensure fair market value.
             </p>
             <ul className="list-disc list-inside mt-6 lg:mt-10 mb-6 text-[#325098] text-sm sm:text-base md:text-lg lg:text-xl">
               <li key="predictive-analytics" className="mb-2">
