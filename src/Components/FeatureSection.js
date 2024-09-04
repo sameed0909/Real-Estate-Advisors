@@ -13,20 +13,27 @@ const FeatureSection = () => {
   }, []);
 
   return (
-    <div className="max-w-5xl mx-auto p-6 sm:p-6 mt-20">
+    <div className="max-w-7xl mx-auto p-6 sm:p-6 mt-20">
       <div className="mb-2 flex justify-center">
-        <span
-          className="px-6 py-2 text-sm font-semibold rounded"
-          data-aos="fade-up" // Adding AOS effect
-          style={{
-            background:
-              "linear-gradient(90.46deg, #325098 -24.51%, #FBD0E1 104.69%)",
-            color: "#FFFFFF",
-          }}
-        >
-          CORE FEATURES
-        </span>
-      </div>
+  <div
+    className="p-[10px] rounded-[4px]" 
+    style={{
+      background:
+        "linear-gradient(90.46deg, #325098 -24.51%, #FBD0E1 104.69%)",
+    }}
+  >
+    <span
+      className="text-[22px] font-semibold font-urbanist"
+      data-aos="fade-up" // Adding AOS effect
+      style={{
+        color: "#FFFFFF",
+      }}
+    >
+      CORE FEATURES
+    </span>
+  </div>
+</div>
+
       <h2
         className="text-xl sm:text-2xl md:text-3xl lg:text-4xl xl:text-3xl font-bold mb-10 p-2 text-transparent bg-clip-text text-center mt-10"
         style={{
@@ -73,14 +80,12 @@ const FeatureSection = () => {
             Advanced AI for Market Trend Analysis
           </h4>
           <p className="text-gray-500 mb-3 text-sm md:text-base lg:text-lg">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus at
-            lectus eu lacus varius dapibus vel eget odio. Cras ut lorem vitae
-            ligula commodo efficitur.
+          In today’s fast-paced financial landscape, staying ahead of market trends is crucial. 
+          Our Advanced AI for Market Trend Analysis leverages state-of-the-art artificial intelligence to provide you with unparalleled insights and predictive power.
           </p>
           <p className="text-gray-500 text-sm md:text-base lg:text-lg">
-            Curabitur ac tortor ut ipsum facilisis aliquet. Donec vel felis a
-            eros faucibus consequat in at libero. Praesent ac turpis a sapien
-            ullamcorper malesuada.
+          Transform complex data into actionable insights with intuitive and interactive visualizations. 
+          Our platform presents data in a clear, visually engaging format, making it easier to interpret and act upon.
           </p>
         </div>
       </div>
@@ -108,14 +113,14 @@ const FeatureSection = () => {
             Comprehensive Analytics Tools
           </h4>
           <p className="text-gray-500 mb-3 text-sm md:text-base lg:text-lg">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus at
-            lectus eu lacus varius dapibus vel eget odio. Cras ut lorem vitae
-            ligula commodo efficitur.
+          Access real-time insights with our dynamic analytics tools. Monitor performance, 
+          track key metrics, and respond to emerging trends instantly, 
+          ensuring that you stay ahead in a fast-paced market.
           </p>
           <p className="text-gray-500 text-sm md:text-base lg:text-lg">
-            Curabitur ac tortor ut ipsum facilisis aliquet. Donec vel felis a
-            eros faucibus consequat in at libero. Praesent ac turpis a sapien
-            ullamcorper malesuada.
+          Seamlessly integrate data from multiple sources, including CRM systems, social media platforms, financial databases, 
+          and more. Our tools unify your data into a single, 
+          accessible platform, providing a holistic view of your business.
           </p>
         </div>
         <div className="w-full md:w-1/2 p-6">
@@ -159,14 +164,13 @@ const FeatureSection = () => {
             Actionable Real Estate Insights
           </h4>
           <p className="text-gray-500 mb-3 text-sm md:text-base lg:text-lg">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus at
-            lectus eu lacus varius dapibus vel eget odio. Cras ut lorem vitae
-            ligula commodo efficitur.
+            Our AI models analyze vast amounts of data from multiple sources, offering detailed market analysis that highlights emerging trends, 
+            price fluctuations, and investment opportunities. Whether you are looking to invest in residential or commercial properties, 
+            our tools provide actionable insights to help you make the best decisions.
           </p>
           <p className="text-gray-500 text-sm md:text-base lg:text-lg">
-            Curabitur ac tortor ut ipsum facilisis aliquet. Donec vel felis a
-            eros faucibus consequat in at libero. Praesent ac turpis a sapien
-            ullamcorper malesuada.
+            For real estate investors managing multiple properties,
+            Monitor growth, assess market positioning, and make strategic adjustments to optimize your returns.
           </p>
         </div>
       </div>

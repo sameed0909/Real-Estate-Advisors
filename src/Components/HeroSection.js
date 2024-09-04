@@ -114,7 +114,7 @@ const HeroSection = () => {
                   <input
                     type="email"
                     placeholder="Enter your email"
-                    className="w-full p-2 mb-2 rounded-lg border-2 bg-white text-white text-sm"
+                    className="w-full p-2 mb-2 rounded-lg border-2 bg-white text-black text-sm"
                   />
                   <button
                     type="button"
