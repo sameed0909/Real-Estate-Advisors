@@ -1,10 +1,21 @@
-import React from "react";
+import React, { useState } from "react";
 import "../style.css";
 import CountUp from 'react-countup';
 
 const HeroSection = () => {
+  const [isActive, setIsActive] = useState(false);
+
+  const toggleEmailInput = () => {
+    setIsActive(!isActive);
+  };
+
+  const handleEmailSubmit = () => {
+    // Handle email submission logic here
+    toggleEmailInput();
+  };
+
   return (
-    <div className="relative">
+    <div className="relative mb-4">
       {/* Navbar */}
       <div className="absolute top-0 left-0 w-full flex items-center justify-between p-6 z-10">
         <div className="h-10 pl-8">
@@ -70,40 +81,75 @@ const HeroSection = () => {
             emails other than Interminie no ac adator board or heads-up.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-start">
-            <button
-              className="px-4 py-2 rounded shadow"
-              style={{
-                backgroundColor: "#332D4F",
-                color: "#FFFFFF",
-                fontFamily: "Urbanist, sans-serif",
-              }}
-            >
-              Schedule A Demo
-            </button>
+            {/* Toggle Email Input */}
+            <div className={`relative mt-8 w-72 transition-all duration-300 overflow-hidden ${isActive ? 'h-40' : 'h-16'} border-2 rounded-2xl p-1`}>
+              <div
+                className={`flex items-center w-full h-12 cursor-pointer transition-justify-content duration-300 ${isActive ? 'justify-end' : 'justify-start'}`}
+                onClick={toggleEmailInput}
+              >
+                <div className="w-12 h-12 rounded-2xl bg-gradient-to-r from-blue-300 to-pink-300 flex justify-center items-center mx-1">
+                  <img src={`${process.env.PUBLIC_URL}/images/sms.png`} alt="Email icon" className="w-6 h-6" />
+                </div>
+                {!isActive && (
+                  <span
+                    style={{ color: '#332D4F' }}
+                    className="font-bold text-lg ml-4"
+                  >
+                    Schedule A Demo
+                  </span>
+                )}
+                <span
+                  className={`ml-auto mr-4 transition-transform duration-300 ${isActive ? 'rotate-90' : ''}`}
+                >
+                  <span
+                    style={{ color: '#332D4F' }}
+                    className="text-xl"
+                  >
+                    &gt;
+                  </span>
+                </span>
+              </div>
+              {isActive && (
+                <div className="absolute bottom-2 left-2 right-2">
+                  <input
+                    type="email"
+                    placeholder="Enter your email"
+                    className="w-full p-2 mb-2 rounded-lg border-2 bg-white text-white text-sm"
+                  />
+                  <button
+                    type="button"
+                    onClick={handleEmailSubmit}
+                    className="w-full rounded-lg bg-gradient-to-r from-blue-300 to-pink-300 p-2 font-bold text-gray-800 cursor-pointer"
+                  >
+                    Submit
+                  </button>
+                </div>
+              )}
+            </div>
           </div>
           <div className="flex justify-start gap-8 mt-8">
             <div className="text-center">
-            <div
-            className="text-2xl"
-            style={{
-              color: "#332D4F",
-              fontFamily: "Urbanist, sans-serif",
-              fontWeight: 800,
-              fontSize: "28px",
-            }}
-          >
-            <CountUp end={50} duration={4.5} />
-            K+
-          </div>
-          <div
-            className="text-sm md:text-base lg:text-lg"
-            style={{
-              color: "#464646",
-              fontFamily: "Urbanist, sans-serif",
-            }}
-          >
-            Happy Clients
-          </div>
+              <div
+                className="text-2xl"
+                style={{
+                  color: "#332D4F",
+                  fontFamily: "Urbanist, sans-serif",
+                  fontWeight: 800,
+                  fontSize: "28px",
+                }}
+              >
+                <CountUp end={50} duration={4.5} />
+                K+
+              </div>
+              <div
+                className="text-sm md:text-base lg:text-lg"
+                style={{
+                  color: "#464646",
+                  fontFamily: "Urbanist, sans-serif",
+                }}
+              >
+                Happy Clients
+              </div>
             </div>
             <div className="text-center">
               <div
@@ -129,7 +175,7 @@ const HeroSection = () => {
               </div>
             </div>
             <div className="text-center">
-            <div
+              <div
                 className="text-2xl font-extrabold"
                 style={{
                   color: "#332D4F",
@@ -154,7 +200,7 @@ const HeroSection = () => {
         </div>
 
         {/* Right Section */}
-        <div className="md:w-3/6 h-full relative md:absolute top-0 right-0 w-full z-0">
+        <div className="md:w-3/6 h-96 md:h-screen relative md:absolute top-0 right-0 w-full z-0 overflow-hidden">
           <img
             src={`${process.env.PUBLIC_URL}/hero.png`}
             alt="Modern House"
