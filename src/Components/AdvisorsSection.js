@@ -29,16 +29,16 @@ const AdvisorsSection = () => {
   ];
 
   return (
-    <section className="py-10 px-4 sm:px-6 lg:px-8 font-poppins">
+    <section className="py-10 px-4 sm:px-6 lg:px-8 font-poppins" data-aos="fade-up">
       <div className="mb-2 flex justify-center">
         <span
-          className="px-6 py-2 text-sm font-semibold squared-full justify-center rounded"
+          className="px-6 py-2 text-sm font-semibold rounded-full"
           style={{
             background:
               "linear-gradient(90.46deg, #325098 -24.51%, #FBD0E1 104.69%)",
-            alignItems: "center",
             color: "#FFFFFF",
           }}
+          data-aos="fade-in"
         >
           OUR ADVISOR
         </span>
@@ -52,10 +52,11 @@ const AdvisorsSection = () => {
           fontWeight: 1000,
           letterSpacing: 1,
         }}
+        data-aos="fade-up"
       >
         Meet Our Advisor
       </h1>
-      <p className="mb-6 text-center mt-10 max-w-2xl mx-auto" style={{ color: "#332D4F", fontFamily: 'Poppins', fontWeight: 400,   }}>
+      <p className="mb-6 text-center mt-10 max-w-2xl mx-auto" style={{ color: "#332D4F", fontFamily: 'Poppins', fontWeight: 400 }}>
         Lorem ipsum dolor sit amet, libero consectetur elit. Integer nec odio.
         Praesent libero. Sed cursus dapibus diam.
       </p>
@@ -73,6 +74,8 @@ const AdvisorsSection = () => {
                     ? "lg:h-[500px] sm:h-[450px] h-[450px] mt-12"
                     : "lg:h-[500px] sm:h-[450px] h-[450px]"
                 } rounded-xl overflow-hidden shadow-lg bg-white transform transition-all duration-300 hover:-translate-y-2`}
+                data-aos="fade-up"
+                data-aos-delay={index * 100} // Add delay for staggered effect
               >
                 <img
                   className="w-full h-full object-cover rounded-xl"
@@ -86,7 +89,7 @@ const AdvisorsSection = () => {
                 </div>
                 {/* Shutter Effect for Description */}
                 <div className="absolute inset-0 flex flex-col justify-start">
-                <div className="absolute inset-0 flex flex-col justify-start transition-transform duration-500 ease-in-out transform translate-y-full group-hover:translate-y-0">
+                  <div className="absolute inset-0 flex flex-col justify-start transition-transform duration-500 ease-in-out transform translate-y-full group-hover:translate-y-0">
                     <div
                       className="w-full h-full flex flex-col p-4"
                       style={{
@@ -94,7 +97,7 @@ const AdvisorsSection = () => {
                           "linear-gradient(180deg, rgba(50, 80, 152, 1) 0%, rgba(68, 72, 83, 0.5) 100%)",
                       }}
                     >
-                      <h2 className="text-xl text-white mb-2 mt-4" >
+                      <h2 className="text-xl text-white mb-2 mt-4">
                         Investment Advisor
                       </h2>
                       <p className="text-white text-base text-left">
@@ -121,6 +124,7 @@ const AdvisorsSection = () => {
                   "linear-gradient(90.46deg, #325098 -24.51%, #FBD0E1 104.69%)",
                 WebkitBackgroundClip: "text",
               }}
+              data-aos="fade-left"
             >
               Why Our Advisors Stand Out
             </h1>
@@ -131,6 +135,7 @@ const AdvisorsSection = () => {
                 fontSize: "16px",
                 lineHeight: "30px",
               }}
+              data-aos="fade-up"
             >
               Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus
               at lacus ut lacus varius dapibus vel eget odio. Cras ut lorem
@@ -143,6 +148,7 @@ const AdvisorsSection = () => {
                 fontSize: "16px",
                 lineHeight: "30px",
               }}
+              data-aos="fade-up"
             >
               Curabitur ac tortor at ipsum facilisis aliquam. Donec vel felis a
               eros feugiat consequat in at libero.
