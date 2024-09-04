@@ -1,6 +1,8 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import "../style.css";
 import CountUp from 'react-countup';
+import AOS from 'aos';
+import 'aos/dist/aos.css';
 
 const HeroSection = () => {
   const [isActive, setIsActive] = useState(false);
@@ -13,6 +15,14 @@ const HeroSection = () => {
     // Handle email submission logic here
     toggleEmailInput();
   };
+
+  useEffect(() => {
+    AOS.init({
+      duration: 1000, // Animation duration in milliseconds
+      easing: "ease-in-out", // Animation easing function
+      once: true, // Animation happens only once
+    });
+  }, []);
 
   return (
     <div className="relative mb-4">
@@ -41,6 +51,7 @@ const HeroSection = () => {
               fontWeight: "bold",
               textTransform: "uppercase",
             }}
+            data-aos="fade-up" // Adding AOS effect
           >
             Find the best property advisor
           </div>
@@ -53,6 +64,7 @@ const HeroSection = () => {
               letterSpacing: "0.02em",
               textAlign: "left",
             }}
+            data-aos="fade-up" // Adding AOS effect
           >
             Empowering Your Real Estate Investments with{" "}
             <span
@@ -75,6 +87,7 @@ const HeroSection = () => {
               color: "#464646",
               fontFamily: "Poppins",
             }}
+            data-aos="fade-up" // Adding AOS effect
           >
             Office spaces that meet the market, Winning keywords, website
             behavioral move data instantly, real estate automation and marketing
@@ -82,7 +95,9 @@ const HeroSection = () => {
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-start">
             {/* Toggle Email Input */}
-            <div className={`relative mt-8 w-72 transition-all duration-300 overflow-hidden ${isActive ? 'h-40' : 'h-16'} border-2 rounded-2xl shadow p-1`}>
+            <div
+              className={`relative mt-8 w-72 transition-all duration-300 overflow-hidden ${isActive ? 'h-40' : 'h-16'} border-2 rounded-2xl shadow p-1`}
+            >
               <div
                 className={`flex items-center w-full h-12 cursor-pointer transition-justify-content duration-300 ${isActive ? 'justify-end' : 'justify-start'}`}
                 onClick={toggleEmailInput}
@@ -137,6 +152,7 @@ const HeroSection = () => {
                   fontWeight: 800,
                   fontSize: "28px",
                 }}
+                data-aos="fade-up" // Adding AOS effect
               >
                 <CountUp end={50} duration={4.5} />
                 K+
@@ -147,6 +163,7 @@ const HeroSection = () => {
                   color: "#464646",
                   fontFamily: "Urbanist, sans-serif",
                 }}
+                data-aos="fade-up" // Adding AOS effect
               >
                 Happy Clients
               </div>
@@ -160,6 +177,7 @@ const HeroSection = () => {
                   fontWeight: 800,
                   fontSize: 28,
                 }}
+                data-aos="fade-up" // Adding AOS effect
               >
                 <CountUp start={0} end={10} duration={2} />
                 +
@@ -170,6 +188,7 @@ const HeroSection = () => {
                   color: "#464646",
                   fontFamily: "Urbanist, sans-serif",
                 }}
+                data-aos="fade-up" // Adding AOS effect
               >
                 Years of Experience
               </div>
@@ -183,6 +202,7 @@ const HeroSection = () => {
                   fontWeight: 800,
                   fontSize: 28,
                 }}
+                data-aos="fade-up" // Adding AOS effect
               >
                 <CountUp start={0} end={98} duration={1.5} suffix="%" />
               </div>
@@ -192,6 +212,7 @@ const HeroSection = () => {
                   color: "#464646",
                   fontFamily: "Urbanist, sans-serif",
                 }}
+                data-aos="fade-up" // Adding AOS effect
               >
                 Client Satisfaction Rate
               </div>
@@ -205,6 +226,7 @@ const HeroSection = () => {
             src={`${process.env.PUBLIC_URL}/hero.png`}
             alt="Modern House"
             className="w-full h-full object-cover rounded-bl-[50px]"
+            data-aos="fade-left" // Adding AOS effect
           />
         </div>
       </div>
