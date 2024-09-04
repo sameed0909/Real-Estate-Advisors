@@ -7,7 +7,7 @@ const AdvisorsSection = () => {
       title: "Senior Real Estate Investment Advisor",
       image: "images/advisor1.png",
       description:
-        "Est peritus in investmentibus cum plus 15 annis experientiae in real estate et mercatoriis proprietatibus. James excels in strategica accessus, opportunitates lucrativas agnoscens et portfolios diversis administrans. Cum track record per investmenta praevia ultra $500 million.",
+        "James Thompson is our Senior Real Estate Investment Advisor, bringing a wealth of expertise and a strategic mindset to our team. With over a decade of experience in real estate investment and market analysis,",
       link: "#",
     },
     {
@@ -15,7 +15,7 @@ const AdvisorsSection = () => {
       title: "Strategic Reality Partner",
       image: "images/advisor2.png",
       description:
-        "Est peritus in investmentibus cum plus 15 annis experientiae in real estate et mercatoriis proprietatibus. Alex excels in strategica accessus, opportunitates lucrativas agnoscens et portfolios diversis administrans. Cum track record per investmenta praevia ultra $500 million.",
+        "Alex Jordan is our Strategic Reality Partner, a seasoned professional with a keen eye for strategic opportunities and a passion for driving success. With a background in both strategic planning and real estate, Alex excels in forging valuable partnerships and navigating complex market.",
       link: "#",
     },
     {
@@ -23,7 +23,7 @@ const AdvisorsSection = () => {
       title: "Senior Real Estate Investment Advisor",
       image: "images/advisor3.png",
       description:
-        "Est peritus in investmentibus cum plus 15 annis experientiae in real estate et mercatoriis proprietatibus. Taylor excels in strategica accessus, opportunitates lucrativas agnoscens et portfolios diversis administrans. Cum track record per investmenta praevia ultra $500 million.",
+        "Taylor Morgan is our Senior Real Estate Investment Advisor, bringing a wealth of experience and a deep understanding of the real estate market. With a track record of successful investments and a strategic approach to real estate.",
       link: "#",
     },
   ];
@@ -57,8 +57,8 @@ const AdvisorsSection = () => {
         Meet Our Advisor
       </h1>
       <p className="mb-6 text-center mt-10 max-w-2xl mx-auto" style={{ color: "#332D4F", fontFamily: 'Poppins', fontWeight: 400 }}>
-        Lorem ipsum dolor sit amet, libero consectetur elit. Integer nec odio.
-        Praesent libero. Sed cursus dapibus diam.
+      our mission to deliver exceptional service and results is our dedicated advisor, 
+      who brings a wealth of experience and knowledge to the table. Our advisor plays a crucial role in steering our strategic direction.
       </p>
       <div className="container mx-auto pt-8 sm:pt-16 lg:pt-32">
         <div className="flex flex-col lg:flex-row justify-start items-start lg:space-x-4 space-y-6 lg:space-y-0">
@@ -137,9 +137,8 @@ const AdvisorsSection = () => {
               }}
               data-aos="fade-up"
             >
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus
-              at lacus ut lacus varius dapibus vel eget odio. Cras ut lorem
-              vitae ligula commodo efficitur.
+              With years of industry experience, our advisor has a deep understanding of the market and the challenges that businesses face. 
+              Their extensive background equips them with the skills and knowledge necessary to navigate complex scenarios and drive successful outcomes.
             </p>
             <p
               className="text-gray-600 mb-8"
@@ -150,8 +149,8 @@ const AdvisorsSection = () => {
               }}
               data-aos="fade-up"
             >
-              Curabitur ac tortor at ipsum facilisis aliquam. Donec vel felis a
-              eros feugiat consequat in at libero.
+              Our advisor is committed to supporting you throughout your journey. 
+              From initial consultations to ongoing strategy refinement, they are here to ensure your success and satisfaction.
             </p>
           </div>
         </div>
