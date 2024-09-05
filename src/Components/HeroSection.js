@@ -95,9 +95,7 @@ const HeroSection = () => {
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-start">
             {/* Toggle Email Input */}
-            <div
-              className={`relative mt-8 w-72 transition-all duration-300 overflow-hidden ${isActive ? 'h-40' : 'h-16'} border-2 rounded-2xl shadow p-1`}
-            >
+            <div className="relative mt-8 w-72 transition-all duration-300 border-2 rounded-2xl shadow p-1">
               <div
                 className={`flex items-center w-full h-12 cursor-pointer transition-justify-content duration-300 ${isActive ? 'justify-end' : 'justify-start'}`}
                 onClick={toggleEmailInput}
@@ -124,8 +122,9 @@ const HeroSection = () => {
                   </span>
                 </span>
               </div>
+
               {isActive && (
-                <div className="absolute bottom-2 left-2 right-2">
+                <div className="absolute top-full mt-2 w-full z-20 bg-white p-2 shadow-lg rounded-lg">
                   <input
                     type="email"
                     placeholder="Enter your email"
