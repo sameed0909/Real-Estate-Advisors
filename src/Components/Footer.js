@@ -55,9 +55,10 @@ const Footer = () => {
 
         {/* Terms and Privacy */}
         <div className="flex flex-col sm:flex-row justify-center items-center space-y-2 sm:space-y-0 sm:space-x-4 text-sm text-gray-500">
-          <a href="/terms-and-conditions" className="mr-0 sm:mr-2">
+
+          <Link to="/terms-and-conditions" className="mr-0 sm:mr-2">
             Terms & Conditions
-          </a>
+          </Link>
           <Link to="/privacy-policy" className="mr-0 sm:mr-2">
             Privacy Policy
           </Link>
