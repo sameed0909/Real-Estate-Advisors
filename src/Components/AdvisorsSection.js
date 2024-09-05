@@ -56,7 +56,7 @@ const AdvisorsSection = () => {
       >
         Meet Our Advisor
       </h1>
-      <p className="mb-6 text-center mt-10 max-w-2xl mx-auto" style={{ color: "#332D4F", fontFamily: 'Poppins', fontWeight: 400 }}>
+      <p className="mb-2 text-center mt-10 max-w-2xl mx-auto" style={{ color: "#332D4F", fontFamily: 'Poppins', fontWeight: 400, fontSize: '18px'}}>
       Our mission to deliver exceptional service and results is our dedicated advisor, 
       who brings a wealth of experience and knowledge to the table. Our advisor plays a crucial role in steering our strategic direction.
       </p>

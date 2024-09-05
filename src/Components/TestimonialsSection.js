@@ -71,7 +71,7 @@ const TestimonialsSection = () => {
     slidesToShow: slidesToShow,
     slidesToScroll: 1,
     autoplay: true,
-    autoplaySpeed: 2000, // 5 seconds
+    autoplaySpeed: 2000, // 2 seconds
   };
 
   const testimonials = [

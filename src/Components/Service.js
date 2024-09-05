@@ -31,7 +31,7 @@ const ServicesSection = () => {
           </div>
 
           <h1
-            className="text-3xl sm:text-4xl md:text-5xl lg:text-[40px] xl:text-[40px] font-bold mb-12 p-2 text-transparent bg-clip-text text-center mt-12"
+            className="text-3xl sm:text-4xl md:text-5xl lg:text-[40px] xl:text-[40px] font-bold mb-8 p-2 text-transparent bg-clip-text text-center mt-8"
             style={{
               background:
                 "linear-gradient(91.21deg, #8CA8BE 35.19%, #325098 99.73%)",
@@ -44,10 +44,12 @@ const ServicesSection = () => {
           >
             HOW OUR PLATFORM WORKS
           </h1>
-
-          <p className="mb-6 text-center mt-6 max-w-2xl mx-auto" style={{ color: "#332D4F", fontFamily: 'Poppins', fontWeight: 400 }}>
-            We offer a range of innovative services designed to streamline your real estate investments and operations.
-            </p>
+          <p
+          className="mb-6 text-center mt-6 max-w-2xl mx-auto"
+          style={{ color: "#332D4F", fontFamily: 'Poppins', fontWeight: 400, fontSize: '18px' }}
+        >
+          We offer a range of innovative services designed to streamline your real estate investments and operations.
+        </p>
         </div>
 
         <div className="flex flex-col mt-10 lg:flex-row lg:items-center">
