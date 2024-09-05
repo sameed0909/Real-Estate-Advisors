@@ -15,29 +15,27 @@ const FeatureSection = () => {
   return (
     <div className="max-w-7xl mx-auto p-6 sm:p-6 mt-20">
       <div className="mb-2 flex justify-center">
-  <div
-    className="p-[10px] rounded-[4px]" 
-    style={{
-      background:
-        "linear-gradient(90.46deg, #325098 -24.51%, #FBD0E1 104.69%)",
-    }}
-  >
-    <span
-      className="text-[22px] font-semibold font-urbanist"
-      data-aos="fade-up" // Adding AOS effect
-      style={{
-        color: "#FFFFFF",
-      }}
-    >
+        <div className="p-[10px] rounded-[4px]" 
+        data-aos="fade-up"
+          style={{background:"linear-gradient(90.46deg, #325098 -24.51%, #FBD0E1 104.69%)",
+          }}
+        >
+          <span
+            className="text-[22px] font-semibold font-urbanist"
+            data-aos="fade-up" // Adding AOS effect
+            style={{
+              color: "#FFFFFF",
+            }}
+          >
       CORE FEATURES
     </span>
   </div>
 </div>
 
       <h2
-        className="text-xl sm:text-2xl md:text-3xl lg:text-4xl xl:text-3xl font-bold mb-10 p-2 text-transparent bg-clip-text text-center mt-10"
+        className="text-3xl sm:text-4xl md:text-5xl lg:text-[40px] xl:text-[40px] font-bold mb-12 p-2 text-transparent bg-clip-text text-center mt-12"
         style={{
-          background: "linear-gradient(90deg, #8CA8BE 0%, #325098 100%)",
+          background: "linear-gradient(91.21deg, #8CA8BE 35.19%, #325098 99.73%)",
           WebkitBackgroundClip: "text",
           fontWeight: 1000,
           fontFamily: "Urbanist",
@@ -47,6 +45,8 @@ const FeatureSection = () => {
       >
         Main Features Of Our Platform
       </h2>
+
+
 
       {/* AI Integration Section */}
       <div

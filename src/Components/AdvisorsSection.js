@@ -44,7 +44,7 @@ const AdvisorsSection = () => {
         </span>
       </div>
       <h1
-        className="text-2xl sm:text-3xl lg:text-4xl font-semibold mb-10 mt-10 text-transparent bg-clip-text text-center"
+        className="text-3xl sm:text-4xl md:text-5xl lg:text-[40px] xl:text-[40px] font-bold mb-12 p-2 text-transparent bg-clip-text text-center mt-12"
         style={{
           background: "linear-gradient(91.21deg, #8CA8BE 35.19%, #325098 99.73%)",
           WebkitBackgroundClip: "text",
@@ -57,7 +57,7 @@ const AdvisorsSection = () => {
         Meet Our Advisor
       </h1>
       <p className="mb-6 text-center mt-10 max-w-2xl mx-auto" style={{ color: "#332D4F", fontFamily: 'Poppins', fontWeight: 400 }}>
-      our mission to deliver exceptional service and results is our dedicated advisor, 
+      Our mission to deliver exceptional service and results is our dedicated advisor, 
       who brings a wealth of experience and knowledge to the table. Our advisor plays a crucial role in steering our strategic direction.
       </p>
       <div className="container mx-auto pt-8 sm:pt-16 lg:pt-32">
