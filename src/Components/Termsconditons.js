@@ -1,6 +1,6 @@
 import React from "react";
 
-const PrivacyPolicy = () => {
+const Termsconditons = () => {
   return (
     <div className="min-h-screen flex flex-col justify-center items-center relative bg-cover bg-center">
       <div className="absolute top-0 left-0 w-full flex items-center justify-between p-6 z-10">
@@ -29,7 +29,7 @@ const PrivacyPolicy = () => {
             data-aos="fade-in" 
             data-aos-duration="1500"
           >
-            Privacy Policy
+            Terms and Conditions
           </h1>
           <p 
             className="text-lg text-center mt-4" 
@@ -763,4 +763,4 @@ const PrivacyPolicy = () => {
   );
 }
 
-export default PrivacyPolicy;
+export default Termsconditons;

@@ -9,11 +9,13 @@ import AdvisorsSection from "./Components/AdvisorsSection.js";
 import HeroSection from "./Components/HeroSection.js";
 import Footer from "./Components/Footer.js";
 import FeatureSection from "./Components/FeatureSection.js";
-import PrivacyPolicy from "./Components/PrivacyPolicy.js";  // Import the Privacy Policy component
+import PrivacyPolicy from "./Components/PrivacyPolicy.js";
+import Termsconditons from "./Components/Termsconditons.js";
 
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import "./App.css";
+
 
 function App() {
   useEffect(() => {
@@ -37,6 +39,7 @@ function App() {
             </>
           } />
           <Route path="/privacy-policy" element={<PrivacyPolicy />} />
+          <Route path="/terms-and-conditions" element={<Termsconditons />} /> {/* Add the route for Terms and Conditions */}
         </Routes>
         <Footer />
       </div>
