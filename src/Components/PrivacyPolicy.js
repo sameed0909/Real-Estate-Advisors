@@ -22,7 +22,7 @@ const PrivacyPolicy = () => {
       </header>
 
       <div className="absolute inset-0 bg-black opacity-40 z-0"></div>
-      <div className="relative z-10 flex flex-col md:flex-row max-w-7xl w-full bg-white bg-opacity-90 shadow-xl rounded-lg">
+      <div className="relative z-10 flex flex-col md:flex-row w-[95%] max-w-screen-2xl bg-white bg-opacity-90 shadow-xl rounded-lg">
         {/* Main Content with Sidebar */}
         <main className="w-full p-12 md:p-16 rounded-lg flex flex-col md:flex-row" style={{ background: 'linear-gradient(to bottom, #FFFFFF, #E7F0FF)' }}>
             {/* Sidebar */}
