@@ -176,7 +176,7 @@ const HeroSection = () => {
                   fontSize: 28,
                 }}
               >
-                <CountUp start={0} end={10} duration={2} />
+                <CountUp start={0} end={10} duration={4} />
                 +
               </div>
               <div
