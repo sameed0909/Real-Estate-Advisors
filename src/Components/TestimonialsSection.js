@@ -1,5 +1,7 @@
 import React, { useEffect, useState } from "react";
 import Slider from "react-slick";
+import AOS from 'aos';
+import 'aos/dist/aos.css';
 
 // Note: You'll need to install react-slick and its CSS:
 // npm install react-slick slick-carousel
@@ -53,6 +55,14 @@ const TestimonialsSection = () => {
     return () => window.removeEventListener("resize", handleResize);
   }, []);
 
+  useEffect(() => {
+    AOS.init({
+      duration: 1000, // Animation duration in milliseconds
+      easing: "ease-in-out", // Animation easing function
+      once: true, // Animation happens only once
+    });
+  }, []);
+
   // Slider settings with 5-second autoplay
   const settings = {
     dots: true,
@@ -61,7 +71,7 @@ const TestimonialsSection = () => {
     slidesToShow: slidesToShow,
     slidesToScroll: 1,
     autoplay: true,
-    autoplaySpeed: 1000, // 5 seconds
+    autoplaySpeed: 2000, // 5 seconds
   };
 
   const testimonials = [
@@ -115,6 +125,7 @@ const TestimonialsSection = () => {
                   "linear-gradient(90.46deg, #325098 -24.51%, #FBD0E1 104.69%)",
                 color: "#FFFFFF",
               }}
+              data-aos="fade-up"
             >
               12K+ HAPPY CLIENTS
             </span>
@@ -126,6 +137,7 @@ const TestimonialsSection = () => {
               WebkitBackgroundClip: "text",
               WebkitTextFillColor: "transparent",
             }}
+            data-aos="fade-up"
           >
             <span
               className="block md:inline"
