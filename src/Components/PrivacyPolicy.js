@@ -2,8 +2,19 @@ import React from "react";
 
 const PrivacyPolicy = () => {
   return (
-    <div className="min-h-screen flex flex-col justify-center items-center relative bg-cover bg-center" style={{ backgroundImage: "url('/hero.png')" }}>
-      <header className="mb-12 relative z-10 bg-opacity-100 mt-4">
+    <div className="min-h-screen flex flex-col justify-center items-center relative bg-cover bg-center">
+      <div className="absolute top-0 left-0 w-full flex items-center justify-between p-6 z-10">
+        <div className="h-10 pl-8">
+          {/* Logo */}
+          <img
+            src={`${process.env.PUBLIC_URL}/logo.png`}
+            alt="Logo"
+            className="h-full"
+          />
+        </div>
+        </div>
+    <div className="min-h-screen w-full flex flex-col justify-center items-center relative bg-cover bg-center mt-20 px-4 sm:px-6 lg:px-8" style={{ backgroundImage: "url('/hero.png')" }}>
+      <header className="mb-12 relative z-10 bg-opacity-100 mt-8">
         <h1 className="text-4xl font-bold text-center" style={{ 
           background: 'linear-gradient(89.87deg, #325098 55.75%, #FFFFFF 118.56%)', 
           WebkitBackgroundClip: 'text', 
@@ -182,8 +193,6 @@ const PrivacyPolicy = () => {
                 <li>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</li>
               </ul>
             </section>
-            
-            {/* Add more sections as needed */}
 
             <section id="collected" className="mb-12">
               <h2 className="text-blue-600" style={{ 
@@ -732,6 +741,7 @@ const PrivacyPolicy = () => {
           </div>
         </main>
       </div>
+    </div>
     </div>
   );
 }
