@@ -153,8 +153,8 @@ const PrivacyPolicy = () => {
 
           {/* Content Area */}
           <div className="md:w-3/4">
-            <section id="type" className="mb-12">
-              <h2 className="text-blue-600" style={{ 
+            <section id="type" className="mb-12" data-aos="fade-up">
+              <h2 className="text-blue-600"  style={{ 
                   fontFamily: 'Urbanist, sans-serif', 
                   fontWeight: 700, 
                   fontSize: '40px', 
@@ -174,7 +174,7 @@ const PrivacyPolicy = () => {
               </p>
             </section>
 
-            <section id="info-provide" className="mb-12">
+            <section id="info-provide" className="mb-12"  data-aos="fade-up">
               <h2 className="text-blue-600" style={{ 
                   fontFamily: 'Urbanist, sans-serif', 
                   fontWeight: 700, 
@@ -192,7 +192,7 @@ const PrivacyPolicy = () => {
               </p>
             </section>
 
-            <section id="personal-data" className="mb-12">
+            <section id="personal-data" className="mb-12"  data-aos="fade-up">
               <h2 className="text-blue-600" style={{ 
                   fontFamily: 'Urbanist, sans-serif', 
                   fontWeight: 700, 
@@ -215,7 +215,7 @@ const PrivacyPolicy = () => {
               </ul>
             </section>
 
-            <section id="collected" className="mb-12">
+            <section id="collected" className="mb-12"  data-aos="fade-up">
               <h2 className="text-blue-600" style={{ 
                   fontFamily: 'Urbanist, sans-serif', 
                   fontWeight: 700, 
@@ -232,7 +232,7 @@ const PrivacyPolicy = () => {
               Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Integer venenatis, nisl sit amet volutpat vehicula, libero sem cursus libero, nec vehicula.              </p>
             </section>
 
-            <section id="address" className="mb-12">
+            <section id="address" className="mb-12"  data-aos="fade-up">
               <h2 className="text-blue-600" style={{ 
                   fontFamily: 'Urbanist, sans-serif', 
                   fontWeight: 700, 
@@ -251,7 +251,7 @@ const PrivacyPolicy = () => {
               eros nec rhoncus tristique, est nunc vehicula quam, in tempus eros velit non eros.              </p>
             </section>
 
-            <section id="cookies" className="mb-12">
+            <section id="cookies" className="mb-12"  data-aos="fade-up" >
               <h2 className="text-blue-600" style={{ 
                   fontFamily: 'Urbanist, sans-serif', 
                   fontWeight: 700, 
@@ -271,7 +271,7 @@ const PrivacyPolicy = () => {
               </p>
             </section>
 
-            <section id="information" className="mb-12">
+            <section id="information" className="mb-12"  data-aos="fade-up">
               <h2 className="text-blue-600" style={{ 
                   fontFamily: 'Urbanist, sans-serif', 
                   fontWeight: 700, 
@@ -291,7 +291,7 @@ const PrivacyPolicy = () => {
               </p>
             </section>
 
-            <section id="provide" className="mb-12">
+            <section id="provide" className="mb-12"  data-aos="fade-up">
               <h2 className="text-blue-600" style={{ 
                   fontFamily: 'Urbanist, sans-serif', 
                   fontWeight: 700, 
@@ -311,7 +311,7 @@ const PrivacyPolicy = () => {
               </p>
             </section>
 
-            <section id="visiting" className="mb-12">
+            <section id="visiting" className="mb-12"  data-aos="fade-up">
               <h2 className="text-blue-600" style={{ 
                   fontFamily: 'Urbanist, sans-serif', 
                   fontWeight: 700, 
@@ -336,7 +336,7 @@ const PrivacyPolicy = () => {
               </ul>
             </section>
 
-            <section id="child" className="mb-12">
+            <section id="child" className="mb-12"  data-aos="fade-up">
               <h2 className="text-blue-600" style={{ 
                   fontFamily: 'Urbanist, sans-serif', 
                   fontWeight: 700, 
@@ -362,7 +362,7 @@ const PrivacyPolicy = () => {
               </p>
             </section>
 
-            <section id="age" className="mb-12">
+            <section id="age" className="mb-12"  data-aos="fade-up">
               <h2 className="text-blue-600" style={{ 
                   fontFamily: 'Urbanist, sans-serif', 
                   fontWeight: 700, 
@@ -382,7 +382,7 @@ const PrivacyPolicy = () => {
 
             </section>
 
-            <section id="collection" className="mb-12">
+            <section id="collection" className="mb-12" data-aos="fade-up">
               <h2 className="text-blue-600" style={{ 
                   fontFamily: 'Urbanist, sans-serif', 
                   fontWeight: 700, 
@@ -401,7 +401,7 @@ const PrivacyPolicy = () => {
               </p>
             </section>
 
-            <section id="child info" className="mb-12">
+            <section id="child info" className="mb-12" data-aos="fade-up">
               <h2 className="text-blue-600" style={{ 
                   fontFamily: 'Urbanist, sans-serif', 
                   fontWeight: 700, 
@@ -420,7 +420,7 @@ const PrivacyPolicy = () => {
               </p>
             </section>
 
-            <section id="chocies" className="mb-12">
+            <section id="chocies" className="mb-12"  data-aos="fade-up">
               <h2 className="text-blue-600" style={{ 
                   fontFamily: 'Urbanist, sans-serif', 
                   fontWeight: 700, 
@@ -440,7 +440,7 @@ const PrivacyPolicy = () => {
               </p>
             </section>
 
-            <section id="access" className="mb-12">
+            <section id="access" className="mb-12"  data-aos="fade-up">
               <h2 className="text-blue-600" style={{ 
                   fontFamily: 'Urbanist, sans-serif', 
                   fontWeight: 700, 
@@ -460,7 +460,7 @@ const PrivacyPolicy = () => {
               </p>
             </section>
 
-            <section id="market" className="mb-12">
+            <section id="market" className="mb-12"  data-aos="fade-up">
               <h2 className="text-blue-600" style={{ 
                   fontFamily: 'Urbanist, sans-serif', 
                   fontWeight: 700, 
@@ -480,7 +480,7 @@ const PrivacyPolicy = () => {
               </p>
             </section>
 
-            <section id="manage" className="mb-12">
+            <section id="manage" className="mb-12"  data-aos="fade-up">
               <h2 className="text-blue-600" style={{ 
                   fontFamily: 'Urbanist, sans-serif', 
                   fontWeight: 700, 
@@ -500,7 +500,7 @@ const PrivacyPolicy = () => {
               </p>
             </section>
 
-            <section id="data" className="mb-12">
+            <section id="data" className="mb-12"  data-aos="fade-up">
               <h2 className="text-blue-600" style={{ 
                   fontFamily: 'Urbanist, sans-serif', 
                   fontWeight: 700, 
@@ -520,7 +520,7 @@ const PrivacyPolicy = () => {
               </p>
             </section>
 
-            <section id="security" className="mb-12">
+            <section id="security" className="mb-12"  data-aos="fade-up">
               <h2 className="text-blue-600" style={{ 
                   fontFamily: 'Urbanist, sans-serif', 
                   fontWeight: 700, 
@@ -540,7 +540,7 @@ const PrivacyPolicy = () => {
               </p>
             </section>
 
-            <section id="security" className="mb-12">
+            <section id="security" className="mb-12"  data-aos="fade-up">
               <h2 className="text-blue-600" style={{ 
                   fontFamily: 'Urbanist, sans-serif', 
                   fontWeight: 700, 
@@ -560,7 +560,7 @@ const PrivacyPolicy = () => {
               </p>
             </section>
 
-            <section id="practice" className="mb-12">
+            <section id="practice" className="mb-12"  data-aos="fade-up">
               <h2 className="text-blue-600" style={{ 
                   fontFamily: 'Urbanist, sans-serif', 
                   fontWeight: 700, 
@@ -579,7 +579,7 @@ const PrivacyPolicy = () => {
               </p>
             </section>
 
-            <section id="third" className="mb-12">
+            <section id="third" className="mb-12"  data-aos="fade-up">
               <h2 className="text-blue-600" style={{ 
                   fontFamily: 'Urbanist, sans-serif', 
                   fontWeight: 700, 
@@ -599,7 +599,7 @@ const PrivacyPolicy = () => {
               </p>
             </section>
 
-            <section id="links" className="mb-12">
+            <section id="links" className="mb-12"  data-aos="fade-up">
               <h2 className="text-blue-600" style={{ 
                   fontFamily: 'Urbanist, sans-serif', 
                   fontWeight: 700, 
@@ -619,7 +619,7 @@ const PrivacyPolicy = () => {
               </p>
             </section>
 
-            <section id="media" className="mb-12">
+            <section id="media" className="mb-12"  data-aos="fade-up">
               <h2 className="text-blue-600" style={{ 
                   fontFamily: 'Urbanist, sans-serif', 
                   fontWeight: 700, 
@@ -639,7 +639,7 @@ const PrivacyPolicy = () => {
               </p>
             </section>
 
-            <section id="share" className="mb-12">
+            <section id="share" className="mb-12"  data-aos="fade-up">
               <h2 className="text-blue-600" style={{ 
                   fontFamily: 'Urbanist, sans-serif', 
                   fontWeight: 700, 
@@ -659,7 +659,7 @@ const PrivacyPolicy = () => {
               </p>
             </section>
 
-            <section id="details" className="mb-12">
+            <section id="details" className="mb-12"  data-aos="fade-up">
               <h2 className="text-blue-600" style={{ 
                   fontFamily: 'Urbanist, sans-serif', 
                   fontWeight: 700, 
@@ -679,7 +679,7 @@ const PrivacyPolicy = () => {
               </p>
             </section>
 
-            <section id="reach" className="mb-12">
+            <section id="reach" className="mb-12"  data-aos="fade-up">
               <h2 className="text-blue-600" style={{ 
                   fontFamily: 'Urbanist, sans-serif', 
                   fontWeight: 700, 
@@ -699,7 +699,7 @@ const PrivacyPolicy = () => {
               </p>
             </section>
 
-            <section id="support" className="mb-12">
+            <section id="support" className="mb-12"  data-aos="fade-up">
               <h2 className="text-blue-600" style={{ 
                   fontFamily: 'Urbanist, sans-serif', 
                   fontWeight: 700, 
@@ -719,7 +719,7 @@ const PrivacyPolicy = () => {
               </p>
             </section>
 
-            <section id="request" className="mb-12">
+            <section id="request" className="mb-12"  data-aos="fade-up">
               <h2 className="text-blue-600" style={{ 
                   fontFamily: 'Urbanist, sans-serif', 
                   fontWeight: 700, 
@@ -739,7 +739,7 @@ const PrivacyPolicy = () => {
               </p>
             </section>
 
-            <section id="concerns" className="mb-12">
+            <section id="concerns" className="mb-12"  data-aos="fade-up">
               <h2 className="text-blue-600" style={{ 
                   fontFamily: 'Urbanist, sans-serif', 
                   fontWeight: 700, 
