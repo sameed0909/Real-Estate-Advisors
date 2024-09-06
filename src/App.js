@@ -4,8 +4,8 @@ import AOS from 'aos';
 import 'aos/dist/aos.css'; // Import AOS styles
 
 import Service from "./Components/Service.js";
-import TestimonialsSection from "./Components/TestimonialsSection.js";
-import AdvisorsSection from "./Components/AdvisorsSection.js";
+// import TestimonialsSection from "./Components/TestimonialsSection.js";
+// import AdvisorsSection from "./Components/AdvisorsSection.js";
 import HeroSection from "./Components/HeroSection.js";
 import Footer from "./Components/Footer.js";
 import FeatureSection from "./Components/FeatureSection.js";
@@ -34,8 +34,8 @@ function App() {
               <HeroSection />
               <FeatureSection />
               <Service />
-              <TestimonialsSection />
-              <AdvisorsSection />
+              {/* <TestimonialsSection /> */}
+              {/* <AdvisorsSection /> */}
             </>
           } />
           <Route path="/privacy-policy" element={<PrivacyPolicy />} />
