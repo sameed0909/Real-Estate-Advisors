@@ -145,7 +145,7 @@ const HeroSection = () => {
           <div className="flex flex-wrap justify-center sm:justify-start gap-8 mt-8">
             <div className="text-center" data-aos="fade-up">
               <div
-                className="text-2xl"
+                className={`text-2xl ${isActive ? 'mt-24' : 'mt-8'}`} 
                 style={{
                   color: "#332D4F",
                   fontFamily: "Urbanist, sans-serif",
@@ -168,7 +168,7 @@ const HeroSection = () => {
             </div>
             <div className="text-center" data-aos="fade-up">
               <div
-                className="text-2xl"
+                className={`text-2xl ${isActive ? 'mt-24' : 'mt-8'}`} 
                 style={{
                   color: "#332D4F",
                   fontFamily: "Urbanist, sans-serif",
@@ -191,7 +191,7 @@ const HeroSection = () => {
             </div>
             <div className="text-center" data-aos="fade-up">
               <div
-                className="text-2xl font-extrabold"
+                className={`text-2xl ${isActive ? 'mt-24' : 'mt-8'}`} 
                 style={{
                   color: "#332D4F",
                   fontFamily: "Urbanist, sans-serif",
