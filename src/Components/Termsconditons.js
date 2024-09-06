@@ -1,6 +1,11 @@
-import React from "react";
+import React, { useEffect } from 'react';
 
 const Termsconditons = () => {
+
+  useEffect(() => {
+    window.scrollTo(0, 0); 
+  }, []);
+
   return (
     <div className="min-h-screen flex flex-col justify-center items-center relative bg-cover bg-center">
       <div className="absolute top-0 left-0 w-full flex items-center justify-between p-6 z-10">
