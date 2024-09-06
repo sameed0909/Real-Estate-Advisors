@@ -97,7 +97,7 @@ const HeroSection = () => {
             {/* Toggle Email Input */}
             <div className="relative mt-8 w-full sm:w-72 transition-all duration-300 border-2 rounded-2xl shadow p-1">
               <div
-                className={`flex items-center w-full h-12 cursor-pointer transition-justify-content duration-300 ${isActive ? 'justify-end' : 'justify-start'}`}
+                className={`flex items-center w-full h-12 cursor-pointer transition-justify-content duration-300 `}
                 onClick={toggleEmailInput}
                 data-aos="fade-right" // Adding AOS effect to the toggle container
               >
