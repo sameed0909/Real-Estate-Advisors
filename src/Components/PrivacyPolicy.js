@@ -8,7 +8,7 @@ const PrivacyPolicy = () => {
   return (
     <div className="min-h-screen flex flex-col relative">
       {/* Fixed Logo */}
-      <div className="fixed top-0 left-0 w-full flex items-center justify-between p-6 bg-white z-50">
+      <div className="fixed top-0 left-0 w-full flex items-center justify-between p-10 bg-white z-50"> {/* Increased padding */}
         <div className="h-11 pl-8 mb-5 mt-2">
           {/* Logo */}
           <img
@@ -20,8 +20,8 @@ const PrivacyPolicy = () => {
       </div>
 
       {/* Main Content */}
-      <div className="pt-16 relative min-h-screen w-full flex flex-col justify-center items-center mt-20 px-4 sm:px-6 lg:px-8" 
-           style={{ backgroundImage: "url('/hero.png')", backgroundAttachment: 'fixed', backgroundSize: 'cover', backgroundPosition: 'center' }}>
+      <div className="pt-16 relative min-h-screen w-full flex flex-col justify-center items-center mt-20 px-6 sm:px-10 lg:px-16" 
+           style={{ backgroundImage: "url('/hero.png')" }}> {/* Increased padding */}
         <header 
           className="mb-12 relative z-10 bg-opacity-100 mt-8" 
           data-aos="fade-up" 
@@ -30,7 +30,7 @@ const PrivacyPolicy = () => {
           <h1 
             className="text-4xl font-bold text-center" 
             style={{ 
-              background: 'linear-gradient(89.87deg, #FFFFFF -50.75%, #325098 100%)', 
+              background: 'linear-gradient(89.87deg, #FFFFFF -50.75%, #325098 70%)', 
               WebkitBackgroundClip: 'text', 
               color: 'transparent' 
             }}
@@ -45,7 +45,7 @@ const PrivacyPolicy = () => {
               padding: '1rem', 
               fontFamily: 'Poppins, sans-serif', 
               fontWeight: 500,
-              color: 'white'
+              color: '#444853',
             }}
             data-aos="fade-in" 
             data-aos-duration="1500"
@@ -56,9 +56,9 @@ const PrivacyPolicy = () => {
 
         <div className="relative z-10 flex flex-col lg:flex-row w-full max-w-screen-2xl bg-white bg-opacity-90 shadow-xl rounded-lg">
           {/* Main Content with Sidebar */}
-          <main className="flex flex-col lg:flex-row w-full p-4 lg:p-12 bg-gradient-to-b from-white to-[#E7F0FF] rounded-lg">
+          <main className="flex flex-col lg:flex-row w-full p-8 lg:p-20 bg-gradient-to-b from-white to-[#E7F0FF] rounded-lg"> {/* Increased padding */}
             {/* Sidebar */}
-            <nav className="w-full lg:w-1/4 lg:pr-12 mt-6 space-y-14 text-lg flex-shrink-0 lg:sticky lg:top-0 lg:h-screen lg:overflow-y-auto"
+            <nav className="w-full lg:w-1/4 lg:pr-20 mt-6 lg:mt-0 p-8 lg:p-10 space-y-14 text-lg flex-shrink-0 lg:sticky lg:top-0 lg:h-screen lg:overflow-y-auto"
               data-aos="fade-up" 
               data-aos-duration="1000">
               <a 
@@ -152,8 +152,10 @@ const PrivacyPolicy = () => {
                 Contact details
               </a>
             </nav>
-          {/* Content Area */}
-          <div className="flex-1 lg:w-3/4">
+            
+            {/* Content Area */}
+            <div className="flex-1 lg:w-3/4 lg:pl-10 p-8 lg:p-16"> {/* Increased padding */}
+
             <section id="type" className="mb-12" data-aos="fade-up">
               <h2 className="text-blue-600"  style={{ 
                   fontFamily: 'Urbanist, sans-serif', 
