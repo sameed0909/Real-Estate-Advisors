@@ -101,7 +101,10 @@ const HeroSection = () => {
                 onClick={toggleEmailInput}
                 data-aos="fade-right" // Adding AOS effect to the toggle container
               >
-                <div className="w-12 h-12 rounded-2xl bg-gradient-to-r from-blue-300 to-pink-300 flex justify-center items-center mx-1">
+                <div className="w-12 h-12 rounded-2xl flex justify-center items-center mx-1"
+  style={{
+    background: "linear-gradient(90.46deg, #325098 -5.51%, #FBD0E1 70.69%)",
+  }}>
                   <img src={`${process.env.PUBLIC_URL}/images/sms.png`} alt="Email icon" className="w-6 h-6" />
                 </div>
                 {!isActive && (
