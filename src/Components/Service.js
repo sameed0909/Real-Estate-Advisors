@@ -4,7 +4,7 @@ import "aos/dist/aos.css"; // Import AOS styles
 
 const ServicesSection = () => {
   useEffect(() => {
-    AOS.init({ 
+    AOS.init({
       duration: 1000, // Duration of the animation
       once: true,     // Trigger animation only once
     });
@@ -17,43 +17,50 @@ const ServicesSection = () => {
           className="flex flex-col justify-center items-center"
           data-aos="fade-up"
         >
-                <div className="mb-2 flex justify-center">
-        <h1
-          className="text-[22px] font-bold font-urbanist bg-clip-text text-transparent"
-          data-aos="fade-up"
-          style={{
-            backgroundImage: "linear-gradient(90.46deg, #325098 -24.51%, #FBD0E1 104.69%)",
-          }}
-        >
-          OUR SERVICES
-        </h1>
-      </div>
-      <h2
-        className="text-3xl sm:text-4xl md:text-5xl lg:text-[40px] xl:text-[40px] font-bold mb-16 p-2 text-transparent bg-clip-text text-center mt-8"
-        style={{
-          background: "linear-gradient(91.21deg, #8CA8BE 35.19%, #325098 99.73%)",
-          WebkitBackgroundClip: "text",
-          fontWeight: 1000,
-          fontFamily: "Urbanist",
-          letterSpacing: 1,
-        }}
-        data-aos="fade-up"
-      >
-        How Our Platform Works
-      </h2>
+          <div className="mb-2 flex justify-center">
+            <h1
+              className="text-[22px] font-bold font-urbanist bg-clip-text text-transparent"
+              data-aos="fade-up"
+              style={{
+                backgroundImage:
+                  "linear-gradient(90.46deg, #325098 -24.51%, #FBD0E1 104.69%)",
+              }}
+            >
+              OUR SERVICES
+            </h1>
+          </div>
+          <h2
+            className="text-3xl sm:text-4xl md:text-5xl lg:text-[40px] xl:text-[40px] font-bold mb-16 p-2 text-transparent bg-clip-text text-center mt-8"
+            style={{
+              background:
+                "linear-gradient(91.21deg, #8CA8BE 35.19%, #325098 99.73%)",
+              WebkitBackgroundClip: "text",
+              fontWeight: 1000,
+              fontFamily: "Urbanist",
+              letterSpacing: 1,
+            }}
+            data-aos="fade-up"
+          >
+            How Our Platform Works
+          </h2>
 
           <p
             className="mb-6 text-center mt-2 max-w-2xl mx-auto"
-            style={{ color: "#332D4F", fontFamily: 'Poppins', fontWeight: 400, fontSize: '18px' }}
+            style={{
+              color: "#332D4F",
+              fontFamily: "Poppins",
+              fontWeight: 400,
+              fontSize: "18px",
+            }}
           >
             We offer a range of innovative services designed to streamline your real estate investments and operations.
           </p>
         </div>
 
-        <div className="flex flex-col mt-10 lg:flex-row lg:items-center">
+        <div className="flex flex-col mt-10 lg:flex-row lg:items-start">
           {/* Image Section */}
           <div
-            className="w-full lg:w-1/2 lg:relative lg:left-0 lg:m-0 lg:p-0"
+            className="w-full lg:w-6/12 lg:relative lg:left-0 lg:m-0 lg:p-0"
             data-aos="fade-right"
           >
             <img
@@ -69,13 +76,14 @@ const ServicesSection = () => {
 
           {/* Text Section */}
           <div
-            className="w-full lg:w-1/2 mt-8 lg:mt-0 lg:pl-12 px-4"
+            className="w-full lg:w-1/2 mt-8 lg:mt-0 lg:pl-12 px-4 lg:ml-16 lg:mt-10" // Updated the lg:ml-16 for more horizontal gap
             data-aos="fade-left"
           >
             <h3
               className="text-xl sm:text-2xl md:text-3xl lg:text-4xl xl:text-3xl font-semibold mb-4"
               style={{
-                background: "linear-gradient(90.46deg, #325098 -24.51%, #FBD0E1 104.69%)",
+                background:
+                  "linear-gradient(90.46deg, #325098 -24.51%, #FBD0E1 104.69%)",
                 WebkitBackgroundClip: "text",
                 WebkitTextFillColor: "transparent",
               }}
@@ -103,4 +111,5 @@ const ServicesSection = () => {
     </section>
   );
 };
+
 export default ServicesSection;

@@ -28,7 +28,7 @@ const HeroSection = () => {
     <div className="relative mb-4">
       {/* Navbar */}
       <div className="absolute top-0 left-0 w-full flex items-center justify-between p-6 z-10" data-aos="fade-down">
-        <div className="h-10 pl-8">
+        <div className="h-16 pl-9">
           {/* Logo */}
           <img
             src={`${process.env.PUBLIC_URL}/logo.png`}
@@ -41,7 +41,7 @@ const HeroSection = () => {
       {/* Hero Section */}
       <div className="flex flex-col md:flex-row p-6 md:p-8 mt-0 relative z-0">
         {/* Left Section */}
-        <div className="md:w-1/2 text-left relative z-20 mt-16 md:mt-20 px-4 md:px-8" data-aos="fade-up">
+        <div className="md:w-1/2 text-left relative z-20 mt-16 md:mt-40 px-4 md:px-8" data-aos="fade-up">
           <div
             className="inline-block px-3 py-1 rounded-md mb-2 mt-10"
             style={{
@@ -103,18 +103,16 @@ const HeroSection = () => {
               >
                 <div className="w-12 h-12 rounded-2xl flex justify-center items-center mx-1"
                   style={{
-                    background: "linear-gradient(90.46deg, #325098 1.51%, #FBD0E1 70.69%)",
+                    background: "linear-gradient(90.46deg, #325098 -50.51%, #FBD0E1 70.69%)",
                   }}>
                   <img src={`${process.env.PUBLIC_URL}/images/sms.png`} alt="Email icon" className="w-6 h-6" />
                 </div>
-                {!isActive && (
                   <span
                     style={{ color: '#332D4F' }}
                     className="font-bold text-sm sm:text-lg ml-4"
                   >
                     Schedule A Demo
                   </span>
-                )}
                 <span
                   className={`ml-auto mr-4 transition-transform duration-300 ${isActive ? 'rotate-90' : ''}`}
                 >

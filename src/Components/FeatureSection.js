@@ -13,7 +13,7 @@ const FeatureSection = () => {
   }, []);
 
   return (
-    <div className="max-w-7xl mx-auto mt-32 px-0"> {/* Removed left and right padding */}
+    <div className="max-w-7xl mx-auto mt-40 px-0"> {/* Removed left and right padding */}
       <div className="mb-2 flex justify-center">
         <h1
           className="text-[22px] font-bold font-urbanist bg-clip-text text-transparent"
@@ -42,10 +42,10 @@ const FeatureSection = () => {
 
       {/* AI Integration Section */}
       <div
-        className="flex flex-col md:flex-row bg-white overflow-hidden mb-16 rounded-lg md:space-x-10 px-0 " // Removed horizontal padding
+        className="flex flex-col md:flex-row bg-white overflow-hidden mb-16 rounded-lg md:space-x-10 px-0" // Removed horizontal padding
         data-aos="fade-right"
       >
-        <div className="w-full md:w-1/2 p-4">
+        <div className="w-full md:w-1/2 p-4 mr-4"> {/* Added margin-right */}
           <img
             src="/image1.png"
             alt="AI Integration"
@@ -54,7 +54,7 @@ const FeatureSection = () => {
           />
         </div>
 
-        <div className="w-full md:w-1/2 p-4 flex flex-col justify-center text-left">
+        <div className="w-full md:w-1/2 p-4 flex flex-col justify-center text-left ml-4"> {/* Added margin-left */}
           <h1
             className="text-xl md:text-2xl lg:text-3xl font-semibold mb-6 p-2 text-transparent bg-clip-text -ml-2"
             style={{
@@ -87,7 +87,7 @@ const FeatureSection = () => {
         className="flex flex-col md:flex-row bg-white overflow-hidden mb-16 rounded-lg md:space-x-8 px-0" // Removed horizontal padding
         data-aos="fade-left"
       >
-        <div className="w-full md:w-1/2 p-4 flex flex-col justify-center md:pr-4 text-left">
+        <div className="w-full md:w-1/2 p-4 mr-4 flex flex-col justify-center md:pr-4 text-left"> {/* Added margin-right */}
           <h1
             className="text-xl md:text-2xl lg:text-3xl font-semibold mb-6 p-2 text-transparent bg-clip-text -ml-2"
             style={{
@@ -115,7 +115,7 @@ const FeatureSection = () => {
             accessible platform, providing a holistic view of your business.
           </p>
         </div>
-        <div className="w-full md:w-1/2 p-4">
+        <div className="w-full md:w-1/2 p-4 ml-4"> {/* Added margin-left */}
           <img
             src="/image2.png"
             alt="Analytics Tools"
@@ -130,7 +130,7 @@ const FeatureSection = () => {
         className="flex flex-col md:flex-row bg-white overflow-hidden rounded-lg mb-16 md:space-x-8 px-0" // Removed horizontal padding
         data-aos="fade-right"
       >
-        <div className="w-full md:w-1/2 p-4">
+        <div className="w-full md:w-1/2 p-4 mr-4"> {/* Added margin-right */}
           <img
             src="/image3.png"
             alt="Real Estate Insights"
@@ -138,7 +138,7 @@ const FeatureSection = () => {
             style={{ aspectRatio: "16/9", borderRadius: "12px" }}
           />
         </div>
-        <div className="w-full md:w-1/2 p-4 flex flex-col justify-center md:pl-4 text-left">
+        <div className="w-full md:w-1/2 p-4 flex flex-col justify-center md:pl-4 text-left ml-4"> {/* Added margin-left */}
           <h1
             className="text-xl md:text-2xl lg:text-3xl font-semibold mb-6 p-2 text-transparent bg-clip-text -ml-2"
             style={{
