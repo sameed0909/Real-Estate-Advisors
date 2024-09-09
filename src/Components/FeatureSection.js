@@ -13,7 +13,7 @@ const FeatureSection = () => {
   }, []);
 
   return (
-    <div className="max-w-7xl mx-auto mt-20 px-0"> {/* Removed left and right padding */}
+    <div className="max-w-7xl mx-auto mt-32 px-0"> {/* Removed left and right padding */}
       <div className="mb-2 flex justify-center">
         <h1
           className="text-[22px] font-bold font-urbanist bg-clip-text text-transparent"

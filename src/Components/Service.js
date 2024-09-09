@@ -17,23 +17,33 @@ const ServicesSection = () => {
           className="flex flex-col justify-center items-center"
           data-aos="fade-up"
         >
+                <div className="mb-2 flex justify-center">
         <h1
-          className="text-[22px] sm:text-[22px] md:text-[22px] lg:text-[22px] xl:text-[22px] font-bold mb-8 p-2 text-transparent bg-clip-text text-center mt-8"
-          style={{
-            background: "linear-gradient(90.46deg, #325098 -24.51%, #FBD0E1 104.69%)",
-            WebkitBackgroundClip: "text",
-            WebkitTextFillColor: "transparent",
-            fontWeight: 700, // Adjusted to a more common weight value
-            fontFamily: "Urbanist, sans-serif", // Ensure 'Urbanist' is loaded properly
-            letterSpacing: "1px", // Added 'px' unit for clarity
-          }}
+          className="text-[22px] font-bold font-urbanist bg-clip-text text-transparent"
           data-aos="fade-up"
+          style={{
+            backgroundImage: "linear-gradient(90.46deg, #325098 -24.51%, #FBD0E1 104.69%)",
+          }}
         >
-          HOW OUR PLATFORM WORKS
+          OUR SERVICES
         </h1>
+      </div>
+      <h2
+        className="text-3xl sm:text-4xl md:text-5xl lg:text-[40px] xl:text-[40px] font-bold mb-16 p-2 text-transparent bg-clip-text text-center mt-10"
+        style={{
+          background: "linear-gradient(91.21deg, #8CA8BE 35.19%, #325098 99.73%)",
+          WebkitBackgroundClip: "text",
+          fontWeight: 1000,
+          fontFamily: "Urbanist",
+          letterSpacing: 1,
+        }}
+        data-aos="fade-up"
+      >
+        How Our Platform Works
+      </h2>
 
           <p
-            className="mb-6 text-center mt-6 max-w-2xl mx-auto"
+            className="mb-6 text-center mt-2 max-w-2xl mx-auto"
             style={{ color: "#332D4F", fontFamily: 'Poppins', fontWeight: 400, fontSize: '18px' }}
           >
             We offer a range of innovative services designed to streamline your real estate investments and operations.
