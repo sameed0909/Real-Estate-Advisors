@@ -17,20 +17,21 @@ const ServicesSection = () => {
           className="flex flex-col justify-center items-center"
           data-aos="fade-up"
         >
-          <h1
-            className="text-[22px] sm:text-[22px] md:text-[22px] lg:text-[22px] xl:text-[22px] font-bold mb-8 p-2 text-transparent bg-clip-text text-center mt-8"
-            style={{
-              background: "linear-gradient(90.46deg, #325098 -24.51%, #FBD0E1 104.69%)",
-              WebkitBackgroundClip: "text",
-              WebkitTextFillColor: "transparent",
-              fontWeight: 1000,
-              fontFamily: "Urbanist",
-              letterSpacing: 1,
-            }}
-            data-aos="fade-up"
-          >
-            HOW OUR PLATFORM WORKS
-          </h1>
+        <h1
+          className="text-[22px] sm:text-[22px] md:text-[22px] lg:text-[22px] xl:text-[22px] font-bold mb-8 p-2 text-transparent bg-clip-text text-center mt-8"
+          style={{
+            background: "linear-gradient(90.46deg, #325098 -24.51%, #FBD0E1 104.69%)",
+            WebkitBackgroundClip: "text",
+            WebkitTextFillColor: "transparent",
+            fontWeight: 700, // Adjusted to a more common weight value
+            fontFamily: "Urbanist, sans-serif", // Ensure 'Urbanist' is loaded properly
+            letterSpacing: "1px", // Added 'px' unit for clarity
+          }}
+          data-aos="fade-up"
+        >
+          HOW OUR PLATFORM WORKS
+        </h1>
+
           <p
             className="mb-6 text-center mt-6 max-w-2xl mx-auto"
             style={{ color: "#332D4F", fontFamily: 'Poppins', fontWeight: 400, fontSize: '18px' }}
@@ -92,5 +93,4 @@ const ServicesSection = () => {
     </section>
   );
 };
-
 export default ServicesSection;
