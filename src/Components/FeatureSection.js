@@ -54,7 +54,7 @@ const FeatureSection = () => {
           />
         </div>
 
-        <div className="w-full md:w-1/2 p-4 flex flex-col justify-center text-left ml-4"> {/* Added margin-left */}
+        <div className="w-full md:w-1/2 p-4 flex flex-col justify-center text-left ml-"> {/* Added margin-left */}
           <h1
             className="text-xl md:text-2xl lg:text-3xl font-semibold mb-6 p-2 text-transparent bg-clip-text -ml-2"
             style={{
