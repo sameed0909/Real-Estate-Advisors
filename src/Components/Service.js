@@ -17,25 +17,12 @@ const ServicesSection = () => {
           className="flex flex-col justify-center items-center"
           data-aos="fade-up"
         >
-          <div className="mb-4 flex justify-center">
-          <span
-            className="px-4 sm:px-6 py-2 text-[22px] font-semibold rounded"
+          <h1
+            className="text-[22px] sm:text-[22px] md:text-[22px] lg:text-[22px] xl:text-[22px] font-bold mb-8 p-2 text-transparent bg-clip-text text-center mt-8"
             style={{
               background: "linear-gradient(90.46deg, #325098 -24.51%, #FBD0E1 104.69%)",
-              color: "#FFFFFF",
-            }}
-          >
-            OUR SERVICES
-          </span>
-
-          </div>
-
-          <h1
-            className="text-3xl sm:text-4xl md:text-5xl lg:text-[40px] xl:text-[40px] font-bold mb-8 p-2 text-transparent bg-clip-text text-center mt-8"
-            style={{
-              background:
-                "linear-gradient(91.21deg, #8CA8BE 35.19%, #325098 99.73%)",
               WebkitBackgroundClip: "text",
+              WebkitTextFillColor: "transparent",
               fontWeight: 1000,
               fontFamily: "Urbanist",
               letterSpacing: 1,
@@ -45,11 +32,11 @@ const ServicesSection = () => {
             HOW OUR PLATFORM WORKS
           </h1>
           <p
-          className="mb-6 text-center mt-6 max-w-2xl mx-auto"
-          style={{ color: "#332D4F", fontFamily: 'Poppins', fontWeight: 400, fontSize: '18px' }}
-        >
-          We offer a range of innovative services designed to streamline your real estate investments and operations.
-        </p>
+            className="mb-6 text-center mt-6 max-w-2xl mx-auto"
+            style={{ color: "#332D4F", fontFamily: 'Poppins', fontWeight: 400, fontSize: '18px' }}
+          >
+            We offer a range of innovative services designed to streamline your real estate investments and operations.
+          </p>
         </div>
 
         <div className="flex flex-col mt-10 lg:flex-row lg:items-center">
@@ -77,8 +64,7 @@ const ServicesSection = () => {
             <h3
               className="text-xl sm:text-2xl md:text-3xl lg:text-4xl xl:text-3xl font-semibold mb-4"
               style={{
-                background:
-                  "linear-gradient(90.46deg, #325098 -24.51%, #FBD0E1 104.69%)",
+                background: "linear-gradient(90.46deg, #325098 -24.51%, #FBD0E1 104.69%)",
                 WebkitBackgroundClip: "text",
                 WebkitTextFillColor: "transparent",
               }}
@@ -87,7 +73,7 @@ const ServicesSection = () => {
             </h3>
             <p className="text-sm sm:text-base md:text-lg lg:text-xl text-gray-500 mt-6 lg:mt-10 text-[#332D4F]">
               Leverage state-of-the-art AI technology to gain deep insights into market trends, property values, and emerging opportunities. 
-              Our analytics tools provide actionable data to help you make informed investment decisions.Obtain accurate and reliable property valuations using our advanced algorithms. Whether you’re buying, selling, or managing properties, our appraisals help ensure fair market value.
+              Our analytics tools provide actionable data to help you make informed investment decisions. Obtain accurate and reliable property valuations using our advanced algorithms. Whether you’re buying, selling, or managing properties, our appraisals help ensure fair market value.
             </p>
             <ul className="list-disc list-inside mt-6 lg:mt-10 mb-6 text-[#325098] text-sm sm:text-base md:text-lg lg:text-xl">
               <li key="predictive-analytics" className="mb-2">
