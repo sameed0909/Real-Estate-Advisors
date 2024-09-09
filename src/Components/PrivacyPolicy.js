@@ -6,8 +6,9 @@ const PrivacyPolicy = () => {
   }, []);
 
   return (
-    <div className="min-h-screen flex flex-col justify-center items-center relative bg-cover bg-center">
-      <div className="absolute top-0 left-0 w-full flex items-center justify-between p-6 z-10">
+    <div className="min-h-screen flex flex-col relative">
+      {/* Fixed Logo */}
+      <div className="fixed top-0 left-0 w-full flex items-center justify-between p-6 bg-white z-50">
         <div className="h-10 pl-8">
           {/* Logo */}
           <img
@@ -16,9 +17,12 @@ const PrivacyPolicy = () => {
             className="h-full"
           />
         </div>
-        </div>
-    <div className="min-h-screen w-full flex flex-col justify-center items-center relative bg-cover bg-center mt-20 px-4 sm:px-6 lg:px-8" style={{ backgroundImage: "url('/hero.png')" }}>
-    <header 
+      </div>
+
+      {/* Main Content */}
+      <div className="pt-16 relative min-h-screen w-full flex flex-col justify-center items-center mt-20 px-4 sm:px-6 lg:px-8" 
+           style={{ backgroundImage: "url('/hero.png')", backgroundAttachment: 'fixed', backgroundSize: 'cover', backgroundPosition: 'center' }}>
+        <header 
           className="mb-12 relative z-10 bg-opacity-100 mt-8" 
           data-aos="fade-up" 
           data-aos-duration="1000"
@@ -26,7 +30,7 @@ const PrivacyPolicy = () => {
           <h1 
             className="text-4xl font-bold text-center" 
             style={{ 
-              background: 'linear-gradient(89.87deg, #325098 55.75%, #FFFFFF 118.56%)', 
+              background: 'linear-gradient(89.87deg, #FFFFFF -50.75%, #325098 100%)', 
               WebkitBackgroundClip: 'text', 
               color: 'transparent' 
             }}
@@ -41,7 +45,7 @@ const PrivacyPolicy = () => {
               padding: '1rem', 
               fontFamily: 'Poppins, sans-serif', 
               fontWeight: 500,
-              color: '#444853'
+              color: 'white'
             }}
             data-aos="fade-in" 
             data-aos-duration="1500"
@@ -50,15 +54,13 @@ const PrivacyPolicy = () => {
           </p>
         </header>
 
-     
-      <div className="relative z-10 flex flex-col md:flex-row w-[95%] max-w-screen-2xl bg-white bg-opacity-90 shadow-xl rounded-lg">
-        {/* Main Content with Sidebar */}
-        
-        <main className="w-full p-12 md:p-16 rounded-lg flex flex-col md:flex-row" style={{ background: 'linear-gradient(to bottom, #FFFFFF, #E7F0FF)' }}>
+        <div className="relative z-10 flex flex-col lg:flex-row w-full max-w-screen-2xl bg-white bg-opacity-90 shadow-xl rounded-lg">
+          {/* Main Content with Sidebar */}
+          <main className="flex flex-col lg:flex-row w-full p-4 lg:p-12 bg-gradient-to-b from-white to-[#E7F0FF] rounded-lg">
             {/* Sidebar */}
-            <nav className="md:w-1/4 md:pr-12  mt-6 space-y-14 text-lg flex-shrink-0 h-screen sticky top-0 overflow-y-auto" 
-            data-aos="fade-up" 
-            data-aos-duration="1000">
+            <nav className="w-full lg:w-1/4 lg:pr-12 mt-6 space-y-14 text-lg flex-shrink-0 lg:sticky lg:top-0 lg:h-screen lg:overflow-y-auto"
+              data-aos="fade-up" 
+              data-aos-duration="1000">
               <a 
                 href="#type" 
                 className="block hover:text-blue-600" 
@@ -150,9 +152,8 @@ const PrivacyPolicy = () => {
                 Contact details
               </a>
             </nav>
-
           {/* Content Area */}
-          <div className="md:w-3/4">
+          <div className="flex-1 lg:w-3/4">
             <section id="type" className="mb-12" data-aos="fade-up">
               <h2 className="text-blue-600"  style={{ 
                   fontFamily: 'Urbanist, sans-serif', 
