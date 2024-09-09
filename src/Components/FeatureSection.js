@@ -13,7 +13,7 @@ const FeatureSection = () => {
   }, []);
 
   return (
-    <div className="max-w-7xl mx-auto p-6 sm:p-6 mt-20">
+    <div className="max-w-7xl mx-auto mt-20 px-0"> {/* Removed left and right padding */}
       <div className="mb-2 flex justify-center">
         <h1
           className="text-[22px] font-bold font-urbanist bg-clip-text text-transparent"
@@ -27,7 +27,7 @@ const FeatureSection = () => {
       </div>
 
       <h2
-        className="text-3xl sm:text-4xl md:text-5xl lg:text-[40px] xl:text-[40px] font-bold mb-12 p-2 text-transparent bg-clip-text text-center mt-12"
+        className="text-3xl sm:text-4xl md:text-5xl lg:text-[40px] xl:text-[40px] font-bold mb-16 p-2 text-transparent bg-clip-text text-center mt-12"
         style={{
           background: "linear-gradient(91.21deg, #8CA8BE 35.19%, #325098 99.73%)",
           WebkitBackgroundClip: "text",
@@ -42,10 +42,10 @@ const FeatureSection = () => {
 
       {/* AI Integration Section */}
       <div
-        className="flex flex-col md:flex-row bg-white overflow-hidden mb-10 rounded-lg md:space-x-12" // Increased horizontal spacing to space-x-12
+        className="flex flex-col md:flex-row bg-white overflow-hidden mb-16 rounded-lg md:space-x-10 px-0 " // Removed horizontal padding
         data-aos="fade-right"
       >
-        <div className="w-full md:w-1/2 p-6">
+        <div className="w-full md:w-1/2 p-4">
           <img
             src="/image1.png"
             alt="AI Integration"
@@ -54,9 +54,9 @@ const FeatureSection = () => {
           />
         </div>
 
-        <div className="w-full md:w-1/2 p-6 flex flex-col justify-center text-left">
+        <div className="w-full md:w-1/2 p-4 flex flex-col justify-center text-left">
           <h1
-            className="text-xl md:text-2xl lg:text-3xl font-semibold mb-2 p-2 text-transparent bg-clip-text -ml-2"
+            className="text-xl md:text-2xl lg:text-3xl font-semibold mb-6 p-2 text-transparent bg-clip-text -ml-2"
             style={{
               background:
                 "linear-gradient(90.46deg, #325098 -24.51%, #FBD0E1 104.69%)",
@@ -66,12 +66,12 @@ const FeatureSection = () => {
             AI Integration
           </h1>
           <h4
-            className="mb-3 p-2 -ml-2 text-sm md:text-base lg:text-lg"
+            className="mb-6 p-2 -ml-2 text-sm md:text-base lg:text-lg"
             style={{ color: "#8CA8BE" }}
           >
             Advanced AI for Market Trend Analysis
           </h4>
-          <p className="text-gray-500 mb-3 text-sm md:text-base lg:text-lg">
+          <p className="text-gray-500 mb-6 text-sm md:text-base lg:text-lg">
             In today’s fast-paced financial landscape, staying ahead of market trends is crucial. 
             Our Advanced AI for Market Trend Analysis leverages state-of-the-art artificial intelligence to provide you with unparalleled insights and predictive power.
           </p>
@@ -84,12 +84,12 @@ const FeatureSection = () => {
 
       {/* Analytics Tools Section */}
       <div
-        className="flex flex-col md:flex-row bg-white overflow-hidden mb-10 rounded-lg md:space-x-12" // Increased horizontal spacing to space-x-12
+        className="flex flex-col md:flex-row bg-white overflow-hidden mb-16 rounded-lg md:space-x-8 px-0" // Removed horizontal padding
         data-aos="fade-left"
       >
-        <div className="w-full md:w-1/2 p-6 flex flex-col justify-center md:pr-8 text-left">
+        <div className="w-full md:w-1/2 p-4 flex flex-col justify-center md:pr-4 text-left">
           <h1
-            className="text-xl md:text-2xl lg:text-3xl font-semibold mb-2 p-2 text-transparent bg-clip-text -ml-2"
+            className="text-xl md:text-2xl lg:text-3xl font-semibold mb-6 p-2 text-transparent bg-clip-text -ml-2"
             style={{
               background:
                 "linear-gradient(90.46deg, #325098 -24.51%, #FBD0E1 104.69%)",
@@ -99,12 +99,12 @@ const FeatureSection = () => {
             Analytics Tools
           </h1>
           <h4
-            className="mb-3 p-2 text-sm md:text-base lg:text-lg -ml-2"
+            className="mb-6 p-2 text-sm md:text-base lg:text-lg -ml-2"
             style={{ color: "#8CA8BE" }}
           >
             Comprehensive Analytics Tools
           </h4>
-          <p className="text-gray-500 mb-3 text-sm md:text-base lg:text-lg">
+          <p className="text-gray-500 mb-6 text-sm md:text-base lg:text-lg">
             Access real-time insights with our dynamic analytics tools. Monitor performance, 
             track key metrics, and respond to emerging trends instantly, 
             ensuring that you stay ahead in a fast-paced market.
@@ -115,7 +115,7 @@ const FeatureSection = () => {
             accessible platform, providing a holistic view of your business.
           </p>
         </div>
-        <div className="w-full md:w-1/2 p-6">
+        <div className="w-full md:w-1/2 p-4">
           <img
             src="/image2.png"
             alt="Analytics Tools"
@@ -127,10 +127,10 @@ const FeatureSection = () => {
 
       {/* Real Estate Insights Section */}
       <div
-        className="flex flex-col md:flex-row bg-white overflow-hidden rounded-lg mb-10 md:space-x-12" // Increased horizontal spacing to space-x-12
+        className="flex flex-col md:flex-row bg-white overflow-hidden rounded-lg mb-16 md:space-x-8 px-0" // Removed horizontal padding
         data-aos="fade-right"
       >
-        <div className="w-full md:w-1/2 p-6">
+        <div className="w-full md:w-1/2 p-4">
           <img
             src="/image3.png"
             alt="Real Estate Insights"
@@ -138,9 +138,9 @@ const FeatureSection = () => {
             style={{ aspectRatio: "16/9", borderRadius: "12px" }}
           />
         </div>
-        <div className="w-full md:w-1/2 p-6 flex flex-col justify-center md:pl-8 text-left">
+        <div className="w-full md:w-1/2 p-4 flex flex-col justify-center md:pl-4 text-left">
           <h1
-            className="text-xl md:text-2xl lg:text-3xl font-semibold mb-2 p-2 text-transparent bg-clip-text -ml-2"
+            className="text-xl md:text-2xl lg:text-3xl font-semibold mb-6 p-2 text-transparent bg-clip-text -ml-2"
             style={{
               background:
                 "linear-gradient(90.46deg, #325098 -24.51%, #FBD0E1 104.69%)",
@@ -150,12 +150,12 @@ const FeatureSection = () => {
             Real Estate Insights
           </h1>
           <h4
-            className="mb-3 p-2 text-sm md:text-base lg:text-lg -ml-2"
+            className="mb-6 p-2 text-sm md:text-base lg:text-lg -ml-2"
             style={{ color: "#8CA8BE" }}
           >
             Actionable Real Estate Insights
           </h4>
-          <p className="text-gray-500 mb-3 text-sm md:text-base lg:text-lg">
+          <p className="text-gray-500 mb-6 text-sm md:text-base lg:text-lg">
             Our AI models analyze vast amounts of data from multiple sources, offering detailed market analysis that highlights emerging trends, 
             price fluctuations, and investment opportunities. Whether you are looking to invest in residential or commercial properties, 
             our tools provide actionable insights to help you make the best decisions.
