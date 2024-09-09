@@ -9,7 +9,7 @@ const PrivacyPolicy = () => {
     <div className="min-h-screen flex flex-col relative">
       {/* Fixed Logo */}
       <div className="fixed top-0 left-0 w-full flex items-center justify-between p-6 bg-white z-50">
-        <div className="h-10 pl-8">
+        <div className="h-11 pl-8 mb-5 mt-2">
           {/* Logo */}
           <img
             src={`${process.env.PUBLIC_URL}/logo.png`}
