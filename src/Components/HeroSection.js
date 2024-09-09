@@ -104,14 +104,12 @@ const HeroSection = () => {
                 <div className="w-12 h-12 rounded-2xl bg-gradient-to-r from-blue-300 to-pink-300 flex justify-center items-center mx-1">
                   <img src={`${process.env.PUBLIC_URL}/images/sms.png`} alt="Email icon" className="w-6 h-6" />
                 </div>
-                {!isActive && (
                   <span
                     style={{ color: '#332D4F' }}
                     className="font-bold text-sm sm:text-lg ml-4"
                   >
                     Schedule A Demo
                   </span>
-                )}
                 <span
                   className={`ml-auto mr-4 transition-transform duration-300 ${isActive ? 'rotate-90' : ''}`}
                 >

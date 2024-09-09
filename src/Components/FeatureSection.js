@@ -15,22 +15,16 @@ const FeatureSection = () => {
   return (
     <div className="max-w-7xl mx-auto p-6 sm:p-6 mt-20">
       <div className="mb-2 flex justify-center">
-        <div className="p-[10px] rounded-[4px]" 
-        data-aos="fade-up"
-          style={{background:"linear-gradient(90.46deg, #325098 -24.51%, #FBD0E1 104.69%)",
+        <h1
+          className="text-[22px] font-bold font-urbanist bg-clip-text text-transparent"
+          data-aos="fade-up"
+          style={{
+            backgroundImage: "linear-gradient(90.46deg, #325098 -24.51%, #FBD0E1 104.69%)",
           }}
         >
-          <span
-            className="text-[22px] font-semibold font-urbanist"
-            data-aos="fade-up" // Adding AOS effect
-            style={{
-              color: "#FFFFFF",
-            }}
-          >
-      CORE FEATURES
-    </span>
-  </div>
-</div>
+          CORE FEATURES
+        </h1>
+      </div>
 
       <h2
         className="text-3xl sm:text-4xl md:text-5xl lg:text-[40px] xl:text-[40px] font-bold mb-12 p-2 text-transparent bg-clip-text text-center mt-12"
@@ -41,17 +35,15 @@ const FeatureSection = () => {
           fontFamily: "Urbanist",
           letterSpacing: 1,
         }}
-        data-aos="fade-up" // Adding AOS effect
+        data-aos="fade-up"
       >
         Main Features Of Our Platform
       </h2>
 
-
-
       {/* AI Integration Section */}
       <div
-        className="flex flex-col md:flex-row bg-white overflow-hidden mb-10 rounded-lg"
-        data-aos="fade-right" // Adding AOS effect
+        className="flex flex-col md:flex-row bg-white overflow-hidden mb-10 rounded-lg md:space-x-12" // Increased horizontal spacing to space-x-12
+        data-aos="fade-right"
       >
         <div className="w-full md:w-1/2 p-6">
           <img
@@ -80,20 +72,20 @@ const FeatureSection = () => {
             Advanced AI for Market Trend Analysis
           </h4>
           <p className="text-gray-500 mb-3 text-sm md:text-base lg:text-lg">
-          In today’s fast-paced financial landscape, staying ahead of market trends is crucial. 
-          Our Advanced AI for Market Trend Analysis leverages state-of-the-art artificial intelligence to provide you with unparalleled insights and predictive power.
+            In today’s fast-paced financial landscape, staying ahead of market trends is crucial. 
+            Our Advanced AI for Market Trend Analysis leverages state-of-the-art artificial intelligence to provide you with unparalleled insights and predictive power.
           </p>
           <p className="text-gray-500 text-sm md:text-base lg:text-lg">
-          Transform complex data into actionable insights with intuitive and interactive visualizations. 
-          Our platform presents data in a clear, visually engaging format, making it easier to interpret and act upon.
+            Transform complex data into actionable insights with intuitive and interactive visualizations. 
+            Our platform presents data in a clear, visually engaging format, making it easier to interpret and act upon.
           </p>
         </div>
       </div>
 
       {/* Analytics Tools Section */}
       <div
-        className="flex flex-col md:flex-row bg-white overflow-hidden mb-10 rounded-lg"
-        data-aos="fade-left" // Adding AOS effect
+        className="flex flex-col md:flex-row bg-white overflow-hidden mb-10 rounded-lg md:space-x-12" // Increased horizontal spacing to space-x-12
+        data-aos="fade-left"
       >
         <div className="w-full md:w-1/2 p-6 flex flex-col justify-center md:pr-8 text-left">
           <h1
@@ -113,14 +105,14 @@ const FeatureSection = () => {
             Comprehensive Analytics Tools
           </h4>
           <p className="text-gray-500 mb-3 text-sm md:text-base lg:text-lg">
-          Access real-time insights with our dynamic analytics tools. Monitor performance, 
-          track key metrics, and respond to emerging trends instantly, 
-          ensuring that you stay ahead in a fast-paced market.
+            Access real-time insights with our dynamic analytics tools. Monitor performance, 
+            track key metrics, and respond to emerging trends instantly, 
+            ensuring that you stay ahead in a fast-paced market.
           </p>
           <p className="text-gray-500 text-sm md:text-base lg:text-lg">
-          Seamlessly integrate data from multiple sources, including CRM systems, social media platforms, financial databases, 
-          and more. Our tools unify your data into a single, 
-          accessible platform, providing a holistic view of your business.
+            Seamlessly integrate data from multiple sources, including CRM systems, social media platforms, financial databases, 
+            and more. Our tools unify your data into a single, 
+            accessible platform, providing a holistic view of your business.
           </p>
         </div>
         <div className="w-full md:w-1/2 p-6">
@@ -135,8 +127,8 @@ const FeatureSection = () => {
 
       {/* Real Estate Insights Section */}
       <div
-        className="flex flex-col md:flex-row bg-white overflow-hidden rounded-lg mb-10"
-        data-aos="fade-right" // Adding AOS effect
+        className="flex flex-col md:flex-row bg-white overflow-hidden rounded-lg mb-10 md:space-x-12" // Increased horizontal spacing to space-x-12
+        data-aos="fade-right"
       >
         <div className="w-full md:w-1/2 p-6">
           <img
