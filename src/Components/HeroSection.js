@@ -43,7 +43,7 @@ const HeroSection = () => {
         {/* Left Section */}
         <div className="md:w-1/2 text-left relative z-20 mt-16 md:mt-20 px-4 md:px-8" data-aos="fade-up">
           <div
-            className="inline-block px-3 py-1 rounded-md mb-2"
+            className="inline-block px-3 py-1 rounded-md mb-2 mt-10"
             style={{
               background:
                 "linear-gradient(90.46deg, #325098 -24.51%, #FBD0E1 104.69%)",
@@ -56,7 +56,7 @@ const HeroSection = () => {
             Find the best property advisor
           </div>
           <h1
-            className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl hero-heading"
+            className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl hero-heading mt-5"
             style={{
               color: "#8CA8BE",
               fontFamily: "Urbanist, sans-serif",
@@ -104,12 +104,14 @@ const HeroSection = () => {
                 <div className="w-12 h-12 rounded-2xl bg-gradient-to-r from-blue-300 to-pink-300 flex justify-center items-center mx-1">
                   <img src={`${process.env.PUBLIC_URL}/images/sms.png`} alt="Email icon" className="w-6 h-6" />
                 </div>
+                {!isActive && (
                   <span
                     style={{ color: '#332D4F' }}
                     className="font-bold text-sm sm:text-lg ml-4"
                   >
                     Schedule A Demo
                   </span>
+                )}
                 <span
                   className={`ml-auto mr-4 transition-transform duration-300 ${isActive ? 'rotate-90' : ''}`}
                 >
