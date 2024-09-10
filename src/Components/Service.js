@@ -88,7 +88,7 @@ const ServicesSection = () => {
                 WebkitTextFillColor: "transparent",
               }}
             >
-              The Best Service <span>For You</span>.
+              The Best Service <span>For You</span>
             </h3>
             <p className="text-sm sm:text-base md:text-lg lg:text-xl text-gray-500 mt-6 lg:mt-10 text-[#332D4F]">
               Leverage state-of-the-art AI technology to gain deep insights into market trends, property values, and emerging opportunities. 
