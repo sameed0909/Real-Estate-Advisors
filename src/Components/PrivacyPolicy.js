@@ -12,7 +12,7 @@ const PrivacyPolicy = () => {
         <div className="h-16 pl-9 mt-5">
           {/* Logo */}
           <img
-            src={`${process.env.PUBLIC_URL}/logo.png`}
+            src={`${process.env.PUBLIC_URL}/pierlogohd.png`}
             alt="Logo"
             className="h-full"
           />
