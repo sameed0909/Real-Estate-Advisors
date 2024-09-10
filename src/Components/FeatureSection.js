@@ -29,7 +29,7 @@ const FeatureSection = () => {
 
       {/* Main Features Header */}
       <h2
-        className="text-3xl sm:text-4xl md:text-5xl lg:text-[40px] font-bold mb-12 text-transparent bg-clip-text text-center"
+        className="text-3xl sm:text-4xl md:text-5xl lg:text-[40px] font-bold mb-12 text-transparent bg-clip-text text-center mt-16"
         style={{
           background: "linear-gradient(91.21deg, #8CA8BE 35.19%, #325098 99.73%)",
           WebkitBackgroundClip: "text",

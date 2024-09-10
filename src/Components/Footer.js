@@ -6,7 +6,7 @@ const Footer = () => {
     <footer className="text-gray-700 py-6" style={{ backgroundColor: "#ECE9F7" }}>
       <div className="container mx-auto px-4 md:px-6 lg:px-8 text-center">
         <img
-          src="/logo.png"
+          src="/pierlogohd.png"
           alt="Company Logo"
           className="mx-auto mb-4 w-24 h-auto"
         />

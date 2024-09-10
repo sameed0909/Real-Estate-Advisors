@@ -45,8 +45,7 @@ const HeroSection = () => {
           <div
             className="inline-block px-3 py-1 rounded-md mb-2 mt-10"
             style={{
-              background:
-                "linear-gradient(90.46deg, #325098 -24.51%, #FBD0E1 104.69%)",
+              background:"linear-gradient(90.46deg, #325098 -24.51%, #FBD0E1 104.69%)",
               color: "#FFFFFF",
               fontWeight: "bold",
               textTransform: "uppercase",
@@ -95,7 +94,7 @@ const HeroSection = () => {
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-start">
             {/* Toggle Email Input */}
-            <div className="relative mt-8 w-full sm:w-72 transition-all duration-300 border-2 rounded-2xl shadow p-1">
+            <div id="schedule" className="relative mt-8 w-full sm:w-72 transition-all duration-300 border-2 rounded-2xl shadow p-1">
               <div
                 className={`flex items-center w-full h-12 cursor-pointer transition-justify-content duration-300 `}
                 onClick={toggleEmailInput}
