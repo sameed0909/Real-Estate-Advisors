@@ -9,7 +9,7 @@ const Termsconditions = () => {
     <div className="min-h-screen flex flex-col relative">
       {/* Fixed Logo */}
       <div className="fixed top-0 left-0 w-full flex items-center justify-between p-10 bg-white z-50"> {/* Increased padding */}
-        <div className="h-16 pl-9 mt-5">
+        <div className="h-16 pl-9 -mt-3">
           {/* Logo */}
           <img
             src={`${process.env.PUBLIC_URL}/pierlogohd.png`}
