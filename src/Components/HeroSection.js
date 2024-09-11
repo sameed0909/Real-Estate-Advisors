@@ -6,6 +6,10 @@ import 'aos/dist/aos.css';
 
 const HeroSection = () => {
   const [isActive, setIsActive] = useState(false);
+  const [email, setEmail] = useState("");
+  const [message, setMessage] = useState("");
+
+
 
   const toggleEmailInput = () => {
     setIsActive(!isActive);
@@ -23,7 +27,56 @@ const HeroSection = () => {
       once: true, // Animation happens only once
     });
   }, []);
+  const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
 
+  const handleEmailChange = (event) => {
+    setEmail(event.target.value);
+  };
+
+  const handleFormSubmit = async (event) => {
+    event.preventDefault();
+
+    if (!emailRegex.test(email)) {
+      setMessage("Please enter a valid email address.");
+      return;
+    }
+
+    try {
+      console.log("Submitting email:", email); // Log the email being submitted
+
+      const response = await fetch(
+        "https://api.360xpertsolutions.com/api/real-estate-pierwishlists",
+        {
+          method: "POST",
+          headers: {
+            "Content-Type": "application/json",
+          },
+          body: JSON.stringify({ data: { Pierwishlist: email } }),
+        }
+      );
+
+      console.log("Response status:", response.status); // Log the response status
+
+      const responseBody = await response.json(); // Get response body
+      console.log("Response body:", responseBody); // Log response body
+
+      if (response.status === 200) {
+        setMessage("You have successfully joined the waitlist!");
+        setEmail(""); // Clear the input field after successful submission
+      } else if (response.status === 400) {
+        setMessage("Email already exists in our database.");
+        setEmail("")
+      } else {
+        setMessage(
+          `An error occurred. Status: ${response.status}. Details: ${responseBody.message || "No details"
+          }`
+        );
+      }
+    } catch (error) {
+      console.error("Error:", error); // Log error details
+      setMessage("An error occurred. Please try again.");
+    }
+  };
   return (
     <div className="relative mb-4">
       {/* Navbar */}
@@ -45,7 +98,7 @@ const HeroSection = () => {
           <div
             className="inline-block px-3 py-1 rounded-md mb-2 mt-10"
             style={{
-              background:"linear-gradient(90.46deg, #325098 -24.51%, #FBD0E1 104.69%)",
+              background: "linear-gradient(90.46deg, #325098 -24.51%, #FBD0E1 104.69%)",
               color: "#FFFFFF",
               fontWeight: "bold",
               textTransform: "uppercase",
@@ -88,13 +141,13 @@ const HeroSection = () => {
             }}
             data-aos="fade-up"
           >
-            Unlock the full potential of your real estate investments with our cutting-edge AI-driven solutions. 
-            Our technology provides actionable insights, predictive analytics, and market intelligence, 
+            Unlock the full potential of your real estate investments with our cutting-edge AI-driven solutions.
+            Our technology provides actionable insights, predictive analytics, and market intelligence,
             enabling you to make data-driven decisions that drive success. Whether you’re buying, selling, or managing properties.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-start">
             {/* Toggle Email Input */}
-            <div id= "email" className="relative mt-8 w-full sm:w-72 transition-all duration-300 border-2 rounded-2xl shadow p-1">
+            <div id="email" className="relative mt-8 w-full sm:w-72 transition-all duration-300 border-2 rounded-2xl shadow p-1">
               <div
                 className={`flex items-center w-full h-12 cursor-pointer transition-justify-content duration-300 `}
                 onClick={toggleEmailInput}
@@ -106,12 +159,12 @@ const HeroSection = () => {
                   }}>
                   <img src={`${process.env.PUBLIC_URL}/images/sms.png`} alt="Email icon" className="w-6 h-6" />
                 </div>
-                  <span
-                    style={{ color: '#332D4F' }}
-                    className="font-bold text-sm sm:text-lg ml-4"
-                  >
-                    Schedule A Demo
-                  </span>
+                <span
+                  style={{ color: '#332D4F' }}
+                  className="font-bold text-sm sm:text-lg ml-4"
+                >
+                  Schedule A Demo
+                </span>
                 <span
                   className={`ml-auto mr-4 transition-transform duration-300 ${isActive ? 'rotate-90' : ''}`}
                 >
@@ -128,16 +181,20 @@ const HeroSection = () => {
                 <div className="absolute top-full mt-2 w-full z-20 bg-white p-2 shadow-lg rounded-lg"> {/* Added AOS effect to the email form */}
                   <input id="Email"
                     type="email"
+                    value={email}
+                    onChange={handleEmailChange}
                     placeholder="Enter your email"
                     className="w-full p-2 mb-2 rounded-lg border-2 bg-white text-black text-sm focus:outline-none focus:ring-2 focus:ring-blue-500"
                   />
                   <button id="submitbutton"
                     type="button"
-                    onClick={handleEmailSubmit}
+                    onClick={handleEmailSubmit && handleFormSubmit}
+
                     className="w-full rounded-lg bg-gradient-to-r from-blue-300 to-pink-300 p-2 font-bold text-gray-800 cursor-pointer hover:bg-gradient-to-l from-pink-300 to-blue-300 transition-colors duration-300"
                   >
                     Submit
                   </button>
+
                 </div>
               )}
             </div>
@@ -145,7 +202,7 @@ const HeroSection = () => {
           <div className="flex flex-wrap justify-center sm:justify-start gap-8 mt-8">
             <div className="text-center" data-aos="fade-up">
               <div
-                className={`text-2xl ${isActive ? 'mt-24' : 'mt-8'}`} 
+                className={`text-2xl ${isActive ? 'mt-24' : 'mt-8'}`}
                 style={{
                   color: "#332D4F",
                   fontFamily: "Urbanist, sans-serif",
@@ -168,7 +225,7 @@ const HeroSection = () => {
             </div>
             <div className="text-center" data-aos="fade-up">
               <div
-                className={`text-2xl ${isActive ? 'mt-24' : 'mt-8'}`} 
+                className={`text-2xl ${isActive ? 'mt-24' : 'mt-8'}`}
                 style={{
                   color: "#332D4F",
                   fontFamily: "Urbanist, sans-serif",
@@ -191,7 +248,7 @@ const HeroSection = () => {
             </div>
             <div className="text-center" data-aos="fade-up">
               <div
-                className={`text-2xl ${isActive ? 'mt-24' : 'mt-8'}`} 
+                className={`text-2xl ${isActive ? 'mt-24' : 'mt-8'}`}
                 style={{
                   color: "#332D4F",
                   fontFamily: "Urbanist, sans-serif",
