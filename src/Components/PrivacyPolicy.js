@@ -141,7 +141,7 @@ const PrivacyPolicy = () => {
                 }}>
                 Third party site and social media plug-ins
               </a>
-              <a 
+              {/* <a 
                 href="#third-party" 
                 className="block hover:text-blue-600" 
                 style={{  
@@ -150,7 +150,7 @@ const PrivacyPolicy = () => {
                   color: '#325098', 
                 }}>
                 Contact details
-              </a>
+              </a> */}
             </nav>
             
             {/* Content Area */}
