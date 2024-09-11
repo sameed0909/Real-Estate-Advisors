@@ -170,11 +170,14 @@ const PrivacyPolicy = () => {
                   Type of information we collect online
                 </h1>
                 <p className="text-lg mt-4" style={{ fontFamily: 'Poppins', color: '#325098', fontWeight: 400, fontSize: '16px'}}>
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla facilisi. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velitr.
+                  We collect various types of information from and about users of our website and services, including:
                 </p>
-                <p className="text-lg mt-4" style={{ fontFamily: 'Poppins, sans-serif', color: '#325098', fontWeight: 400 , fontSize: '16px' }}>
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla facilisi. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velitr.
-                </p>
+                <ul className="list-disc list-inside mt-4 text-gray-800"  style={{ fontFamily: 'Poppins, sans-serif', color: '#325098', fontWeight: 400 }}>
+                <li>Personal identifiers (e.g., name, address, email address, phone number)</li>
+                <li>Financial information (e.g., payment details for services)</li>
+                <li>Professional or employment-related information</li>
+                <li>Real estate preferences and search history</li>
+              </ul>
               </section>
 
             <section id="info-provide" className="mb-12"  data-aos="fade-up">
