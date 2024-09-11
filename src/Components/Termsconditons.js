@@ -180,7 +180,7 @@ const Termsconditions = () => {
               </ul>
               </section>
 
-            <section id="info-provide" className="mb-12"  data-aos="fade-up">
+            {/* <section id="info-provide" className="mb-12"  data-aos="fade-up">
             <h1 className="text-blue-600"  style={{ 
                     // fontFamily: 'Urbanist', 
                     fontWeight: 700, 
@@ -196,9 +196,9 @@ const Termsconditions = () => {
               <p className="text-lg mt-4" style={{ fontFamily: 'Poppins, sans-serif', color: '#325098', fontWeight: 400, fontSize: 16 }}>
                 Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Integer venenatis, nisl sit amet volutpat vehicula, libero sem cursus libero, nec vehicula tortor felis nec nulla. Morbi id nulla nec nunc condimentum viverra. Proin sollicitudin, eros nec rhoncus tristique, est nunc vehicula quam, in tempus eros velit non eros.
               </p>
-            </section>
+            </section> */}
 
-            <section id="personal-data" className="mb-12"  data-aos="fade-up"> 
+            {/* <section id="personal-data" className="mb-12"  data-aos="fade-up"> 
                 <h1 className="text-blue-600"  style={{ 
                   // fontFamily: 'Urbanist', 
                   fontWeight: 700, 
@@ -219,7 +219,7 @@ const Termsconditions = () => {
                 <li>Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</li>
                 <li>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</li>
               </ul>
-            </section>
+            </section> */}
 
             <section id="heading2" className="mb-12" data-aos="fade-up">
             <h1 className="text-blue-600"  style={{ 
@@ -252,7 +252,7 @@ const Termsconditions = () => {
                </p>
             </section>
 
-            <section id="address" className="mb-12"  data-aos="fade-up">
+            {/* <section id="address" className="mb-12"  data-aos="fade-up">
             <h1 className="text-blue-600"  style={{ 
                     // fontFamily: 'Urbanist', 
                     fontWeight: 700, 
@@ -269,9 +269,9 @@ const Termsconditions = () => {
               Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Integer venenatis, 
               nisl sit amet volutpat vehicula, libero sem cursus libero, nec vehicula tortor felis nec nulla. Morbi id nulla nec nunc condimentum viverra. Proin sollicitudin, 
               eros nec rhoncus tristique, est nunc vehicula quam, in tempus eros velit non eros.              </p>
-            </section>
+            </section> */}
 
-            <section id="cookies" className="mb-12"  data-aos="fade-up" >
+            {/* <section id="cookies" className="mb-12"  data-aos="fade-up" >
             <h1 className="text-blue-600"  style={{ 
                     // fontFamily: 'Urbanist', 
                     fontWeight: 700, 
@@ -289,7 +289,7 @@ const Termsconditions = () => {
               Integer venenatis, nisl sit amet volutpat vehicula, libero sem cursus libero, nec vehicula tortor felis nec nulla. Morbi id nulla nec nunc condimentum viverra. Proin sollicitudin, eros nec rhoncus tristique, est nunc vehicula quam, in tempus eros velit non eros. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; 
               Integer venenatis, nisl sit amet volutpat vehicula, libero sem cursus libero, nec vehicula.              
               </p>
-            </section>
+            </section> */}
 
             <section id="heading3" className="mb-12"  data-aos="fade-up">
             <h1 className="text-blue-600"  style={{ 
@@ -345,7 +345,7 @@ const Termsconditions = () => {
               </p>
             </section>
 
-            <section id="visiting" className="mb-12"  data-aos="fade-up">
+            {/* <section id="visiting" className="mb-12"  data-aos="fade-up">
             <h1 className="text-blue-600"  style={{ 
                     // fontFamily: 'Urbanist', 
                     fontWeight: 700, 
@@ -368,7 +368,7 @@ const Termsconditions = () => {
                 <li>Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</li>
                 <li>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</li>
               </ul>
-            </section>
+            </section> */}
 
             <section id="heading5" className="mb-12"  data-aos="fade-up">
             <h1 className="text-blue-600"  style={{ 
@@ -389,7 +389,7 @@ const Termsconditions = () => {
               </p>
             </section>
 
-            <section id="age" className="mb-12"  data-aos="fade-up">
+            {/* <section id="age" className="mb-12"  data-aos="fade-up">
             <h1 className="text-blue-600"  style={{ 
                     // fontFamily: 'Urbanist', 
                     fontWeight: 700, 
@@ -407,9 +407,9 @@ const Termsconditions = () => {
               Cras eu mi vitae nunc consectetur pretium. Curabitur auctor nec velit non facilisis.              
               </p>
 
-            </section>
+            </section> */}
 
-            <section id="collection" className="mb-12" data-aos="fade-up">
+            {/* <section id="collection" className="mb-12" data-aos="fade-up">
             <h1 className="text-blue-600"  style={{ 
                     // fontFamily: 'Urbanist', 
                     fontWeight: 700, 
@@ -445,7 +445,7 @@ const Termsconditions = () => {
               Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse potenti. Phasellus non velit vel velit fringilla interdum ut nec eros. Aliquam eget mauris risus. Sed sollicitudin, felis at interdum gravida, nulla magna volutpat est, 
               a bibendum libero est ac enim. Duis sed dui nec purus placerat suscipit.              
               </p>
-            </section>
+            </section> */}
 
             <section id="heading6" className="mb-12"  data-aos="fade-up">
             <h1 className="text-blue-600"  style={{ 
@@ -471,7 +471,7 @@ const Termsconditions = () => {
               </ul>
             </section>
 
-            <section id="access" className="mb-12"  data-aos="fade-up">
+            {/* <section id="access" className="mb-12"  data-aos="fade-up">
             <h1 className="text-blue-600"  style={{ 
                     // fontFamily: 'Urbanist', 
                     fontWeight: 700, 
@@ -529,7 +529,7 @@ const Termsconditions = () => {
               Nam interdum justo at sapien sollicitudin, id malesuada elit pharetra. 
               Nullam sit amet ex id sapien hendrerit iaculis. Nulla dapibus magna a est fermentum, ut vestibulum risus blandit.              
               </p>
-            </section>
+            </section> */}
 
             <section id="heading7" className="mb-12"  data-aos="fade-up">
             <h1 className="text-blue-600"  style={{ 
@@ -551,7 +551,7 @@ const Termsconditions = () => {
               </p>
             </section>
 
-            <section id="security" className="mb-12"  data-aos="fade-up">
+            {/* <section id="security" className="mb-12"  data-aos="fade-up">
             <h1 className="text-blue-600"  style={{ 
                     // fontFamily: 'Urbanist', 
                     fontWeight: 700, 
@@ -569,9 +569,9 @@ const Termsconditions = () => {
               Proin nec justo sit amet odio feugiat gravida. Vestibulum fringilla facilisis turpis, sed fermentum nulla. Fusce posuere ante a metus suscipit, 
               quis interdum purus volutpat. Nunc ac tellus nec arcu porttitor consequat.              
               </p>
-            </section>
+            </section> */}
 
-            <section id="security" className="mb-12"  data-aos="fade-up">
+            {/* <section id="security" className="mb-12"  data-aos="fade-up">
             <h1 className="text-blue-600"  style={{ 
                     // fontFamily: 'Urbanist', 
                     fontWeight: 700, 
@@ -608,7 +608,7 @@ const Termsconditions = () => {
               Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, 
               totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.              
               </p>
-            </section>
+            </section> */}
 
             <section id="heading8" className="mb-12"  data-aos="fade-up">
             <h1 className="text-blue-600"  style={{ 
@@ -630,7 +630,7 @@ const Termsconditions = () => {
               </p>
             </section>
 
-            <section id="links" className="mb-12"  data-aos="fade-up">
+            {/* <section id="links" className="mb-12"  data-aos="fade-up">
             <h1 className="text-blue-600"  style={{ 
                     // fontFamily: 'Urbanist', 
                     fontWeight: 700, 
@@ -648,9 +648,9 @@ const Termsconditions = () => {
               ac dignissim justo efficitur. Quisque lacinia, arcu quis facilisis aliquet, enim orci tempus ex, a condimentum tortor augue non magna. 
               Suspendisse vel lectus eget neque tempor varius. Phasellus eget aliquam magna, vel luctus magna.              
               </p>
-            </section>
+            </section> */}
 
-            <section id="media" className="mb-12"  data-aos="fade-up">
+            {/* <section id="media" className="mb-12"  data-aos="fade-up">
             <h1 className="text-blue-600"  style={{ 
                     // fontFamily: 'Urbanist', 
                     fontWeight: 700, 
@@ -668,9 +668,9 @@ const Termsconditions = () => {
               Aenean convallis ligula sit amet purus aliquam malesuada. Integer a purus eu dui hendrerit tincidunt sit amet at neque. 
               Proin malesuada mauris in turpis cursus convallis. Nam auctor luctus odio nec malesuada.              
               </p>
-            </section>
+            </section> */}
 
-            <section id="share" className="mb-12"  data-aos="fade-up">
+            {/* <section id="share" className="mb-12"  data-aos="fade-up">
             <h1 className="text-blue-600"  style={{ 
                     // fontFamily: 'Urbanist', 
                     fontWeight: 700, 
@@ -688,9 +688,9 @@ const Termsconditions = () => {
               sit amet facilisis risus gravida. Integer in justo auctor, 
               aliquet nisi eget, egestas mi. Vivamus vitae urna scelerisque, feugiat enim vel, pretium tortor.              
               </p>
-            </section>
+            </section> */}
 
-            <section id="details" className="mb-12"  data-aos="fade-up">
+            {/* <section id="details" className="mb-12"  data-aos="fade-up">
             <h1 className="text-blue-600"  style={{ 
                     // fontFamily: 'Urbanist', 
                     fontWeight: 700, 
@@ -728,8 +728,8 @@ const Termsconditions = () => {
               ac dignissim justo efficitur. Quisque lacinia, arcu quis facilisis aliquet, enim orci tempus ex, a condimentum tortor augue non magna. 
               Suspendisse vel lectus eget neque tempor varius. Phasellus eget aliquam magna, vel luctus magna.              
               </p>
-            </section>
-
+            </section> */}
+{/* 
             <section id="support" className="mb-12"  data-aos="fade-up">
             <h1 className="text-blue-600"  style={{ 
                     // fontFamily: 'Urbanist', 
@@ -788,7 +788,7 @@ const Termsconditions = () => {
               ac dignissim justo efficitur. Quisque lacinia, arcu quis facilisis aliquet, enim orci tempus ex, a condimentum tortor augue non magna. 
               Suspendisse vel lectus eget neque tempor varius. Phasellus eget aliquam magna, vel luctus magna.              
               </p>
-            </section>
+            </section> */}
 
           </div>
         </main>
