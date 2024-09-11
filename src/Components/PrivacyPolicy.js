@@ -62,7 +62,7 @@ const PrivacyPolicy = () => {
               data-aos="fade-up" 
               data-aos-duration="1000">
               <a 
-                href="#type" 
+                href="#heading1" 
                 className="block hover:text-blue-600" 
                 style={{  
                   fontFamily: 'Urbanist, sans-serif', 
@@ -72,7 +72,7 @@ const PrivacyPolicy = () => {
                 Type of information we collect online
               </a>
               <a 
-                href="#collected" 
+                href="#heading2" 
                 className="block hover:text-blue-600" 
                 style={{  
                   fontFamily: 'Urbanist, sans-serif', 
@@ -82,7 +82,7 @@ const PrivacyPolicy = () => {
                 Information that may be collected automatically
               </a>
               <a 
-                href="#info-provide" 
+                href="#heading3" 
                 className="block hover:text-blue-600" 
                 style={{  
                   fontFamily: 'Urbanist, sans-serif', 
@@ -92,7 +92,7 @@ const PrivacyPolicy = () => {
                 How we use your information
               </a>
               <a 
-                href="#contact" 
+                href="#heading4" 
                 className="block hover:text-blue-600" 
                 style={{  
                   fontFamily: 'Urbanist, sans-serif', 
@@ -102,7 +102,7 @@ const PrivacyPolicy = () => {
                 Information we share
               </a>
               <a 
-                href="#personal-data" 
+                href="#heading5" 
                 className="block hover:text-blue-600" 
                 style={{  
                   fontFamily: 'Urbanist, sans-serif', 
@@ -112,7 +112,7 @@ const PrivacyPolicy = () => {
                 Children privacy
               </a>
               <a 
-                href="#children-privacy" 
+                href="#heading6" 
                 className="block hover:text-blue-600" 
                 style={{  
                   fontFamily: 'Urbanist, sans-serif', 
@@ -122,7 +122,7 @@ const PrivacyPolicy = () => {
                 Your privacy choices
               </a>
               <a 
-                href="#privacy-choices" 
+                href="#heading7" 
                 className="block hover:text-blue-600" 
                 style={{  
                   fontFamily: 'Urbanist, sans-serif', 
@@ -132,7 +132,7 @@ const PrivacyPolicy = () => {
                 Data security
               </a>
               <a 
-                href="#data-security" 
+                href="#heading8" 
                 className="block hover:text-blue-600" 
                 style={{  
                   fontFamily: 'Urbanist, sans-serif', 
@@ -156,7 +156,7 @@ const PrivacyPolicy = () => {
             {/* Content Area */}
             <div className="flex-1 lg:w-3/4 lg:pl-10 p-8 lg:p-16"> {/* Increased padding */}
 
-              <section id="type" className="mb-12" data-aos="fade-up">
+              <section id="heading1" className="mb-12" data-aos="fade-up">
                 <h1 className="text-blue-600"  style={{ 
                     // fontFamily: 'Urbanist', 
                     fontWeight: 700, 
@@ -221,7 +221,7 @@ const PrivacyPolicy = () => {
               </ul>
             </section>
 
-            <section id="collected" className="mb-12"  data-aos="fade-up">
+            <section id="heading2" className="mb-12" data-aos="fade-up">
             <h1 className="text-blue-600"  style={{ 
                     // fontFamily: 'Urbanist', 
                     fontWeight: 700, 
@@ -232,10 +232,24 @@ const PrivacyPolicy = () => {
                     WebkitBackgroundClip: 'text', 
                     color: 'transparent' 
                   }}>
-                Information that may be collected automatically
+                Information That May Be Collected Automatically
               </h1>
               <p className="text-lg mt-4" style={{ fontFamily: 'Poppins, sans-serif', color: '#325098', fontWeight: 400, fontSize:16 }}>
-              Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Integer venenatis, nisl sit amet volutpat vehicula, libero sem cursus libero, nec vehicula.              </p>
+              When you visit our website or use our online services, we may automatically collect certain information about your equipment, 
+              browsing actions, and patterns, including:             
+               </p>
+               <ul className="list-disc list-inside mt-4 text-gray-800"  style={{ fontFamily: 'Poppins, sans-serif', color: '#325098', fontWeight: 400 }}>
+                <li>IP address and device identifiers</li>
+                <li>Browser type and version</li>
+                <li>Operating system</li>
+                <li>Time zone setting and location</li>
+                <li>Pages viewed and links clicked</li>
+                <li>Date and time stamps of visits</li>
+                <li>Referring website addresses</li>
+              </ul>
+              <p className="text-lg mt-4" style={{ fontFamily: 'Poppins, sans-serif', color: '#325098', fontWeight: 400, fontSize:16 }}>
+              We collect this data using cookies, web beacons, and other similar technologies.             
+               </p>
             </section>
 
             <section id="address" className="mb-12"  data-aos="fade-up">
@@ -277,7 +291,7 @@ const PrivacyPolicy = () => {
               </p>
             </section>
 
-            <section id="information" className="mb-12"  data-aos="fade-up">
+            <section id="heading3" className="mb-12"  data-aos="fade-up">
             <h1 className="text-blue-600"  style={{ 
                     // fontFamily: 'Urbanist', 
                     fontWeight: 700, 
@@ -288,13 +302,20 @@ const PrivacyPolicy = () => {
                     WebkitBackgroundClip: 'text', 
                     color: 'transparent' 
                   }}>
-                How we use your information 
+                How We Use Your Information 
               </h1>
               <p className="text-lg mt-4" style={{ fontFamily: 'Poppins, sans-serif', color: '#325098', fontWeight: 400, fontSize: '16px' }}>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
-              Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. 
-              Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.              
+              We use the information we collect about you or that you provide to us, including any personal information:              
               </p>
+              <ul className="list-disc list-inside mt-4 text-gray-800"  style={{ fontFamily: 'Poppins, sans-serif', color: '#325098', fontWeight: 400 }}>
+                <li>To provide and improve our real estate advisory services</li>
+                <li>To process transactions and send related information</li>
+                <li>To send promotional communications about our services</li>
+                <li>To respond to your inquiries and provide customer support</li>
+                <li>To personalize your website experience and deliver content relevant to your interests</li>
+                <li>To analyze website usage and optimize our marketing efforts</li>
+                <li>To comply with legal obligations</li>
+              </ul>
             </section>
 
             <section id="provide" className="mb-12"  data-aos="fade-up">
@@ -342,7 +363,7 @@ const PrivacyPolicy = () => {
               </ul>
             </section>
 
-            <section id="child" className="mb-12"  data-aos="fade-up">
+            <section id="heading5" className="mb-12"  data-aos="fade-up">
             <h1 className="text-blue-600"  style={{ 
                     // fontFamily: 'Urbanist', 
                     fontWeight: 700, 
@@ -356,15 +377,8 @@ const PrivacyPolicy = () => {
                 Children Privacy 
               </h1>
               <p className="text-lg mt-4" style={{ fontFamily: 'Poppins, sans-serif', color: '#325098', fontWeight: 400, fontSize:'16px' }}>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque vel turpis nec libero euismod condimentum. 
-              Nulla facilisi. Mauris faucibus risus eu sapien lacinia, at egestas libero tempus. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Integer in dui id libero fringilla eleifend. Donec sed ipsum at lacus scelerisque bibendum a ac velit. 
-              Aliquam erat volutpat. Sed interdum turpis sed libero dapibus, non accumsan magna suscipit.              
-              </p>
-
-              <p className="text-lg mt-6" style={{ fontFamily: 'Poppins, sans-serif', color: '#325098', fontWeight: 400, fontSize:'16px' }}>
-              Pellentesque vehicula orci non mauris gravida, a suscipit ligula elementum. Suspendisse potenti. Nulla fringilla, 
-              mauris ut vulputate tincidunt, ante dolor aliquet est, a ultricies odio urna a justo. Nulla eget eros ac risus vehicula pretium. Sed euismod orci sit amet lectus ultrices gravida. Vivamus blandit ligula eu justo tincidunt, quis scelerisque sem fermentum. Donec facilisis purus id mauris tempus, vel facilisis dui auctor. 
-              Curabitur auctor magna sed justo efficitur, non convallis odio pellentesque.              
+              Our website and services are not intended for children under 13 years of age. We do not knowingly collect personal information from children under 13. 
+              If you are under 13, please do not provide any information on this website.              
               </p>
             </section>
 
@@ -426,7 +440,7 @@ const PrivacyPolicy = () => {
               </p>
             </section>
 
-            <section id="chocies" className="mb-12"  data-aos="fade-up">
+            <section id="heading6" className="mb-12"  data-aos="fade-up">
             <h1 className="text-blue-600"  style={{ 
                     // fontFamily: 'Urbanist', 
                     fontWeight: 700, 
@@ -440,10 +454,14 @@ const PrivacyPolicy = () => {
                 Your Privacy Choices 
               </h1>
               <p className="text-lg mt-4" style={{ fontFamily: 'Poppins, sans-serif', color: '#325098', fontWeight: 400, fontSize:'16px' }}>
-              LorLorem ipsum dolor sit amet, consectetur adipiscing elit. In sit amet accumsan arcu. 
-              Nullam pharetra, justo vitae venenatis interdum, libero felis posuere ex, sed blandit nisi augue id sapien. Morbi malesuada, velit sit amet interdum dignissim, orci turpis porttitor orci, in gravida dui velit nec elit. Phasellus vel dignissim elit. Suspendisse potenti. Sed ultrices, 
-              augue vitae fermentum bibendum, neque justo viverra arcu, ac malesuada nulla sapien ut ligula.              
+              You have several choices regarding the use of information on our services:              
               </p>
+              <ul className="list-disc list-inside mt-4 text-gray-800"  style={{ fontFamily: 'Poppins, sans-serif', color: '#325098', fontWeight: 400 }}>
+                <li>Tracking Technologies: You can set your browser to refuse all or some browser cookies, or to alert you when cookies are being sent</li>
+                <li>Promotional Offers: You can opt-out of receiving promotional emails by following the unsubscribe link in each email.</li>
+                <li>Access and Correction: You can review and change your personal information by logging into your account or contacting us directly.</li>
+                <li>Do Not Track Signals: We currently do not respond to "do not track" signals from web browsers</li>
+              </ul>
             </section>
 
             <section id="access" className="mb-12"  data-aos="fade-up">
@@ -506,7 +524,7 @@ const PrivacyPolicy = () => {
               </p>
             </section>
 
-            <section id="data" className="mb-12"  data-aos="fade-up">
+            <section id="heading7" className="mb-12"  data-aos="fade-up">
             <h1 className="text-blue-600"  style={{ 
                     // fontFamily: 'Urbanist', 
                     fontWeight: 700, 
@@ -520,9 +538,9 @@ const PrivacyPolicy = () => {
                  Data Security 
               </h1>
               <p className="text-lg mt-4" style={{ fontFamily: 'Poppins, sans-serif', color: '#325098', fontWeight: 400, fontSize:'16px' }}>
-              Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. 
-              Nunc ut mauris ut libero vehicula malesuada sit amet non lacus. Etiam in tortor et felis vehicula gravida at non lorem. Aenean dapibus magna at magna scelerisque, a bibendum libero varius. Nulla facilisi. Mauris auctor ligula vel turpis luctus, et luctus mi elementum. Donec ut congue felis, 
-              eget facilisis nulla. Donec scelerisque massa vel metus vulputate, a vehicula ligula suscipit              
+              We have implemented measures designed to secure your personal information from accidental loss and from unauthorized access, use, 
+              alteration, and disclosure. However, 
+              the transmission of information via the internet is not completely secure, and we cannot guarantee the security of your personal information transmitted to our website.              
               </p>
             </section>
 
@@ -585,7 +603,7 @@ const PrivacyPolicy = () => {
               </p>
             </section>
 
-            <section id="third" className="mb-12"  data-aos="fade-up">
+            <section id="heading8" className="mb-12"  data-aos="fade-up">
             <h1 className="text-blue-600"  style={{ 
                     // fontFamily: 'Urbanist', 
                     fontWeight: 700, 
@@ -599,9 +617,9 @@ const PrivacyPolicy = () => {
                   Third-Party Site and social media plug-ins 
               </h1>
               <p className="text-lg mt-4" style={{ fontFamily: 'Poppins, sans-serif', color: '#325098', fontWeight: 400,fontSize:'16px' }}>
-              Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. 
-              Nunc ut mauris ut libero vehicula malesuada sit amet non lacus. Etiam in tortor et felis vehicula gravida at non lorem. Aenean dapibus magna at magna scelerisque, a bibendum libero varius. Nulla facilisi. Mauris auctor ligula vel turpis luctus, et luctus mi elementum. Donec ut congue felis, 
-              eget facilisis nulla. Donec scelerisque massa vel metus vulputate, a vehicula ligula suscipit              
+              Our website may contain links to third-party websites or include social media features. 
+              These third-party sites have separate and independent privacy policies. We have no responsibility or liability for the content and activities of these linked sites. However, 
+              we seek to protect the integrity of our site and welcome any feedback about these sites.              
               </p>
             </section>
 
