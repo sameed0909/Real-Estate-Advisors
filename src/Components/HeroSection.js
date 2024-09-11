@@ -39,7 +39,7 @@ const HeroSection = () => {
       </div>
 
       {/* Hero Section */}
-      <div className="flex flex-col md:flex-row p-6 md:p-8 mt-0 relative z-0">
+      <div id="schedule" className="flex flex-col md:flex-row p-6 md:p-8 mt-0 relative z-0">
         {/* Left Section */}
         <div className="md:w-1/2 text-left relative z-20 mt-16 md:mt-40 px-4 md:px-8" data-aos="fade-up">
           <div
@@ -94,7 +94,7 @@ const HeroSection = () => {
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-start">
             {/* Toggle Email Input */}
-            <div id="schedule" className="relative mt-8 w-full sm:w-72 transition-all duration-300 border-2 rounded-2xl shadow p-1">
+            <div id= "email" className="relative mt-8 w-full sm:w-72 transition-all duration-300 border-2 rounded-2xl shadow p-1">
               <div
                 className={`flex items-center w-full h-12 cursor-pointer transition-justify-content duration-300 `}
                 onClick={toggleEmailInput}
@@ -126,12 +126,12 @@ const HeroSection = () => {
 
               {isActive && (
                 <div className="absolute top-full mt-2 w-full z-20 bg-white p-2 shadow-lg rounded-lg"> {/* Added AOS effect to the email form */}
-                  <input
+                  <input id="Email"
                     type="email"
                     placeholder="Enter your email"
                     className="w-full p-2 mb-2 rounded-lg border-2 bg-white text-black text-sm focus:outline-none focus:ring-2 focus:ring-blue-500"
                   />
-                  <button
+                  <button id="submitbutton"
                     type="button"
                     onClick={handleEmailSubmit}
                     className="w-full rounded-lg bg-gradient-to-r from-blue-300 to-pink-300 p-2 font-bold text-gray-800 cursor-pointer hover:bg-gradient-to-l from-pink-300 to-blue-300 transition-colors duration-300"

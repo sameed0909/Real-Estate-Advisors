@@ -39,7 +39,7 @@ function App() {
             </>
           } />
           <Route path="/privacy-policy" element={<PrivacyPolicy />} />
-          <Route path="/terms-and-conditions" element={<Termsconditons />} /> {/* Add the route for Terms and Conditions */}
+          <Route path="/terms-and-conditions" element={<Termsconditons />} /> Add the route for Terms and Conditions
         </Routes>
         <Footer />
       </div>
