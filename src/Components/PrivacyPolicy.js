@@ -318,7 +318,7 @@ const PrivacyPolicy = () => {
               </ul>
             </section>
 
-            <section id="provide" className="mb-12"  data-aos="fade-up">
+            <section id="heading4" className="mb-12"  data-aos="fade-up">
             <h1 className="text-blue-600"  style={{ 
                     // fontFamily: 'Urbanist', 
                     fontWeight: 700, 
@@ -329,12 +329,19 @@ const PrivacyPolicy = () => {
                     WebkitBackgroundClip: 'text', 
                     color: 'transparent' 
                   }}>
-                Information You Provide 
+                Information We Share 
               </h1>
               <p className="text-lg mt-4" style={{ fontFamily: 'Poppins, sans-serif', color: '#325098', fontWeight: 400, fontSize: '16px' }}>
-              Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; 
-              Integer venenatis, nisl sit amet volutpat vehicula, libero sem cursus libero, nec vehicula tortor felis nec nulla. Morbi id nulla nec nunc condimentum viverra.
-               Proin sollicitudin, eros nec rhoncus tristique, est nunc vehicula quam.              
+              We may disclose aggregated information about our users without restriction. We may share your personal information with:              
+              </p>
+              <ul className="list-disc list-inside mt-4 text-gray-800"  style={{ fontFamily: 'Poppins, sans-serif', color: '#325098', fontWeight: 400 }}>
+                <li>Service providers and contractors who perform services on our behalf</li>
+                <li>Real estate partners to facilitate transactions or services you've requested</li>
+                <li>Legal and regulatory authorities, as required by applicable laws</li>
+                <li>Potential buyers or investors in the event of a business transaction like a merger or acquisition</li>
+              </ul>
+              <p className="text-lg mt-4" style={{ fontFamily: 'Poppins, sans-serif', color: '#325098', fontWeight: 400, fontSize: '16px' }}>
+              We do not sell your personal information to third parties.              
               </p>
             </section>
 
