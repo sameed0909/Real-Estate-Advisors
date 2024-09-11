@@ -14,7 +14,7 @@ const Footer = () => {
 
         {/* Links for Schedule and Contact Us */}
         <div className="flex flex-col sm:flex-row justify-center items-center space-y-4 sm:space-y-0 sm:space-x-8 mb-4">
-          <a href="#schedule" className="text-sm text-gray" style={{ color: "#444853" }}>
+          <a href="#schedule" id="oncall" className="text-sm text-gray" style={{ color: "#444853" }}>
             Schedule a Call
           </a>
         </div>
