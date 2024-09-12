@@ -35,14 +35,37 @@ const Footer = () => {
     }
   };
 
+  const navigateToHero = (event) => {
+    event.preventDefault();
+
+    if (location.pathname === "/") {
+      // If already on the main page, scroll to the Hero section
+      const heroSection = document.getElementById("hero");
+      if (heroSection) {
+        heroSection.scrollIntoView({ behavior: "smooth", block: "start" });
+      }
+    } else {
+      // If on another page, navigate to the homepage first, then scroll to Hero section
+      navigate("/");
+      setTimeout(() => {
+        const heroSection = document.getElementById("hero");
+        if (heroSection) {
+          heroSection.scrollIntoView({ behavior: "smooth", block: "start" });
+        }
+      }, 0);
+    }
+  };
+
   return (
     <footer className="text-gray-700 py-6" style={{ backgroundColor: "#ECE9F7" }}>
       <div className="container mx-auto px-4 md:px-6 lg:px-8 text-center">
-        <img
-          src="/pierlogohd.png"
-          alt="Company Logo"
-          className="mx-auto mb-4 w-24 h-auto"
-        />
+        <a href="/" onClick={navigateToHero}>
+          <img
+            src="/pierlogohd.png"
+            alt="Company Logo"
+            className="mx-auto mb-4 w-24 h-auto"
+          />
+        </a>
         <div className="border-t border-gray-300 my-4"></div>
 
         {/* Links for Schedule and Contact Us */}
