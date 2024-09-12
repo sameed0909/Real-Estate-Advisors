@@ -1,7 +1,19 @@
 import React from "react";
-import { Link } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 
 const Footer = () => {
+  const navigate = useNavigate();
+
+  const scrollToSchedule = () => {
+    navigate("/"); // Navigate to the home page
+    setTimeout(() => {
+      const scheduleSection = document.getElementById("schedule");
+      if (scheduleSection) {
+        scheduleSection.scrollIntoView({ behavior: "smooth" });
+      }
+    }, 0); // Timeout to ensure navigation happens before scrolling
+  };
+
   return (
     <footer className="text-gray-700 py-6" style={{ backgroundColor: "#ECE9F7" }}>
       <div className="container mx-auto px-4 md:px-6 lg:px-8 text-center">
@@ -14,48 +26,26 @@ const Footer = () => {
 
         {/* Links for Schedule and Contact Us */}
         <div className="flex flex-col sm:flex-row justify-center items-center space-y-4 sm:space-y-0 sm:space-x-8 mb-4">
-          <a href="#email" id="oncall" className="text-sm text-gray" style={{ color: "#444853" }}>
+          <a href="#email" onClick={scrollToSchedule} className="text-sm text-gray" style={{ color: "#444853" }}>
             Schedule a Demo
           </a>
         </div>
 
         {/* Social Media Icons */}
         <div className="flex justify-center items-center space-x-6 mb-4">
-          <a
-            href="https://facebook.com"
-            className="text-gray-700 text-2xl font-bold"
-          >
-            <img
-              src="/facebook.svg"
-              alt="facebook"
-              className="w-6 h-6 inline"
-            />
+          <a href="https://facebook.com" className="text-gray-700 text-2xl font-bold">
+            <img src="/facebook.svg" alt="facebook" className="w-6 h-6 inline" />
           </a>
-          <a
-            href="https://twitter.com"
-            className="text-gray-700 text-2xl font-bold"
-          >
-            <img
-              src="/x-logo.svg"
-              alt="X"
-              className="w-6 h-6 inline"
-            />
+          <a href="https://twitter.com" className="text-gray-700 text-2xl font-bold">
+            <img src="/x-logo.svg" alt="X" className="w-6 h-6 inline" />
           </a>
-          <a
-            href="https://instagram.com"
-            className="text-gray-700 text-2xl font-bold"
-          >
-            <img
-              src="/instagram.svg"
-              alt="instagram"
-              className="w-6 h-6 inline"
-            />
+          <a href="https://instagram.com" className="text-gray-700 text-2xl font-bold">
+            <img src="/instagram.svg" alt="instagram" className="w-6 h-6 inline" />
           </a>
         </div>
 
         {/* Terms and Privacy */}
         <div className="flex flex-col sm:flex-row justify-center items-center space-y-2 sm:space-y-0 sm:space-x-4 text-sm text-gray-500">
-
           <Link to="/terms-and-conditions" className="mr-0 sm:mr-2">
             Terms & Conditions
           </Link>
