@@ -9,8 +9,6 @@ const HeroSection = () => {
   const [email, setEmail] = useState("");
   const [message, setMessage] = useState("");
 
-
-
   const toggleEmailInput = () => {
     setIsActive(!isActive);
   };
@@ -27,6 +25,7 @@ const HeroSection = () => {
       once: true, // Animation happens only once
     });
   }, []);
+
   const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
 
   const handleEmailChange = (event) => {
@@ -38,6 +37,7 @@ const HeroSection = () => {
 
     if (!emailRegex.test(email)) {
       setMessage("Please enter a valid email address.");
+      alert("Please enter a valid email address."); // Show alert
       return;
     }
 
@@ -62,21 +62,25 @@ const HeroSection = () => {
 
       if (response.status === 200) {
         setMessage("You have successfully joined the waitlist!");
+        alert("You have successfully joined the waitlist!"); // Show alert
         setEmail(""); // Clear the input field after successful submission
       } else if (response.status === 400) {
         setMessage("Email already exists in our database.");
-        setEmail("")
+        alert("Email already exists in our database."); // Show alert
+        setEmail("");
       } else {
         setMessage(
-          `An error occurred. Status: ${response.status}. Details: ${responseBody.message || "No details"
-          }`
+          `An error occurred. Status: ${response.status}. Details: ${responseBody.message || "No details"}`
         );
+        alert(`An error occurred. Status: ${response.status}. Details: ${responseBody.message || "No details"}`); // Show alert
       }
     } catch (error) {
       console.error("Error:", error); // Log error details
       setMessage("An error occurred. Please try again.");
+      alert("An error occurred. Please try again."); // Show alert
     }
   };
+
   return (
     <div className="relative mb-4">
       {/* Navbar */}
@@ -188,13 +192,11 @@ const HeroSection = () => {
                   />
                   <button id="submitbutton"
                     type="button"
-                    onClick={handleEmailSubmit && handleFormSubmit}
-
+                    onClick={handleFormSubmit} // Use only handleFormSubmit
                     className="w-full rounded-lg bg-gradient-to-r from-blue-300 to-pink-300 p-2 font-bold text-gray-800 cursor-pointer hover:bg-gradient-to-l from-pink-300 to-blue-300 transition-colors duration-300"
                   >
                     Submit
                   </button>
-
                 </div>
               )}
             </div>
