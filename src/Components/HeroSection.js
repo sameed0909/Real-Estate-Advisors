@@ -96,7 +96,7 @@ const HeroSection = () => {
       </div>
 
       {/* Hero Section */}
-      <div id="schedule" className="flex flex-col md:flex-row p-6 md:p-8 mt-0 relative z-0">
+      <div id ="hero" className="flex flex-col md:flex-row p-6 md:p-8 mt-0 relative z-0">
         {/* Left Section */}
         <div className="md:w-1/2 text-left relative z-20 mt-16 md:mt-40 px-4 md:px-8" data-aos="fade-up">
           <div

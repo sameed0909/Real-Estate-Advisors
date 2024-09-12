@@ -1,17 +1,38 @@
 import React from "react";
-import { Link, useNavigate } from "react-router-dom";
+import { useNavigate, Link, useLocation } from "react-router-dom";
 
 const Footer = () => {
   const navigate = useNavigate();
+  const location = useLocation(); // Get the current page location
 
-  const scrollToSchedule = () => {
-    navigate("/"); // Navigate to the home page
-    setTimeout(() => {
-      const scheduleSection = document.getElementById("schedule");
-      if (scheduleSection) {
-        scheduleSection.scrollIntoView({ behavior: "smooth" });
+  const scrollToSchedule = (event) => {
+    event.preventDefault(); // Prevent default link behavior
+
+    if (location.pathname === "/privacy-policy" || location.pathname === "/terms-and-conditions") {
+      // If on the Privacy Policy or Terms & Conditions page, navigate to the home page and scroll to the HeroSection start
+      navigate("/"); // Navigate to the home page
+      setTimeout(() => {
+        const heroSection = document.getElementById("hero"); // Ensure the ID matches the Hero section
+        if (heroSection) {
+          heroSection.scrollIntoView({ behavior: "smooth", block: "start" });
+        }
+      }, 0); // Timeout to ensure navigation happens before scrolling
+    } else if (location.pathname === "/") {
+      // If already on the main page, scroll to the schedule button
+      const emailSection = document.getElementById("email");
+      if (emailSection) {
+        emailSection.scrollIntoView({ behavior: "smooth" });
       }
-    }, 0); // Timeout to ensure navigation happens before scrolling
+    } else {
+      // In case you're on any other page, first navigate to the home page and then scroll to the schedule button
+      navigate("/"); 
+      setTimeout(() => {
+        const emailSection = document.getElementById("email");
+        if (emailSection) {
+          emailSection.scrollIntoView({ behavior: "smooth" });
+        }
+      }, 0);
+    }
   };
 
   return (
