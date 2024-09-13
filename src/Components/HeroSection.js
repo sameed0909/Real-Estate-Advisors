@@ -1,21 +1,18 @@
-import React, { useState, useEffect } from "react";
+import React, { useState, useEffect, useRef } from "react";
 import "../style.css";
 import CountUp from 'react-countup';
 import AOS from 'aos';
 import 'aos/dist/aos.css';
+import Swal from 'sweetalert2'; // Import SweetAlert2
 
 const HeroSection = () => {
   const [isActive, setIsActive] = useState(false);
   const [email, setEmail] = useState("");
   const [message, setMessage] = useState("");
+  const heroRef = useRef(null); // Reference to the Hero section
 
   const toggleEmailInput = () => {
     setIsActive(!isActive);
-  };
-
-  const handleEmailSubmit = () => {
-    // Handle email submission logic here
-    toggleEmailInput();
   };
 
   useEffect(() => {
@@ -24,6 +21,20 @@ const HeroSection = () => {
       easing: "ease-in-out", // Animation easing function
       once: true, // Animation happens only once
     });
+
+    const handleScroll = () => {
+      if (heroRef.current) {
+        const rect = heroRef.current.getBoundingClientRect();
+        if (rect.top >= window.innerHeight || rect.bottom <= 0) {
+          setIsActive(false); // Close the email input area if Hero section is not in view
+        }
+      }
+    };
+
+    window.addEventListener('scroll', handleScroll);
+    return () => {
+      window.removeEventListener('scroll', handleScroll);
+    };
   }, []);
 
   const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
@@ -37,7 +48,15 @@ const HeroSection = () => {
 
     if (!emailRegex.test(email)) {
       setMessage("Please enter a valid email address.");
-      alert("Please enter a valid email address."); // Show alert
+      Swal.fire({
+        title: 'Invalid Email',
+        text: 'Please enter a valid email address.',
+        icon: 'error',
+        confirmButtonText: 'OK',
+        customClass: {
+          container: 'responsive-alert-container', // Custom class for responsive styling
+        }
+      });
       return;
     }
 
@@ -62,22 +81,58 @@ const HeroSection = () => {
 
       if (response.status === 200) {
         setMessage("You have successfully joined the waitlist!");
-        alert("You have successfully joined the waitlist!"); // Show alert
+        Swal.fire({
+          title: 'Success',
+          text: 'You have successfully joined the waitlist!',
+          icon: 'success',
+          confirmButtonText: 'OK',
+          customClass: {
+            container: 'responsive-alert-container', // Custom class for responsive styling
+          }
+        });
         setEmail(""); // Clear the input field after successful submission
+        setIsActive(false); // Close the email input area
       } else if (response.status === 400) {
         setMessage("Email already exists in our database.");
-        alert("Email already exists in our database."); // Show alert
+        Swal.fire({
+          title: 'Email Exists',
+          text: 'Email already exists in our database.',
+          icon: 'warning',
+          confirmButtonText: 'OK',
+          customClass: {
+            container: 'responsive-alert-container', // Custom class for responsive styling
+          }
+        });
         setEmail("");
+        setIsActive(false); // Close the email input area
       } else {
         setMessage(
           `An error occurred. Status: ${response.status}. Details: ${responseBody.message || "No details"}`
         );
-        alert(`An error occurred. Status: ${response.status}. Details: ${responseBody.message || "No details"}`); // Show alert
+        Swal.fire({
+          title: 'Error',
+          text: `An error occurred. Status: ${response.status}. Details: ${responseBody.message || "No details"}`,
+          icon: 'error',
+          confirmButtonText: 'OK',
+          customClass: {
+            container: 'responsive-alert-container', // Custom class for responsive styling
+          }
+        });
+        setIsActive(false); // Close the email input area
       }
     } catch (error) {
       console.error("Error:", error); // Log error details
       setMessage("An error occurred. Please try again.");
-      alert("An error occurred. Please try again."); // Show alert
+      Swal.fire({
+        title: 'Error',
+        text: 'An error occurred. Please try again.',
+        icon: 'error',
+        confirmButtonText: 'OK',
+        customClass: {
+          container: 'responsive-alert-container', // Custom class for responsive styling
+        }
+      });
+      setIsActive(false); // Close the email input area
     }
   };
 
@@ -96,7 +151,7 @@ const HeroSection = () => {
       </div>
 
       {/* Hero Section */}
-      <div id ="hero" className="flex flex-col md:flex-row p-6 md:p-8 mt-0 relative z-0">
+      <div id="hero" ref={heroRef} className="flex flex-col md:flex-row p-6 md:p-8 mt-0 relative z-0">
         {/* Left Section */}
         <div className="md:w-1/2 text-left relative z-20 mt-16 md:mt-40 px-4 md:px-8" data-aos="fade-up">
           <div
