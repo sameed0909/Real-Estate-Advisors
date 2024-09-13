@@ -1,20 +1,28 @@
 import React, { useEffect } from 'react';
+import { useNavigate } from 'react-router-dom'; // Import useNavigate from react-router-dom
 
 const Termsconditions = () => {
+  const navigate = useNavigate(); // Initialize useNavigate
+
   useEffect(() => {
     window.scrollTo(0, 0); 
   }, []);
 
+  const handleLogoClick = () => {
+    navigate('/#hero'); // Navigate to Hero section
+  };
+
   return (
     <div className="min-h-screen flex flex-col relative">
       {/* Fixed Logo */}
-      <div className="fixed top-0 left-0 w-full flex items-center justify-between p-10 bg-white z-50"> {/* Increased padding */}
+      <div className="fixed top-0 left-0 w-full flex items-center justify-between p-10 bg-white z-50">
         <div className="h-16 pl-9 -mt-3">
           {/* Logo */}
           <img
             src={`${process.env.PUBLIC_URL}/pierlogohd.png`}
             alt="Logo"
-            className="h-full"
+            className="h-full cursor-pointer" // Add cursor-pointer for clickable logo
+            onClick={handleLogoClick} // Add click handler
           />
         </div>
       </div>

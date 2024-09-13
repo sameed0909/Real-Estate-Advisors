@@ -1,9 +1,16 @@
 import React, { useEffect } from 'react';
+import { useNavigate } from 'react-router-dom'; // Import useNavigate hook from react-router-dom
 
 const PrivacyPolicy = () => {
+  const navigate = useNavigate(); // Initialize useNavigate hook
+
   useEffect(() => {
-    window.scrollTo(0, 0); 
+    window.scrollTo(0, 0);
   }, []);
+
+  const handleLogoClick = () => {
+    navigate('/#hero'); // Navigate to the Hero section
+  };
 
   return (
     <div className="min-h-screen flex flex-col relative">
@@ -14,11 +21,12 @@ const PrivacyPolicy = () => {
           <img
             src={`${process.env.PUBLIC_URL}/pierlogohd.png`}
             alt="Logo"
-            className="h-full"
+            className="h-full cursor-pointer" // Add cursor-pointer for clickable logo
+            onClick={handleLogoClick} // Handle logo click
           />
         </div>
       </div>
-
+      
       {/* Main Content */}
       <div className="pt-16 relative min-h-screen w-full flex flex-col justify-center items-center mt-20 px-6 sm:px-10 lg:px-16" 
            style={{ backgroundImage: "url('/hero.png')" }}> {/* Increased padding */}
