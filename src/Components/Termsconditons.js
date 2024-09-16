@@ -19,7 +19,7 @@ const Termsconditions = () => {
         <div className="h-16 pl-9 -mt-3">
           {/* Logo */}
           <img
-            src={`${process.env.PUBLIC_URL}/pierlogohd.png`}
+            src={`${process.env.PUBLIC_URL}/pier-logo-hdd.png`}
             alt="Logo"
             className="h-full cursor-pointer" // Add cursor-pointer for clickable logo
             onClick={handleLogoClick} // Add click handler

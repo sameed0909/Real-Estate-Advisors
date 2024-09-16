@@ -61,7 +61,7 @@ const Footer = () => {
       <div className="container mx-auto px-4 md:px-6 lg:px-8 text-center">
         <a href="/" onClick={navigateToHero}>
           <img
-            src="/pierlogohd.png"
+            src="/pier-logo-hdd.png"
             alt="Company Logo"
             className="mx-auto mb-4 w-24 h-auto"
           />
