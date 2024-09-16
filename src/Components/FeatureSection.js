@@ -13,7 +13,7 @@ const FeatureSection = () => {
   }, []);
 
   return (
-    <div className="max-w-8xl mx-auto px-4 sm:px-6 lg:px-8 mt-40">
+    <div className="max-w-8xl mx-auto px-4 sm:px-6 lg:px-8 mt-40 overflow-x-hidden">
       {/* Core Features Header */}
       <div className="mb-2 flex justify-center">
         <h1
