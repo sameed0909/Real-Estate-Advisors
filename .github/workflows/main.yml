@@ -3,7 +3,7 @@ name: SSH to Remote Server
 on:
   push:
     branches:
-      - master  # Change this to the branch you want to trigger on
+      - main  # Change this to the branch you want to trigger on
 
 jobs:
   ssh:
