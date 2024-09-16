@@ -290,7 +290,7 @@ const HeroSection = () => {
                   fontSize: 28,
                 }}
               >
-                <CountUp start={0} end={10} duration={4} />
+                <CountUp start={0} end={10} duration={6} />
                 +
               </div>
               <div
@@ -313,7 +313,7 @@ const HeroSection = () => {
                   fontSize: 28,
                 }}
               >
-                <CountUp start={0} end={98} duration={1.5} suffix="%" />
+                <CountUp start={0} end={98} duration={3.5} suffix="%" />
               </div>
               <div
                 className="text-sm md:text-base lg:text-lg"
