@@ -137,7 +137,7 @@ const HeroSection = () => {
   };
 
   return (
-    <div className="relative mb-4">
+    <div className="relative mb-4 overflow-x-hidden"> {/* Added overflow-x-hidden here */}
       {/* Navbar */}
       <div className="absolute top-0 left-0 w-full flex items-center justify-between p-6 z-10" data-aos="fade-down">
         <div className="h-16 pl-9 mt-5">
