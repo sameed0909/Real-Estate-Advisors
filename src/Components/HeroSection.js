@@ -143,7 +143,7 @@ const HeroSection = () => {
         <div className="h-16 pl-9 mt-5">
           {/* Logo */}
           <img
-            src={`${process.env.PUBLIC_URL}/pier-logo-hdd.png`}
+            src={`${process.env.PUBLIC_URL}/pier logo-02.svg`}
             alt="Logo"
             className="h-full"
           />
