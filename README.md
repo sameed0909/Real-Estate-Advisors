@@ -10,4 +10,3 @@ React.js for building interactive user interfaces
 Tailwind CSS for creating a responsive and stylish design
 JavaScript (ES6) for modern and dynamic functionalities
 Email Integration: Enables users to submit their contact information for scheduling calls
->>>>>>> d468de58c9a01ae64ffdcc13aa57ce631e21af5e
